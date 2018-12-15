@@ -34,6 +34,10 @@ public class Constants {
         map.put("ThE WorLd", "The World");
         map.put("Promises", "Promises (Adiale)");
         map.put("endless", "Endless (FlappySheepy)");
+        map.put("moon adventure", "Moon Adventure");
+        map.put("Theory of SkriLLex", "Theory of Skrillex");
+        map.put("Jawbreaker", "Jawbreaker (ZenthicAlpha)");
+        map.put("Fernanfloo 3", "");
         //map.put("Fernanfloo 3", "");
 
         return map;

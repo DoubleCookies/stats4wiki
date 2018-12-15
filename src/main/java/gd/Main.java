@@ -12,11 +12,8 @@ public class Main {
         generateMostDownloadedLevels();
         generateMostLikedLevels();
         generateMostDownloadedLevelsSmall();
-    }
-
-    private static void generateTopDemons() {
-        String[] res = ResponseGenerator.generateTopDemonsList();
-        writeToFile(0, "Top 50 popular demons", 0, res[0].getBytes(), ".md");
+        generateMostDownloadedLevelsForDemons();
+        generateMostDownloadedLevelsSmallForDemons();
     }
 
     private static void generateMostDownloadedLevels() {
@@ -27,6 +24,16 @@ public class Main {
     private static void generateMostDownloadedLevelsSmall() {
         String res = ResponseGenerator.generateMostDownloadedListSmall();
         writeToFile(0, "Most downloaded small", 0, res.getBytes(), ".txt");
+    }
+
+    private static void generateMostDownloadedLevelsForDemons() {
+        String res = ResponseGenerator.generateMostDownloadedListForDemons();
+        writeToFile(0, "Most downloaded for demons", 0, res.getBytes(), ".txt");
+    }
+
+    private static void generateMostDownloadedLevelsSmallForDemons() {
+        String res = ResponseGenerator.generateMostDownloadedListSmallForDemons();
+        writeToFile(0, "Most downloaded small for demons", 0, res.getBytes(), ".txt");
     }
 
     private static void generateMostLikedLevels() {

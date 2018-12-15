@@ -347,10 +347,6 @@ public class GDLevel {
 		return "\"" + name + "\" by " + creator + " (" + id + ") — likes: " + likes + ", downloads: " + downloads;
 	}
 
-	public String markdownString() {
-		return "| " + name + " | " + creator + " | " + id + " | " + downloads + " | " + likes;
-	}
-
 	public String smallWikiString() {
 		String data = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name) : name;
 		data = data.trim();
@@ -398,10 +394,6 @@ public class GDLevel {
 				cr = creator;
 		}
 		return "! " + (count+1) + "\n" + "| [[" + data + "]]\n| "+ cr + "\n| <center>{{" + diffTemplate + "}}</center>\n| " + numberFormatter.format(downloads) + "\n| " + numberFormatter.format(likes);
-	}
-
-	public String markdownWithDescrString() {
-		return "| " + name + " | " + creator + " | " + id + " | " + description;
 	}
 
 	@Override
