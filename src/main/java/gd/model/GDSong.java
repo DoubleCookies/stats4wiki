@@ -181,10 +181,6 @@ public class GDSong {
                 + ", songTitle=" + songTitle + ", downloadURL=" + downloadURL + ", isCustom=" + isCustom + "]";
     }
 
-    public String toListString() {
-        return "| " + songID + " | " + songAuthorName + " | " + songTitle + " | ";
-    }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
