@@ -3,8 +3,6 @@ package gd;
 import gd.enums.Difficulty;
 import gd.model.GDLevel;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,10 +11,8 @@ import java.util.List;
  */
 public class ResponseGenerator {
 
-    static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-
     static String generateMostDownloadedList() {
-        int counter=0;
+        int counter = 0;
         StringBuilder builder = new StringBuilder();
         builder.append("{| class=\"wikitable\"\n" +
                 "! Место\n" +
@@ -40,7 +36,7 @@ public class ResponseGenerator {
     }
 
     static String generateMostDownloadedListSmall() {
-        int counter=0;
+        int counter = 0;
         StringBuilder builder = new StringBuilder();
         builder.append("{{#arraydefine:levels|TEST_VALUE_FOR_SHIFT,\n");
         List<GDLevel> list = getMostDownloadedLevels();
@@ -60,7 +56,7 @@ public class ResponseGenerator {
     }
 
     static String generateMostDownloadedListForDemons() {
-        int counter=0;
+        int counter = 0;
         StringBuilder builder = new StringBuilder();
         builder.append("{| class=\"wikitable\"\n" +
                 "! Место\n" +
@@ -86,7 +82,7 @@ public class ResponseGenerator {
     }
 
     static String generateMostDownloadedListSmallForDemons() {
-        int counter=0;
+        int counter = 0;
         StringBuilder builder = new StringBuilder();
         builder.append("{{#arraydefine:levels|TEST_VALUE_FOR_SHIFT,\n");
         List<GDLevel> list = getMostDownloadedLevelsForDemons();
@@ -108,7 +104,7 @@ public class ResponseGenerator {
     }
 
     static String generateMostLikedList() {
-        int counter=0;
+        int counter = 0;
         StringBuilder builder = new StringBuilder();
         builder.append("{| class=\"wikitable\"\n" +
                 "! Место\n" +
