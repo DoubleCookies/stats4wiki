@@ -1,14 +1,12 @@
 package gd;
 
-import gd.enums.DemonDifficulty;
 import gd.enums.Difficulty;
-import gd.model.EmptyListException;
 import gd.model.GDLevel;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.*;
-import java.util.stream.IntStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Class for generating level lists

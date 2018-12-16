@@ -5,7 +5,6 @@ import gd.model.GDSong;
 import java.util.HashMap;
 import java.util.Map;
 
-
 /**
  * Contains utility static methods
  *

@@ -1,11 +1,5 @@
 package gd.enums;
 
-/**
- * Represents the different difficulties for levels in the game.    
- * 
- * @author Alex1304
- *
- */
 public enum Difficulty {
 	NA,
 	AUTO,
