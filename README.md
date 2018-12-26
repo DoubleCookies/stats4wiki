@@ -1,5 +1,7 @@
 # Stats4wiki
 
+[![Build Status](https://travis-ci.org/killhtf/stats4wiki.svg?branch=master)](https://travis-ci.org/killhtf/stats4wiki)
+
 Statistics tool for building tables and templates for some russian geometry dash wikia (FANDOM) pages. Based on [GdStatistics](https://github.com/killhtf/GDStatistics) project, which is based on Alex1304 [ultimategdbot](https://github.com/alex1304/ultimategdbot) *(feel increasing nesting!)*. 
 
 ## Features
