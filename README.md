@@ -7,8 +7,8 @@ Statistics tool for building tables and templates for some russian geometry dash
 ## Features
 - Collect information about top-50 most downloaded/liked levels and generate table for it.
 - Collect information about top-50 most downloaded demons and generate table for it.
-- Generate short lists for special wikia templates.
-- Automatically transform level names and level authors to links (you can found it in **`Constants.java`**).
+- Generate short lists for special templates.
+- Transform level names and level authors to links (you can found some rules in **`Constants.java`**).
 Statistics tables contains russian headers and tempaltes but it's easy to change it if you need! 
 
 ## Structure

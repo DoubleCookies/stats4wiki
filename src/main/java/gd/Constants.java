@@ -70,9 +70,9 @@ public class Constants {
         return names;
     }
 
-    public static final Map<String, String> PopularLevelsCreators = initPopularLevelCrators();
+    public static final Map<String, String> PopularLevelsCreators = initPopularLevelCreators();
 
-    private static Map<String, String> initPopularLevelCrators() {
+    private static Map<String, String> initPopularLevelCreators() {
         Map<String, String> map = new HashMap<>();
         map.put("DiMaViKuLov26", "DimaVikulov26");
         map.put("DORABAE", "Dorabae");
