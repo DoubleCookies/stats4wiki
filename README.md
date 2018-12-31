@@ -15,5 +15,10 @@ Statistics tables contains russian headers and tempaltes but it's easy to change
 - **Statistics** folder contains markdown lists with statistics information.
 - **src** folder contains... sources!
 
+## Plans (for the distant future)
+- Do web-interface + create some github page
+- Describe how project works
+- Create some illustrations?
+
 ## License
 This project has [MIT License](https://opensource.org/licenses/MIT)
