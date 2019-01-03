@@ -49,10 +49,8 @@ public class Constants {
         names.add("Jax");
         names.add("Scanbrux");
         names.add("Adiale");
-        names.add("Jax");
         names.add("Creator Cloud");
         names.add("ZenthicAlpha");
-        names.add("timeless real");
         names.add("Berkoo");
         names.add("Riot");
         names.add("Mixroid");
@@ -64,9 +62,20 @@ public class Constants {
         names.add("FunnyGame");
         names.add("Serponge");
         names.add("TamaN");
-        names.add("Creator Cloud");
         names.add("Jeyzor");
         names.add("Glittershroom43");
+        names.add("Lyod");
+        names.add("Rob Buck");
+        names.add("TriAxis");
+        names.add("Ggb0y");
+        names.add("Caustic");
+        names.add("Experience D");
+        names.add("Jerry Bronze V");
+        names.add("Rek3dge");
+        names.add("WOOGI1411");
+        names.add("TheRealSalad");
+        names.add("Minesap");
+        names.add("ChaSe");
         return names;
     }
 
@@ -80,7 +89,12 @@ public class Constants {
         map.put("alkali", "Alkali");
         map.put("TheRealDarnoc", "Darnoc");
         map.put("IIINePtunEIII", "Neptune");
-        map.put("SUOMI", "Suomi");
+        map.put("timeless real", "Timeless real");
+        map.put("noobas", "Noobas");
+        map.put("haoN", "HaoN");
+        map.put("TrusTa", "TrusTa (игрок)|Trusta");
+        map.put("IRabb2tI", "Rabb2t");
+        map.put("lSunix", "Cyclic");
         return map;
     }
 

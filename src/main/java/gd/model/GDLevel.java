@@ -348,14 +348,14 @@ public class GDLevel {
 	}
 
 	public String smallWikiString() {
-		String data = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name) : name;
+		String data = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name).trim() : name.trim();
 		data = data.trim();
 		data = data.substring(0, 1).toUpperCase() + data.substring(1);
 		return data;
 	}
 
 	public String wikiString(int count) {
-		String data = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name) : name;
+		String data = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name).trim() : name.trim();
 		String diffTemplate = "";
 		if(epic) {
 			diffTemplate += "Эпический ";
@@ -384,7 +384,10 @@ public class GDLevel {
 		NumberFormat numberFormatter = NumberFormat.getNumberInstance();
 		String cr = "";
 		if(Constants.allowedCreatorsNames.contains(creator)) {
-			cr = "[["+creator+"]]";
+			if(creator != "Riot")
+				cr = "[["+creator+"]]";
+			else
+				cr = "[[" + creator +"]] и др.";
 		} else if (Constants.PopularLevelsCreators.containsKey(creator)) {
 			cr = "[["+Constants.PopularLevelsCreators.get(creator)+"]]";
 		} else {
