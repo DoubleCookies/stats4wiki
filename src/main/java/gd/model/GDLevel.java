@@ -216,88 +216,6 @@ public class GDLevel {
 	}
 
 	/**
-	 * Sets the name of the level
-	 *
-	 * @param name - String
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	/**
-	 * Sets the name of the creator who created this level
-	 *
-	 * @param creator - String
-	 */
-	public void setCreator(String creator) {
-		this.creator = creator;
-	}
-
-	/**
-	 * Sets the level difficulty
-	 *
-	 * @param difficulty - gd.enums.Difficulty
-	 */
-	public void setDifficulty(Difficulty difficulty) {
-		this.difficulty = difficulty;
-	}
-
-	/**
-	 * Sets the type of Demon difficulty
-	 *
-	 * @param demonDifficulty - gd.enums.DemonDifficulty
-	 */
-	public void setDemonDifficulty(DemonDifficulty demonDifficulty) {
-		this.demonDifficulty = demonDifficulty;
-	}
-
-	/**
-	 * Sets the number of stars assigned to the level
-	 *
-	 * @param stars - short
-	 */
-	public void setStars(short stars) {
-		this.stars = stars;
-	}
-
-	/**
-	 * Sets the featured score of the level, or a value &lt;= 0 if not featured
-	 *
-	 * @param featuredScore - int
-	 */
-	public void setFeaturedScore(int featuredScore) {
-		this.featuredScore = featuredScore;
-	}
-
-	/**
-	 * Sets whether the level is marked as Epic
-	 *
-	 * @param epic - boolean
-	 */
-	public void setEpic(boolean epic) {
-		this.epic = epic;
-	}
-
-	/**
-	 * Sets the amount of downloads for the level
-	 *
-	 * @param downloads - long
-	 */
-	public void setDownloads(long downloads) {
-		this.downloads = downloads;
-	}
-
-	/**
-	 * Sets the amount of likes for the level
-	 *
-	 * @param likes - long
-	 */
-	public void setLikes(long likes) {
-		this.likes = likes;
-	}
-
-
-	/**
 	 * Whether the level is featured.
 	 * 
 	 * @return boolean
@@ -322,15 +240,6 @@ public class GDLevel {
 	 */
 	public String getDescription() {
 		return description;
-	}
-
-	/**
-	 * Sets the level description
-	 *
-	 * @param description - String
-	 */
-	public void setDescription(String description) {
-		this.description = description;
 	}
 
 
