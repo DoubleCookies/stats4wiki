@@ -2,8 +2,8 @@
 The Nightmare,
 The Lightning Road,
 Bloodbath,
-Laser Room,
 Nine Circles,
+Laser Room,
 YStep,
 Xstep v2,
 Speed Racer,
@@ -48,5 +48,5 @@ Speed of Light,
 Time pressure,
 Insomnia,
 ForceDynamix,
-Dorabaedifficult4
+Bloodlust
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
