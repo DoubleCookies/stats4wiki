@@ -47,6 +47,6 @@ Jawbreaker (ZenthicAlpha),
 Speed of Light,
 Time pressure,
 Insomnia,
-ForceDynamix,
-Bloodlust
+Bloodlust,
+ForceDynamix
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
