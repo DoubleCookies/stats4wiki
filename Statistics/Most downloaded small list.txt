@@ -16,8 +16,8 @@ The Lightning Road,
 Acid Factory,
 Amplification,
 UFO Madness,
-Space Travel,
 Bloodbath,
+Space Travel,
 Through time,
 Nine Circles,
 Laser Room,
@@ -48,5 +48,5 @@ Dinosaur,
 Darkness,
 Simple Cloud,
 Stereo Madness X,
-GoldenClub
+Glitter Madness 2k15
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
