@@ -46,7 +46,7 @@ Hexagon Force v2,
 Jawbreaker (ZenthicAlpha),
 Speed of Light,
 Time pressure,
-Insomnia,
 Bloodlust,
+Insomnia,
 ForceDynamix
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
