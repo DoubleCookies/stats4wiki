@@ -42,11 +42,11 @@ Radioactive Demon,
 Windy Landscape,
 Chaoz Impact,
 12 Clutterfunk,
-Hexagon Force v2,
 Speed of Light,
+Hexagon Force v2,
 Jawbreaker (ZenthicAlpha),
-Time pressure,
 Bloodlust,
+Time pressure,
 Insomnia,
 ForceDynamix
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
