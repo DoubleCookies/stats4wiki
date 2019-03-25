@@ -1,3 +1,7 @@
+# Special file for private purposes
+Statistics/copytext_list.txt
+
+# Default
 *.class
 *.iml
 # BlueJ files

@@ -8,17 +8,21 @@ import java.nio.file.Paths;
 
 public class Main {
 
+    static String mdl;
+    static String mll;
+
     public static void main(String[] args) {
         generateMostDownloadedLevels();
         generateMostLikedLevels();
         generateMostDownloadedLevelsSmall();
         generateMostDownloadedLevelsForDemons();
         generateMostDownloadedLevelsSmallForDemons();
+        generateMostDownloadedAndLikedCopyText();
     }
 
     private static void generateMostDownloadedLevels() {
-        String res = ResponseGenerator.generateMostDownloadedList();
-        writeToFile(0, "Most downloaded", res.getBytes(), ".txt");
+        mdl = ResponseGenerator.generateMostDownloadedList();
+        writeToFile(0, "Most downloaded", mdl.getBytes(), ".txt");
     }
 
     private static void generateMostDownloadedLevelsSmall() {
@@ -37,8 +41,33 @@ public class Main {
     }
 
     private static void generateMostLikedLevels() {
-        String res = ResponseGenerator.generateMostLikedList();
-        writeToFile(0, "Most liked", res.getBytes(), ".txt");
+        mll = ResponseGenerator.generateMostLikedList();
+        writeToFile(0, "Most liked", mll.getBytes(), ".txt");
+    }
+
+    //Special method for faster copy-paste process
+    private static void generateMostDownloadedAndLikedCopyText() {
+        String start = "{{Фан-статья}}\n" +
+                "{{Связанный шаблон|[[Шаблон:Топ 50 популярных уровней|данном шаблоне]]}}\n" +
+                "\n" +
+                "В представленных ниже списках находятся 50 самых популярных уровней по количеству загрузок и по количеству лайков.\n" +
+                "\n" +
+                "<tabber>Топ по загрузкам=\n" +
+                "<div class=\"recordboxmedium\">\n";
+
+        String medium = "\n</div>\n" +
+                "|-|Топ по лайкам=\n" +
+                "<div class=\"recordboxmedium\">\n";
+
+        String finish = "\n</div>\n" +
+                "</tabber>\n" +
+                "\n" +
+                "== Интересные факты ==\n" +
+                "* В обоих топах нет ни одного уровня со сложностью {{Средний демон}} и {{Безумный демон}}.\n" +
+                "* [[Bloodbath]] — единственный {{Экстремальный демон}} в данных топах.\n" +
+                "* [[Phantom]] и [[Dinosaur]] — единственные [[Зал славы|эпические]] уровни, который есть в этих топах, причём [[Phantom]] находится только в топе по лайкам, а [[Dinosaur]] — и в топе по загрузкам, и по лайкам.";
+        String result = start + mdl + medium + mll + finish;
+        writeToFile(0, "copytext", result.getBytes(), ".txt");
     }
 
 
