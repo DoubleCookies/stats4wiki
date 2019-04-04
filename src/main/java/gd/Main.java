@@ -10,6 +10,7 @@ public class Main {
 
     static String mdl;
     static String mll;
+    static String mdld;
 
     public static void main(String[] args) {
         generateMostDownloadedLevels();
@@ -18,6 +19,7 @@ public class Main {
         generateMostDownloadedLevelsForDemons();
         generateMostDownloadedLevelsSmallForDemons();
         generateMostDownloadedAndLikedCopyText();
+        generateMostDownloadedAndLikedDemonsCopyText();
     }
 
     private static void generateMostDownloadedLevels() {
@@ -31,8 +33,8 @@ public class Main {
     }
 
     private static void generateMostDownloadedLevelsForDemons() {
-        String res = ResponseGenerator.generateMostDownloadedListForDemons();
-        writeToFile(0, "Most downloaded for demons", res.getBytes(), ".txt");
+        mdld = ResponseGenerator.generateMostDownloadedListForDemons();
+        writeToFile(0, "Most downloaded for demons", mdld.getBytes(), ".txt");
     }
 
     private static void generateMostDownloadedLevelsSmallForDemons() {
@@ -65,9 +67,27 @@ public class Main {
                 "== Интересные факты ==\n" +
                 "* В обоих топах нет ни одного уровня со сложностью {{Средний демон}} и {{Безумный демон}}.\n" +
                 "* [[Bloodbath]] — единственный {{Экстремальный демон}} в данных топах.\n" +
-                "* [[Phantom]] и [[Dinosaur]] — единственные [[Зал славы|эпические]] уровни, который есть в этих топах, причём [[Phantom]] находится только в топе по лайкам, а [[Dinosaur]] — и в топе по загрузкам, и по лайкам.";
+                "* [[Phantom]] и [[Dinosaur]] — единственные [[Зал славы|эпические]] уровни, которые есть в этих топах, причём [[Phantom]] находится только в топе по лайкам, а [[Dinosaur]] — и в топе по загрузкам, и по лайкам.";
         String result = start + mdl + medium + mll + finish;
         writeToFile(0, "copytext", result.getBytes(), ".txt");
+    }
+
+    //Special method for faster copy-paste process (demons page)
+    private static void generateMostDownloadedAndLikedDemonsCopyText() {
+        String start = "{{Фан-статья}}\n" +
+                "{{Связанный шаблон|[[Шаблон:Топ 50 популярных демонов|данном шаблоне]]}}\n" +
+                "\n" +
+                "В представленном ниже списке находятся 50 самых популярных {{Демон}} уровней в [[Geometry Dash]] '''по количеству загрузок'''.\n\n" +
+                "<div class=\"recordboxmedium\">\n";
+
+        String finish = "\n</div>\n" +
+                "\n" +
+                "== Интересные факты ==\n" +
+                "* [[Windy Landscape]] — единственный {{Безумный демон}} в топе.\n" +
+                "* [[Extinction]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
+                "* В данном топе присутствуют демоны всех сложностей.";
+        String result = start + mdld + finish;
+        writeToFile(0, "copytext demons", result.getBytes(), ".txt");
     }
 
 
