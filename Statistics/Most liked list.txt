@@ -10,349 +10,349 @@
 | [[ReTraY]]
 | [[DimaVikulov26]]
 | <center>{{Featured лёгкий}}</center>
-| 27 234 142
-| 3 810 710
+| 27 317 042
+| 3 813 248
 |-
 ! 2
 | [[Level Easy]]
 | —
 | <center>{{Featured нормальный}}</center>
-| 35 629 336
-| 3 020 149
+| 35 698 863
+| 3 021 348
 |-
 ! 3
 | [[Sonar]]
 | [[JerkRat]]
 | <center>{{Featured лёгкий}}</center>
-| 30 891 896
-| 2 979 175
+| 30 983 356
+| 2 981 058
 |-
 ! 4
 | [[Promises (Adiale)]]
 | [[Adiale]]
 | <center>{{Featured лёгкий}}</center>
-| 23 006 923
-| 2 745 241
+| 23 088 213
+| 2 746 733
 |-
 ! 5
 | [[Dark Paradise]]
 | Roli GD 
 | <center>{{Featured лёгкий}}</center>
-| 23 824 470
-| 2 648 779
+| 23 891 715
+| 2 650 417
 |-
 ! 6
 | [[The Nightmare]]
 | [[Jax]]
 | <center>{{Featured лёгкий демон}}</center>
-| 28 583 873
-| 2 597 511
+| 28 661 537
+| 2 599 794
 |-
 ! 7
 | [[End Of Line]]
 | PMK
 | <center>{{Featured нормальный}}</center>
-| 24 695 447
-| 2 403 939
+| 24 740 468
+| 2 404 961
 |-
 ! 8
 | [[Auto Play Area]]
 | [[Jax]]
 | <center>{{Featured авто}}</center>
-| 20 564 360
-| 2 253 131
+| 20 602 809
+| 2 253 860
 |-
 ! 9
 | [[OuterSpace]]
 | Nicki1202
 | <center>{{Featured сложный}}</center>
-| 22 956 101
-| 1 918 244
+| 23 072 392
+| 1 920 430
 |-
 ! 10
 | [[dorabaebasic4]]
 | [[Dorabae]]
 | <center>{{Featured нормальный}}</center>
-| 18 551 866
-| 1 840 058
+| 18 590 844
+| 1 841 038
 |-
 ! 11
 | [[Dreamland (Scanbrux)]]
 | [[Scanbrux]]
 | <center>{{Featured сложный}}</center>
-| 27 117 743
-| 1 813 896
+| 27 171 599
+| 1 814 611
 |-
 ! 12
 | [[through time]]
 | [[Berkoo]]
 | <center>{{Featured нормальный}}</center>
-| 13 166 936
-| 1 804 417
+| 13 211 204
+| 1 805 353
 |-
 ! 13
 | [[Flappy Hexagon]]
 | [[Creator Cloud]]
 | <center>{{Featured сложный}}</center>
-| 17 822 258
-| 1 687 892
+| 17 859 899
+| 1 688 752
 |-
 ! 14
 | [[The Lightning Road]]
 | [[Timeless real]]
 | <center>{{Featured лёгкий демон}}</center>
-| 17 260 648
-| 1 539 374
+| 17 307 548
+| 1 540 695
 |-
 ! 15
 | [[Highscore]]
 | [[Danolex]]
 | <center>{{Featured нормальный}}</center>
-| 10 380 321
-| 1 505 985
+| 10 412 882
+| 1 507 184
 |-
 ! 16
 | [[Almighty]]
 | aArbolito
 | <center>{{Featured сложный}}</center>
-| 12 735 833
-| 1 417 587
+| 12 778 827
+| 1 418 559
 |-
 ! 17
 | [[Acid Factory]]
 | suxide
 | <center>{{Featured сложный}}</center>
-| 17 509 982
-| 1 365 943
+| 17 583 029
+| 1 367 398
 |-
 ! 18
 | [[Space Travel]]
 | [[Rabb2t]]
 | <center>{{Featured авто}}</center>
-| 13 501 531
-| 1 336 243
+| 13 521 577
+| 1 336 678
 |-
 ! 19
 | [[dorabaebasic5]]
 | [[Dorabae]]
 | <center>{{Featured сложный}}</center>
-| 10 795 759
-| 1 333 253
+| 10 816 801
+| 1 334 027
 |-
 ! 20
 | [[Back on Track RM]]
 | [[ZenthicAlpha]]
 | <center>{{Featured нормальный}}</center>
-| 17 592 941
-| 1 331 805
+| 17 626 489
+| 1 332 593
 |-
 ! 21
 | [[Nine Circles]]
 | [[Zobros]]
 | <center>{{Featured демон}}</center>
-| 12 948 926
-| 1 280 206
+| 12 995 709
+| 1 281 582
 |-
 ! 22
 | [[Bloodbath]]
 | [[Riot]]
 | <center>{{Featured экстремальный демон}}</center>
-| 14 227 647
-| 1 268 494
+| 14 296 379
+| 1 270 087
 |-
 ! 23
 | [[Chambers]]
 | [[SirHadoken]]
 | <center>{{Featured нормальный}}</center>
-| 12 067 068
-| 1 242 014
+| 12 121 183
+| 1 243 558
 |-
 ! 24
 | [[Lucid Dream]]
 | Dverry
 | <center>{{лёгкий}}</center>
-| 10 025 284
-| 1 220 012
+| 10 046 020
+| 1 220 732
 |-
 ! 25
 | [[destructive auto]]
 | yakine
 | <center>{{Featured авто}}</center>
-| 7 064 009
-| 1 203 287
+| 7 078 442
+| 1 203 975
 |-
 ! 26
 | [[The World]]
 | x8Px
 | <center>{{Featured лёгкий}}</center>
-| 7 920 352
-| 1 160 975
+| 7 941 895
+| 1 161 958
 |-
 ! 27
 | [[Phantom]]
 | [[TheRealSalad]]
 | <center>{{Эпический сложный}}</center>
-| 8 025 227
-| 1 121 585
+| 8 067 576
+| 1 122 755
 |-
 ! 28
 | [[Polargeist v01]]
 | [[Mixroid]]
 | <center>{{Featured сложный}}</center>
-| 12 409 712
-| 1 099 856
+| 12 429 500
+| 1 100 582
 |-
 ! 29
 | [[Adrift]]
 | [[TamaN]]
 | <center>{{Featured нормальный}}</center>
-| 9 477 835
-| 1 096 539
+| 9 503 446
+| 1 097 627
 |-
 ! 30
 | [[Speed Racer]]
 | [[ZenthicAlpha]]
 | <center>{{Featured лёгкий демон}}</center>
-| 10 043 751
-| 1 064 129
+| 10 081 779
+| 1 065 433
 |-
 ! 31
 | [[Amplification]]
 | [[Berkoo]]
 | <center>{{Featured сложный}}</center>
-| 14 506 013
-| 1 058 833
+| 14 574 528
+| 1 060 298
 |-
 ! 32
 | [[Endless (FlappySheepy)]]
 | FlappySheepy
 | <center>{{Featured нормальный}}</center>
-| 9 398 572
-| 1 051 614
+| 9 425 630
+| 1 052 694
 |-
 ! 33
 | [[Spooky Light]]
 | [[Serponge]]
 | <center>{{Featured нормальный}}</center>
-| 10 162 726
-| 1 049 717
+| 10 208 363
+| 1 051 050
 |-
 ! 34
 | [[Easy]]
 | [[MrCheeseTigrr]]
 | <center>{{Featured сложный}}</center>
-| 11 989 085
-| 1 048 516
+| 12 011 337
+| 1 049 194
 |-
 ! 35
 | [[ColorZ]]
 | xtobe5
 | <center>{{Featured нормальный}}</center>
-| 8 234 144
-| 1 012 970
+| 8 256 175
+| 1 013 989
 |-
 ! 36
 | [[High hill]]
 | —
 | <center>{{Featured сложный}}</center>
-| 11 116 748
-| 1 007 039
+| 11 134 523
+| 1 007 629
 |-
 ! 37
 | [[Unity]]
 | [[TriAxis]]
 | <center>{{Featured безумный}}</center>
-| 8 673 790
-| 995 893
+| 8 701 887
+| 996 943
 |-
 ! 38
 | [[Auto Cycles]]
 | [[FunnyGame]]
 | <center>{{Featured авто}}</center>
-| 9 235 883
-| 987 941
+| 9 246 996
+| 988 250
 |-
 ! 39
 | [[Infernal Arena]]
 | SUOMI
 | <center>{{Featured нормальный}}</center>
-| 9 378 336
-| 971 913
+| 9 419 345
+| 973 198
 |-
 ! 40
 | [[Auto Clubstep]]
 | [[FunnyGame]]
 | <center>{{Featured авто}}</center>
-| 8 262 277
-| 955 693
+| 8 273 802
+| 955 991
 |-
 ! 41
 | [[Ocean Of Dreams]]
 | Spu7Nix
 | <center>{{Featured лёгкий}}</center>
-| 6 705 768
-| 894 763
+| 6 730 810
+| 895 692
 |-
 ! 42
 | [[Hexagon HyperDrive]]
 | [[Mitchell]]
 | <center>{{Featured сложный}}</center>
-| 10 143 605
-| 894 039
+| 10 166 565
+| 894 660
 |-
 ! 43
 | [[Fernanfloo 3]]
 | 1XxDrawinGxX1
 | <center>{{очень сложный}}</center>
-| 9 449 086
-| 886 876
+| 9 479 988
+| 887 365
 |-
 ! 44
 | [[dinosaur]]
 | [[Alkali]]
 | <center>{{Эпический безумный}}</center>
-| 9 333 110
-| 880 229
+| 9 379 441
+| 881 106
 |-
 ! 45
 | [[dorabaebasic7]]
 | [[Dorabae]]
 | <center>{{сложный}}</center>
-| 5 958 122
-| 873 384
+| 5 969 588
+| 873 965
 |-
 ! 46
 | [[Glitter Madness 2k15]]
 | [[Glittershroom43]]
 | <center>{{Featured нормальный}}</center>
-| 8 695 372
-| 865 822
+| 8 719 728
+| 866 689
 |-
 ! 47
 | [[ichor]]
 | DzRAS
 | <center>{{Featured сложный}}</center>
-| 6 265 140
-| 858 786
+| 6 292 846
+| 859 962
 |-
 ! 48
 | [[fernanfloo 2]]
 | 1XxDrawinGxX1
 | <center>{{очень сложный}}</center>
-| 7 904 861
-| 858 351
+| 7 932 280
+| 858 740
 |-
 ! 49
 | [[divine]]
 | f3lixsram
 | <center>{{Featured сложный}}</center>
-| 6 977 037
-| 856 595
+| 7 002 979
+| 857 259
 |-
 ! 50
 | [[X]]
 | [[TriAxis]]
 | <center>{{Featured лёгкий демон}}</center>
-| 7 884 149
-| 852 769
+| 7 918 568
+| 853 989
 |}

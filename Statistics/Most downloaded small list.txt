@@ -47,6 +47,6 @@ Auto Cycles,
 UFOgeist,
 Darkness,
 Simple Cloud,
-Stereo Madness X,
-Glitter Madness 2k15
+Glitter Madness 2k15,
+Stereo Madness X
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
