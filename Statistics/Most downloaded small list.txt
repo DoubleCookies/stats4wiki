@@ -38,8 +38,8 @@ Hexagon HyperDrive,
 Speed Racer,
 Lucid Dream,
 UFO on Track,
-Adrift,
 Fernanfloo 3,
+Adrift,
 Infernal Arena,
 Dinosaur,
 Endless (FlappySheepy),
@@ -47,6 +47,6 @@ UFOgeist,
 Auto Cycles,
 Darkness,
 Simple Cloud,
-Glitter Madness 2k15,
-Unity
+Unity,
+Glitter Madness 2k15
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
