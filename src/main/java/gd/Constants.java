@@ -77,6 +77,12 @@ public class Constants {
         names.add("TheRealSalad");
         names.add("Minesap");
         names.add("ChaSe");
+        names.add("MasK463");
+        names.add("M2coL");
+        names.add("Dhafin");
+        names.add("Knobbelboy");
+        names.add("Glittershroom");
+        names.add("FlappySheepy");
         return names;
     }
 
@@ -96,6 +102,14 @@ public class Constants {
         map.put("TrusTa", "TrusTa (игрок)|Trusta");
         map.put("IRabb2tI", "Rabb2t");
         map.put("lSunix", "Cyclic");
+        map.put("Aeon Air", "AeonAir");
+        map.put("Roli GD ", "Rolipso|Roli GD");
+        map.put("zellink", "ZelLink");
+        map.put("SUOMI", "Suomi");
+        map.put("x8Px", "X8Px|x8Px");
+        map.put("xtobe5", "Xtobe5|xtobe5");
+        map.put("Spu7Nix", "Spu7nix");
+        map.put("f3lixsram", "F3lixsram|f3lixsram");
         return map;
     }
 

@@ -24,6 +24,9 @@ public class Main {
 
     private static void generateMostDownloadedLevels() {
         mdl = ResponseGenerator.generateMostDownloadedList();
+        mdl = mdl.replace("| [[Level Easy]]\n" +
+                "| —", "| [[Level Easy]]\n" +
+                "| [[Cody]]");
         writeToFile(0, "Most downloaded", mdl.getBytes(), ".txt");
     }
 
@@ -44,6 +47,9 @@ public class Main {
 
     private static void generateMostLikedLevels() {
         mll = ResponseGenerator.generateMostLikedList();
+        mll = mll.replace("| [[Level Easy]]\n" +
+                "| —", "| [[Level Easy]]\n" +
+                "| [[Cody]]");
         writeToFile(0, "Most liked", mll.getBytes(), ".txt");
     }
 
@@ -84,7 +90,7 @@ public class Main {
                 "\n" +
                 "== Интересные факты ==\n" +
                 "* [[Windy Landscape]] — единственный {{Безумный демон}} в топе.\n" +
-                "* [[Extinction]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
+                "* [[Extinction]], [[FREEDOM]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
                 "* В данном топе присутствуют демоны всех сложностей.";
         String result = start + mdld + finish;
         writeToFile(0, "copytext demons", result.getBytes(), ".txt");
