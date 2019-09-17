@@ -47,6 +47,6 @@ Hexagon Force v2,
 Chaoz Impact,
 Insomnia,
 Time pressure,
-12 Clutterfunk,
-FREEDOM
+FREEDOM,
+12 Clutterfunk
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
