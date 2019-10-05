@@ -48,5 +48,5 @@ Chaoz Impact,
 Insomnia,
 FREEDOM,
 Time pressure,
-12 Clutterfunk
+Sakupen Hell
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
