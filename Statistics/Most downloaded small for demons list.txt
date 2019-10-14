@@ -47,6 +47,6 @@ Hexagon Force v2,
 Chaoz Impact,
 Insomnia,
 FREEDOM,
-Time pressure,
-Sakupen Hell
+Sakupen Hell,
+Time pressure
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
