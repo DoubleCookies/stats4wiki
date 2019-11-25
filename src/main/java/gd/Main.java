@@ -89,7 +89,7 @@ public class Main {
         String finish = "\n</div>\n" +
                 "\n" +
                 "== Интересные факты ==\n" +
-                "* [[Windy Landscape]] — единственный {{Безумный демон}} в топе.\n" +
+                "[[Windy Landscape]] и [[Supersonic]] — единственные {{Безумный демон}} в топе.\n" +
                 "* [[Extinction]], [[FREEDOM]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
                 "* В данном топе присутствуют демоны всех сложностей.";
         String result = start + mdld + finish;
