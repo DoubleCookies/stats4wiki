@@ -83,6 +83,7 @@ public class Constants {
         names.add("Knobbelboy");
         names.add("Glittershroom");
         names.add("FlappySheepy");
+        names.add("KrmaL");
         return names;
     }
 

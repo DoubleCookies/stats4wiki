@@ -293,7 +293,7 @@ public class GDLevel {
 		NumberFormat numberFormatter = NumberFormat.getNumberInstance();
 		String cr = "";
 		if(Constants.allowedCreatorsNames.contains(creator)) {
-			if(creator != "Riot")
+			if(!creator.equals("Riot"))
 				cr = "[["+creator+"]]";
 			else
 				cr = "[[" + creator +"]] и др.";
@@ -305,6 +305,8 @@ public class GDLevel {
 			else
 				cr = creator;
 		}
+		if(data.equals("Beautiful Chaos"))
+			cr = "Darnoc2";
 		return "! " + (count+1) + "\n" + "| [[" + data + "]]\n| "+ cr + "\n| <center>{{" + diffTemplate + "}}</center>\n| " + numberFormatter.format(downloads) + "\n| " + numberFormatter.format(likes);
 	}
 
