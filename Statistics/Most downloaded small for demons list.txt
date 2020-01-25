@@ -48,5 +48,5 @@ Sakupen Hell,
 Insomnia,
 FREEDOM,
 Phobos,
-Chaoz Impact
+8o
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
