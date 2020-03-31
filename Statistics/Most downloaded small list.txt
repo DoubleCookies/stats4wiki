@@ -42,11 +42,11 @@ Square adventure,
 Lucid Dream,
 Endless (FlappySheepy),
 Adrift,
-UFO on Track,
 Phantom,
+UFO on Track,
 Secrets,
 Unity,
 UFOgeist,
-Glitter Madness 2k15,
-X
+X,
+Glitter Madness 2k15
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
