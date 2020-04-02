@@ -46,7 +46,7 @@ Phobos,
 Jawbreaker (ZenthicAlpha),
 FREEDOM,
 Hexagon Force v2,
-Radioactive Demon,
 8o,
+Radioactive Demon,
 Insomnia
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
