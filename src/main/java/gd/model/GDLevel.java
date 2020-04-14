@@ -269,7 +269,7 @@ public class GDLevel {
 		if(epic) {
 			diffTemplate += "Эпический ";
 		} else {
-			if(featuredScore != 0)
+			if(featuredScore != 0 && !name.equals("Sonic Wave"))
 				diffTemplate += "Featured ";
 		}
 		if(difficulty == Difficulty.DEMON) {
