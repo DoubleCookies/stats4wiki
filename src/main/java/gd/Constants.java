@@ -37,7 +37,7 @@ public class Constants {
         map.put("moon adventure", "Moon Adventure");
         map.put("time pressure", "Time pressure");
         map.put("Theory of SkriLLex", "Theory of Skrillex");
-        map.put("Jawbreaker", "Jawbreaker (ZenthicAlpha)");
+        map.put("Jawbreaker", "Jawbreaker (ZenthicAlpha)|Jawbreaker");
 
         return map;
     }
@@ -100,7 +100,7 @@ public class Constants {
         map.put("timeless real", "Timeless real");
         map.put("noobas", "Noobas");
         map.put("haoN", "HaoN");
-        map.put("TrusTa", "TrusTa (игрок)|Trusta");
+        map.put("TrusTa", "TrusTa (игрок)|TrusTa");
         //map.put("IRabb2tI", "Rabb2t");
         map.put("lSunix", "Cyclic");
         map.put("Aeon Air", "AeonAir");
