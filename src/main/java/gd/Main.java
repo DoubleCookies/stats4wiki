@@ -32,8 +32,6 @@ public class Main {
 
     private static void generateMostDownloadedLevelsSmall() {
         String res = ResponseGenerator.generateMostDownloadedListSmall();
-        //dirty hack for one exception
-        res = res.replace("Jawbreaker (ZenthicAlpha)|Jawbreaker", "Jawbreaker (ZenthicAlpha)");
         writeToFile(0, "Most downloaded small", res.getBytes(), ".txt");
     }
 
@@ -44,6 +42,8 @@ public class Main {
 
     private static void generateMostDownloadedLevelsSmallForDemons() {
         String res = ResponseGenerator.generateMostDownloadedListSmallForDemons();
+        //dirty hack for one exception
+        res = res.replace("Jawbreaker (ZenthicAlpha)|Jawbreaker", "Jawbreaker (ZenthicAlpha)");
         writeToFile(0, "Most downloaded small for demons", res.getBytes(), ".txt");
     }
 
