@@ -44,9 +44,9 @@ Phobos,
 Sakupen Hell,
 Jawbreaker (ZenthicAlpha),
 8o,
-Beautiful Chaos,
 FREEDOM,
+Beautiful Chaos,
 Hexagon Force v2,
 Insomnia,
-Radioactive Demon
+Ultra Paracosm
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
