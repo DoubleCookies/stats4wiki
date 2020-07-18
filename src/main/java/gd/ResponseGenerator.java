@@ -27,7 +27,7 @@ public class ResponseGenerator {
             if(counter < 50)
             {
                 builder.append("|-\n");
-                builder.append(level.wikiString(counter) + "\n");
+                builder.append(level.wikiString(counter)).append("\n");
                 counter++;
             }
         }
@@ -46,9 +46,9 @@ public class ResponseGenerator {
             {
                 counter++;
                 if(counter == 50)
-                    builder.append(level.smallWikiString() + "\n");
+                    builder.append(level.smallWikiString()).append("\n");
                 else
-                    builder.append(level.smallWikiString() + ",\n");
+                    builder.append(level.smallWikiString()).append(",\n");
             }
         }
         builder.append("}}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>");
@@ -72,7 +72,7 @@ public class ResponseGenerator {
                 if(counter < 50)
                 {
                     builder.append("|-\n");
-                    builder.append(level.wikiString(counter) + "\n");
+                    builder.append(level.wikiString(counter)).append("\n");
                     counter++;
                 }
             }
@@ -93,9 +93,9 @@ public class ResponseGenerator {
                 {
                     counter++;
                     if(counter == 50)
-                        builder.append(level.smallWikiString() + "\n");
+                        builder.append(level.smallWikiString()).append("\n");
                     else
-                        builder.append(level.smallWikiString() + ",\n");
+                        builder.append(level.smallWikiString()).append(",\n");
                 }
             }
         }
@@ -119,7 +119,7 @@ public class ResponseGenerator {
             if(counter < 50)
             {
                 builder.append("|-\n");
-                builder.append(level.wikiString(counter) + "\n");
+                builder.append(level.wikiString(counter)).append("\n");
                 counter++;
             }
         }

@@ -17,7 +17,7 @@ public class Constants {
     public static final int INDEX_LEVEL_AUDIO_TRACK = 12;
     public static final int INDEX_LEVEL_SONG_ID = 35;
 
-    /* Списки для замены */
+    /* Replace names lists (for wiki) */
     public static final Map<String, String> levelsExceptions = initLevelExceptions();
 
     private static Map<String, String> initLevelExceptions() {
@@ -112,7 +112,4 @@ public class Constants {
         map.put("f3lixsram", "F3lixsram|f3lixsram");
         return map;
     }
-
-
-
 }

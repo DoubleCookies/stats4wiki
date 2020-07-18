@@ -56,7 +56,7 @@ public abstract class GDLevelFactory {
 		try {
 			Map<Integer, String> structuredLvlInfo = structureRawData(cutOneLevel(cutLevelInfoPart(rawData), index));
 			Map<Long, String> structuredCreatorsInfo = structureCreatorsInfo(cutCreatorInfoPart(rawData, download));
-			Map<Long, GDSong> structuredAudioInfo = structureAudioInfo(cutCreatorMusicPart(rawData, download));
+			Map<Long, GDSong> structuredAudioInfo = structureAudioInfo(cutCreatorMusicPart(rawData));
 			GDSong song = Long.parseLong(structuredLvlInfo.get(Constants.INDEX_LEVEL_SONG_ID)) <= 0 ?
 					Utils.getAudioTrack(Integer.parseInt(structuredLvlInfo.get(Constants.INDEX_LEVEL_AUDIO_TRACK))):
 					structuredAudioInfo.get(Long.parseLong(structuredLvlInfo.get(Constants.INDEX_LEVEL_SONG_ID)));
@@ -111,7 +111,7 @@ public abstract class GDLevelFactory {
 		}
 	}
 
-	private static String cutCreatorMusicPart(String rawData, boolean download) {
+	private static String cutCreatorMusicPart(String rawData) {
 		try {
 			return rawData.split("#")[2];
 		} catch (ArrayIndexOutOfBoundsException e) {
@@ -174,7 +174,7 @@ public abstract class GDLevelFactory {
 			for (int i = 0 ; i < arrayOfData.length ; i += 2) {
 				result.put(Integer.parseInt(arrayOfData[i]), (i+1 < arrayOfData.length) ? arrayOfData[i+1] : "");
 			}
-		} catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+		} catch (NumberFormatException | ArrayIndexOutOfBoundsException ignored) {
 
 		}
 

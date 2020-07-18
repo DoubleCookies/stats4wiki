@@ -104,8 +104,6 @@ public class GDLevel {
 	 * 			  - level description
 	 * @param gdSong
 	 * 			  - level music info
-	 * @throws IllegalArgumentException
-	 *             if the argument {@code pass} &lt; -2
 	 */
 	public GDLevel(long id, String name, String creator, Difficulty difficulty,
                    DemonDifficulty demonDifficulty, short stars, int featuredScore, boolean epic, long downloads,
@@ -125,34 +123,6 @@ public class GDLevel {
 	}
 	
 	/**
-	 * Gets the ID of the level
-	 * 
-	 * @return long
-	 */
-	public long getId() {
-		return id;
-	}
-	
-	/**
-	 * Gets the name of the level
-	 * 
-	 * @return String
-	 */
-	public String getName() {
-		return name;
-	}
-	
-	/**
-	 * Gets the name of the creator who created this level
-	 * 
-	 * @return String
-	 */
-	public String getCreator() {
-		return creator;
-	}
-
-	
-	/**
 	 * Gets the level difficulty
 	 * 
 	 * @return gd.enums.Difficulty
@@ -160,102 +130,16 @@ public class GDLevel {
 	public Difficulty getDifficulty() {
 		return difficulty;
 	}
-	
-	/**
-	 * Gets the type of Demon difficulty
-	 * 
-	 * @return gd.enums.DemonDifficulty
-	 */
-	public DemonDifficulty getDemonDifficulty() {
-		return demonDifficulty;
-	}
-	
-	/**
-	 * Gets the number of stars assigned to the level
-	 * 
-	 * @return
-	 */
-	public short getStars() {
-		return stars;
-	}
-	
-	/**
-	 * Gets the featured score of the level, or a value &lt;= 0 if not featured
-	 * 
-	 * @return int
-	 */
-	public int getFeaturedScore() {
-		return featuredScore;
-	}
-	
-	/**
-	 * Whether the level is marked as Epic
-	 * 
-	 * @return boolean
-	 */
-	public boolean isEpic() {
-		return epic;
-	}
-	
-	/**
-	 * Gets the amount of downloads for the level
-	 * 
-	 * @return long
-	 */
-	public long getDownloads() {
-		return downloads;
-	}
-
-	/**
-	 * Gets the amount of likes for the level
-	 * 
-	 * @return long
-	 */
-	public long getLikes() {
-		return likes;
-	}
-
-	/**
-	 * Whether the level is featured.
-	 * 
-	 * @return boolean
-	 */
-	public boolean isFeatured() {
-		return featuredScore > 0;
-	}
-	
-	/**
-	 * Whether the level is Awarded, i.e the amount of stars is greater than 0.
-	 * 
-	 * @return boolean
-	 */
-	public boolean isAwarded() {
-		return stars > 0;
-	}
-
-	/**
-	 * Gets the level description
-	 *
-	 * @return String
-	 */
-	public String getDescription() {
-		return description;
-	}
-
-
-	public GDSong getGdSong() {
-		return gdSong;
-	}
-
-	public void setGdSong(GDSong gdSong) {
-		this.gdSong = gdSong;
-	}
 
 	@Override
 	public String toString() {
 		return "\"" + name + "\" by " + creator + " (" + id + ") — likes: " + likes + ", downloads: " + downloads;
 	}
 
+    /**
+     * Generate string for small lists
+     * @return string with only level name
+     */
 	public String smallWikiString() {
 		String data = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name).trim() : name.trim();
 		data = data.trim();
@@ -263,8 +147,13 @@ public class GDLevel {
 		return data;
 	}
 
+    /**
+     * Generate string for big lists
+     * @param count number of row in table
+     * @return string with information about level in MediaWiki table row format
+     */
 	public String wikiString(int count) {
-		String data = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name).trim() : name.trim();
+		String levelName = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name).trim() : name.trim();
 		String diffTemplate = "";
 		if(epic) {
 			diffTemplate += "Эпический ";
@@ -291,23 +180,23 @@ public class GDLevel {
 			}
 		}
 		NumberFormat numberFormatter = NumberFormat.getNumberInstance();
-		String cr = "";
+		String creatorString = "";
 		if(Constants.allowedCreatorsNames.contains(creator)) {
 			if(!creator.equals("Riot"))
-				cr = "[["+creator+"]]";
+				creatorString = "[[" + creator + "]]";
 			else
-				cr = "[[" + creator +"]] и др.";
+				creatorString = "[[" + creator + "]] и др.";
 		} else if (Constants.PopularLevelsCreators.containsKey(creator)) {
-			cr = "[["+Constants.PopularLevelsCreators.get(creator)+"]]";
+			creatorString = "[[" + Constants.PopularLevelsCreators.get(creator) + "]]";
 		} else {
 			if(creator == null)
-				cr = "—";
+				creatorString = "—";
 			else
-				cr = creator;
+				creatorString = creator;
 		}
-		if(data.equals("Beautiful Chaos"))
-			cr = "Darnoc2";
-		return "! " + (count+1) + "\n" + "| [[" + data + "]]\n| "+ cr + "\n| <center>{{" + diffTemplate + "}}</center>\n| " + numberFormatter.format(downloads) + "\n| " + numberFormatter.format(likes);
+		if(levelName.equals("Beautiful Chaos"))
+			creatorString = "Darnoc2";
+		return "! " + (count+1) + "\n" + "| [[" + levelName + "]]\n| "+ creatorString + "\n| <center>{{" + diffTemplate + "}}</center>\n| " + numberFormatter.format(downloads) + "\n| " + numberFormatter.format(likes);
 	}
 
 	@Override
@@ -321,8 +210,6 @@ public class GDLevel {
 	/**
 	 * Two levels are considered as equal if and only if they have both
 	 * the same ID
-	 * 
-	 * @see {@link Object#equals(Object)}
 	 */
 	@Override
 	public boolean equals(Object obj) {
@@ -333,9 +220,7 @@ public class GDLevel {
 		if (getClass() != obj.getClass())
 			return false;
 		GDLevel other = (GDLevel) obj;
-		if (id != other.id)
-			return false;
-		return true;
-	}
+        return id == other.id;
+    }
 
 }
