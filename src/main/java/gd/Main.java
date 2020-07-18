@@ -8,54 +8,54 @@ import java.nio.file.Paths;
 
 public class Main {
 
-    static String mdl;
-    static String mll;
-    static String mdld;
+    static String mostDownloadedLevels;
+    static String mostLikedLevels;
+    static String mostDownloadedLevelsForDemons;
 
     public static void main(String[] args) {
         generateMostDownloadedLevels();
         generateMostLikedLevels();
-        generateMostDownloadedLevelsSmall();
         generateMostDownloadedLevelsForDemons();
+        generateMostDownloadedLevelsSmall();
         generateMostDownloadedLevelsSmallForDemons();
         generateMostDownloadedAndLikedCopyText();
         generateMostDownloadedAndLikedDemonsCopyText();
     }
 
     private static void generateMostDownloadedLevels() {
-        mdl = ResponseGenerator.generateMostDownloadedList();
-        mdl = mdl.replace("| [[Level Easy]]\n" +
+        mostDownloadedLevels = ResponseGenerator.generateMostDownloadedList();
+        //replacement for one exception
+        mostDownloadedLevels = mostDownloadedLevels.replace("| [[Level Easy]]\n" +
                 "| —", "| [[Level Easy]]\n" +
                 "| [[Cody]]");
-        writeToFile(0, "Most downloaded", mdl.getBytes(), ".txt");
+        writeToFile("Most downloaded", mostDownloadedLevels.getBytes());
+    }
+
+    private static void generateMostDownloadedLevelsForDemons() {
+        mostDownloadedLevelsForDemons = ResponseGenerator.generateMostDownloadedListForDemons();
+        writeToFile("Most downloaded for demons", mostDownloadedLevelsForDemons.getBytes());
+    }
+
+    private static void generateMostLikedLevels() {
+        mostLikedLevels = ResponseGenerator.generateMostLikedList();
+        mostLikedLevels = mostLikedLevels.replace("| [[Level Easy]]\n" +
+                "| —", "| [[Level Easy]]\n" +
+                "| [[Cody]]");
+        writeToFile("Most liked", mostLikedLevels.getBytes());
     }
 
     private static void generateMostDownloadedLevelsSmall() {
         String res = ResponseGenerator.generateMostDownloadedListSmall();
-        writeToFile(0, "Most downloaded small", res.getBytes(), ".txt");
-    }
-
-    private static void generateMostDownloadedLevelsForDemons() {
-        mdld = ResponseGenerator.generateMostDownloadedListForDemons();
-        writeToFile(0, "Most downloaded for demons", mdld.getBytes(), ".txt");
+        writeToFile("Most downloaded small", res.getBytes());
     }
 
     private static void generateMostDownloadedLevelsSmallForDemons() {
         String res = ResponseGenerator.generateMostDownloadedListSmallForDemons();
-        //dirty hack for one exception
+        //replacement for one exception
         res = res.replace("Jawbreaker (ZenthicAlpha)|Jawbreaker", "Jawbreaker (ZenthicAlpha)");
-        writeToFile(0, "Most downloaded small for demons", res.getBytes(), ".txt");
+        writeToFile("Most downloaded small for demons", res.getBytes());
     }
 
-    private static void generateMostLikedLevels() {
-        mll = ResponseGenerator.generateMostLikedList();
-        mll = mll.replace("| [[Level Easy]]\n" +
-                "| —", "| [[Level Easy]]\n" +
-                "| [[Cody]]");
-        writeToFile(0, "Most liked", mll.getBytes(), ".txt");
-    }
-
-    //Special method for faster copy-paste process
     private static void generateMostDownloadedAndLikedCopyText() {
         String start = "{{Фан-статья}}\n" +
                 "{{Связанный шаблон|[[Шаблон:Топ 50 популярных уровней|данном шаблоне]]}}\n" +
@@ -77,11 +77,10 @@ public class Main {
                 "* [[Bloodbath]] — единственный {{Экстремальный демон}} в данных топах.\n" +
                 "* [[Phantom]], [[Dinosaur]] и [[Shock]] — единственные [[Зал славы|эпические]] уровни в данных топах, причём [[Phantom]] и [[Dinosaur]] есть в обоих топах, а [[Shock]] есть только в топе по лайкам.\n" +
                 "* [[Fernanfloo 3]] — единственный неоценённый уровень в данных топах.";
-        String result = start + mdl + medium + mll + finish;
-        writeToFile(0, "copytext", result.getBytes(), ".txt");
+        String result = start + mostDownloadedLevels + medium + mostLikedLevels + finish;
+        writeToFile("copytext", result.getBytes());
     }
 
-    //Special method for faster copy-paste process (demons page)
     private static void generateMostDownloadedAndLikedDemonsCopyText() {
         String start = "{{Фан-статья}}\n" +
                 "{{Связанный шаблон|[[Шаблон:Топ 50 популярных демонов|данном шаблоне]]}}\n" +
@@ -94,15 +93,14 @@ public class Main {
                 "== Интересные факты ==\n" +
                 "* [[Extinction]], [[FREEDOM]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
                 "* В данном топе присутствуют демоны всех сложностей.";
-        String result = start + mdld + finish;
-        writeToFile(0, "copytext demons", result.getBytes(), ".txt");
+        String result = start + mostDownloadedLevelsForDemons + finish;
+        writeToFile( "copytext demons", result.getBytes());
     }
 
-
-    private static void writeToFile(int sortingCode, String prefix, byte[] data, String filetype) {
+    private static void writeToFile(String prefix, byte[] data) {
         FileOutputStream out;
         try {
-            out = getFileOutputStream(sortingCode, prefix, filetype);
+            out = getFileOutputStream(prefix);
             out.write(data);
             out.close();
         } catch (IOException e) {
@@ -110,23 +108,14 @@ public class Main {
         }
     }
 
-    private static FileOutputStream getFileOutputStream(int sortingCode, String prefix, String filetype) throws IOException {
+    private static FileOutputStream getFileOutputStream(String prefix) throws IOException {
         FileOutputStream out;
         String baseFolder = "Statistics";
         Path path = Paths.get(baseFolder);
         if(!Files.exists(path))
             Files.createDirectories(path);
         baseFolder +="/";
-
-        switch (sortingCode)
-        {
-            case 1: { out = new FileOutputStream(baseFolder + prefix + " list with descending likes" + filetype); break;}
-            case 2: { out = new FileOutputStream(baseFolder + prefix + " list with ascending likes" + filetype); break;}
-            case 3: { out = new FileOutputStream(baseFolder + prefix + " list with descending downloads" + filetype); break;}
-            case 4: { out = new FileOutputStream(baseFolder + prefix + " list with ascending downloads" + filetype); break;}
-            case 5: { out = new FileOutputStream(baseFolder + prefix + " list with longest descriptions" + filetype); break;}
-            default: { out = new FileOutputStream(baseFolder + prefix + " list" + filetype); break;}
-        }
+        out = new FileOutputStream(baseFolder + prefix + " list.txt");
         return out;
     }
 }

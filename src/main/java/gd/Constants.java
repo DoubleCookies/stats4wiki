@@ -101,7 +101,6 @@ public class Constants {
         map.put("noobas", "Noobas");
         map.put("haoN", "HaoN");
         map.put("TrusTa", "TrusTa (игрок)|TrusTa");
-        //map.put("IRabb2tI", "Rabb2t");
         map.put("lSunix", "Cyclic");
         map.put("Aeon Air", "AeonAir");
         map.put("Roli GD ", "Rolipso|Roli GD");
