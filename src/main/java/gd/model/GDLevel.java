@@ -182,17 +182,13 @@ public class GDLevel {
 		NumberFormat numberFormatter = NumberFormat.getNumberInstance();
 		String creatorString = "";
 		if(Constants.allowedCreatorsNames.contains(creator)) {
-			if(!creator.equals("Riot"))
-				creatorString = "[[" + creator + "]]";
-			else
-				creatorString = "[[" + creator + "]] и др.";
-		} else if (Constants.PopularLevelsCreators.containsKey(creator)) {
-			creatorString = "[[" + Constants.PopularLevelsCreators.get(creator) + "]]";
+            creatorString = "[[" + creator + "]]";
+			if(creator.equals("Riot"))
+				creatorString += " и др.";
+		} else if (Constants.allowedCreatorsNamesWithReplacement.containsKey(creator)) {
+			creatorString = "[[" + Constants.allowedCreatorsNamesWithReplacement.get(creator) + "]]";
 		} else {
-			if(creator == null)
-				creatorString = "—";
-			else
-				creatorString = creator;
+            creatorString = creator == null ? "—" : creator;
 		}
 		if(levelName.equals("Beautiful Chaos"))
 			creatorString = "Darnoc2";

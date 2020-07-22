@@ -17,7 +17,7 @@ public class Constants {
     public static final int INDEX_LEVEL_AUDIO_TRACK = 12;
     public static final int INDEX_LEVEL_SONG_ID = 35;
 
-    /* Replace names lists (for wiki) */
+    /* Replace names lists (for wiki articles) */
     public static final Map<String, String> levelsExceptions = initLevelExceptions();
 
     private static Map<String, String> initLevelExceptions() {
@@ -42,9 +42,10 @@ public class Constants {
         return map;
     }
 
-    public static final List<String> allowedCreatorsNames = initNames();
+    /* Creators list which have article on wiki */
+    public static final List<String> allowedCreatorsNames = initCreatorsNamesList();
 
-    private static List<String> initNames() {
+    private static List<String> initCreatorsNamesList() {
         List<String> names = new ArrayList<>();
         names.add("JerkRat");
         names.add("Jax");
@@ -87,9 +88,10 @@ public class Constants {
         return names;
     }
 
-    public static final Map<String, String> PopularLevelsCreators = initPopularLevelCreators();
+    /* Creators list which have article on wiki (with different article name) */
+    public static final Map<String, String> allowedCreatorsNamesWithReplacement = initCreatorsMapForRepalcement();
 
-    private static Map<String, String> initPopularLevelCreators() {
+    private static Map<String, String> initCreatorsMapForRepalcement() {
         Map<String, String> map = new HashMap<>();
         map.put("DiMaViKuLov26", "DimaVikulov26");
         map.put("DORABAE", "Dorabae");
