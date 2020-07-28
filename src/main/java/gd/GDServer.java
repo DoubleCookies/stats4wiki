@@ -38,14 +38,14 @@ public abstract class GDServer {
 			wr.close();
 
 			// Fetching response
-			String result = "";
+			StringBuilder result = new StringBuilder();
 			BufferedReader rd = new BufferedReader(new InputStreamReader(con.getInputStream()));
 			String line;
 			while ((line = rd.readLine()) != null) {
-				result += line + "\n";
+				result.append(line).append("\n");
 			}
 
-			return result.replaceAll("\n", "");
+			return result.toString().replaceAll("\n", "");
 	}
 
 	/**

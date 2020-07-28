@@ -71,11 +71,6 @@ public class GDLevel {
 	private String description;
 
 	/**
-	 * Level soundtrack
-	 */
-	private GDSong gdSong;
-
-	/**
 	 * Constructs an instance of gd.model.GDLevel by providing all of its attributes at
 	 * once.
 	 * 
@@ -102,12 +97,10 @@ public class GDLevel {
 	 *            - amount of likes for the level
 	 * @param description
 	 * 			  - level description
-	 * @param gdSong
-	 * 			  - level music info
 	 */
 	public GDLevel(long id, String name, String creator, Difficulty difficulty,
                    DemonDifficulty demonDifficulty, short stars, int featuredScore, boolean epic, long downloads,
-                   long likes, String description, GDSong gdSong) {
+                   long likes, String description) {
 		this.id = id;
 		this.name = name;
 		this.creator = creator;
@@ -119,7 +112,6 @@ public class GDLevel {
 		this.downloads = downloads;
 		this.likes = likes;
 		this.description = description;
-		this.gdSong = gdSong;
 	}
 	
 	/**
