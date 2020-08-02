@@ -94,7 +94,7 @@ public class Main {
                 "* [[Extinction]], [[FREEDOM]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
                 "* В данном топе присутствуют демоны всех сложностей.";
         String result = start + mostDownloadedLevelsForDemons + finish;
-        writeToFile( "copytext demons", result.getBytes());
+        writeToFile("copytext demons", result.getBytes());
     }
 
     private static void writeToFile(String prefix, byte[] data) {
@@ -112,9 +112,9 @@ public class Main {
         FileOutputStream out;
         String baseFolder = "Statistics";
         Path path = Paths.get(baseFolder);
-        if(!Files.exists(path))
+        if (!Files.exists(path))
             Files.createDirectories(path);
-        baseFolder +="/";
+        baseFolder += "/";
         out = new FileOutputStream(baseFolder + prefix + " list.txt");
         return out;
     }

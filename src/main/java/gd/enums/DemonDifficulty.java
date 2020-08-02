@@ -1,9 +1,9 @@
 package gd.enums;
 
 public enum DemonDifficulty {
-	EASY,
-	MEDIUM,
-	HARD,
-	INSANE,
-	EXTREME;
+    EASY,
+    MEDIUM,
+    HARD,
+    INSANE,
+    EXTREME;
 }

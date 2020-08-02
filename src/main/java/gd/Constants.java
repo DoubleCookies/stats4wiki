@@ -16,6 +16,7 @@ public class Constants {
         map.put("flappy hexagon", "Flappy Hexagon");
         map.put("THE LIGHTNING ROAD", "The Lightning Road");
         map.put("stereo madness v2", "Stereo Madness v2 (Neptune)");
+        map.put("Clutterfunk v2", "Clutterfunk v2 (Neptune)");
         map.put("lucid dream", "Lucid Dream");
         map.put("auto cycles", "Auto Cycles");
         map.put("DARKNESS", "Darkness");

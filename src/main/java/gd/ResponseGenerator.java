@@ -22,10 +22,8 @@ public class ResponseGenerator {
                 "! Кол-во загрузок\n" +
                 "! Кол-во лайков\n");
         List<GDLevel> list = getMostDownloadedLevels();
-        for(GDLevel level : list)
-        {
-            if(counter < 50)
-            {
+        for (GDLevel level : list) {
+            if (counter < 50) {
                 builder.append("|-\n");
                 builder.append(level.wikiString(counter)).append("\n");
                 counter++;
@@ -40,12 +38,10 @@ public class ResponseGenerator {
         StringBuilder builder = new StringBuilder();
         builder.append("{{#arraydefine:levels|TEST_VALUE_FOR_SHIFT,\n");
         List<GDLevel> list = getMostDownloadedLevels();
-        for(GDLevel level : list)
-        {
-            if(counter < 50)
-            {
+        for (GDLevel level : list) {
+            if (counter < 50) {
                 counter++;
-                if(counter == 50)
+                if (counter == 50)
                     builder.append(level.smallWikiString()).append("\n");
                 else
                     builder.append(level.smallWikiString()).append(",\n");
@@ -66,11 +62,9 @@ public class ResponseGenerator {
                 "! Кол-во загрузок\n" +
                 "! Кол-во лайков\n");
         List<GDLevel> list = getMostDownloadedLevelsForDemons();
-        for(GDLevel level : list)
-        {
-            if(level.getDifficulty() == Difficulty.DEMON) {
-                if(counter < 50)
-                {
+        for (GDLevel level : list) {
+            if (level.getDifficulty() == Difficulty.DEMON) {
+                if (counter < 50) {
                     builder.append("|-\n");
                     builder.append(level.wikiString(counter)).append("\n");
                     counter++;
@@ -86,13 +80,11 @@ public class ResponseGenerator {
         StringBuilder builder = new StringBuilder();
         builder.append("{{#arraydefine:levels|TEST_VALUE_FOR_SHIFT,\n");
         List<GDLevel> list = getMostDownloadedLevelsForDemons();
-        for(GDLevel level : list)
-        {
-            if(level.getDifficulty() == Difficulty.DEMON) {
-                if(counter < 50)
-                {
+        for (GDLevel level : list) {
+            if (level.getDifficulty() == Difficulty.DEMON) {
+                if (counter < 50) {
                     counter++;
-                    if(counter == 50)
+                    if (counter == 50)
                         builder.append(level.smallWikiString()).append("\n");
                     else
                         builder.append(level.smallWikiString()).append(",\n");
@@ -114,10 +106,8 @@ public class ResponseGenerator {
                 "! Кол-во загрузок\n" +
                 "! Кол-во лайков\n");
         List<GDLevel> list = getMostLikedLevels();
-        for(GDLevel level : list)
-        {
-            if(counter < 50)
-            {
+        for (GDLevel level : list) {
+            if (counter < 50) {
                 builder.append("|-\n");
                 builder.append(level.wikiString(counter)).append("\n");
                 counter++;
@@ -132,13 +122,13 @@ public class ResponseGenerator {
         int i = 0;
         int count = 0;
         try {
-            while(count < 50) {
+            while (count < 50) {
                 String res = GDServer.fetchMostPopularLevels(i);
                 for (int j = 0; j < 10; j++) {
                     GDLevel level = getLevel(j, res);
                     list.add(level);
                     count++;
-                    if(count > 50)
+                    if (count > 50)
                         break;
                 }
                 i++;
@@ -154,16 +144,16 @@ public class ResponseGenerator {
         int i = 0;
         int count = 0;
         try {
-            while(count < 50) {
+            while (count < 50) {
                 String res = GDServer.fetchMostPopularLevels(i);
                 for (int j = 0; j < 10; j++) {
                     GDLevel level = getLevel(j, res);
 
-                    if(level.getDifficulty() == Difficulty.DEMON) {
+                    if (level.getDifficulty() == Difficulty.DEMON) {
                         list.add(level);
                         count++;
                     }
-                    if(count > 50)
+                    if (count > 50)
                         break;
                 }
                 i++;
@@ -179,13 +169,13 @@ public class ResponseGenerator {
         int i = 0;
         int count = 0;
         try {
-            while(count < 50) {
+            while (count < 50) {
                 String res = GDServer.fetchMostLikedLevels(i);
                 for (int j = 0; j < 10; j++) {
                     GDLevel level = getLevel(j, res);
                     list.add(level);
                     count++;
-                    if(count > 50)
+                    if (count > 50)
                         break;
                 }
                 i++;
