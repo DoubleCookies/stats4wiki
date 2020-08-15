@@ -37,8 +37,8 @@ Stereo Madness v2 (Neptune),
 High hill,
 Dorabaebasic5,
 Fernanfloo 3,
-Hexagon HyperDrive,
 Phantom,
+Hexagon HyperDrive,
 Square adventure,
 Secrets,
 Endless (FlappySheepy),
@@ -47,6 +47,6 @@ Adrift,
 UFO on Track,
 Unity,
 X,
-UFOgeist,
-Glitter Madness 2k15
+Glitter Madness 2k15,
+UFOgeist
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>

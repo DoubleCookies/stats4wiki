@@ -40,13 +40,13 @@ Speed of Light,
 Chaotic,
 DeathFunk,
 Phobos,
-Windy Landscape,
 Sakupen Hell,
-Jawbreaker (ZenthicAlpha),
+Windy Landscape,
 8o,
+Jawbreaker (ZenthicAlpha),
 FREEDOM,
 Beautiful Chaos,
 Hexagon Force v2,
-Insomnia,
-Ultra Paracosm
+Ultra Paracosm,
+Insomnia
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
