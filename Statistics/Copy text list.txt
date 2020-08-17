@@ -1,0 +1,734 @@
+{{Фан-статья}}
+{{Связанный шаблон|[[Шаблон:Топ 50 популярных уровней|данном шаблоне]]}}
+
+В представленных ниже списках находятся 50 самых популярных уровней по количеству загрузок и по количеству лайков.
+
+<tabber>Топ по загрузкам=
+<div class="recordboxmedium">
+{| class="wikitable"
+! Место
+! Уровень
+! Создатель
+! [[Уровни сложности|Сложность]]
+! Кол-во загрузок
+! Кол-во лайков
+|-
+! 1
+| [[Level Easy]]
+| [[Cody]]
+| <center>{{Featured нормальный}}</center>
+| 42 550 657
+| 3 119 071
+|-
+! 2
+| [[Sonar]]
+| [[JerkRat]]
+| <center>{{Featured лёгкий}}</center>
+| 40 239 780
+| 3 148 955
+|-
+! 3
+| [[The Nightmare]]
+| [[Jax]]
+| <center>{{Featured лёгкий демон}}</center>
+| 36 671 037
+| 2 799 043
+|-
+! 4
+| [[ReTraY]]
+| [[DimaVikulov26]]
+| <center>{{Featured лёгкий}}</center>
+| 35 756 314
+| 4 040 572
+|-
+! 5
+| [[OuterSpace]]
+| Nicki1202
+| <center>{{Featured сложный}}</center>
+| 34 795 485
+| 2 117 108
+|-
+! 6
+| [[Dreamland (Scanbrux)]]
+| [[Scanbrux]]
+| <center>{{Featured сложный}}</center>
+| 32 559 610
+| 1 875 397
+|-
+! 7
+| [[Promises (Adiale)]]
+| [[Adiale]]
+| <center>{{Featured лёгкий}}</center>
+| 31 191 745
+| 2 876 494
+|-
+! 8
+| [[Dark Paradise]]
+| [[Rolipso|Roli GD]]
+| <center>{{Featured лёгкий}}</center>
+| 30 505 087
+| 2 797 496
+|-
+! 9
+| [[End Of Line]]
+| PMK
+| <center>{{Featured нормальный}}</center>
+| 29 266 349
+| 2 486 302
+|-
+! 10
+| [[Acid Factory]]
+| JefryKawaii
+| <center>{{Featured сложный}}</center>
+| 25 049 315
+| 1 493 128
+|-
+! 11
+| [[Auto Play Area]]
+| [[Jax]]
+| <center>{{Featured авто}}</center>
+| 24 401 935
+| 2 312 391
+|-
+! 12
+| [[dorabaebasic4]]
+| [[Dorabae]]
+| <center>{{Featured нормальный}}</center>
+| 22 547 461
+| 1 924 366
+|-
+! 13
+| [[The Lightning Road]]
+| [[Timeless real]]
+| <center>{{Featured лёгкий демон}}</center>
+| 22 503 078
+| 1 671 320
+|-
+! 14
+| [[Flappy Hexagon]]
+| [[Creator Cloud]]
+| <center>{{Featured сложный}}</center>
+| 21 699 511
+| 1 760 725
+|-
+! 15
+| [[Amplification]]
+| [[Berkoo]]
+| <center>{{Featured сложный}}</center>
+| 21 518 459
+| 1 187 157
+|-
+! 16
+| [[Bloodbath]]
+| [[Riot]] и др.
+| <center>{{Featured экстремальный демон}}</center>
+| 21 475 592
+| 1 417 845
+|-
+! 17
+| [[Back on Track RM]]
+| [[ZenthicAlpha]]
+| <center>{{Featured нормальный}}</center>
+| 21 019 852
+| 1 396 984
+|-
+! 18
+| [[Nine Circles]]
+| [[Zobros]]
+| <center>{{Featured демон}}</center>
+| 18 164 008
+| 1 422 785
+|-
+! 19
+| [[through time]]
+| [[Berkoo]]
+| <center>{{Featured нормальный}}</center>
+| 17 711 840
+| 1 885 003
+|-
+! 20
+| [[Chambers]]
+| [[SirHadoken]]
+| <center>{{Featured нормальный}}</center>
+| 17 526 635
+| 1 379 337
+|-
+! 21
+| [[Almighty]]
+| aArbolito
+| <center>{{Featured сложный}}</center>
+| 17 232 168
+| 1 499 557
+|-
+! 22
+| [[UFO Madness]]
+| ZelLink
+| <center>{{Featured нормальный}}</center>
+| 16 928 456
+| 883 508
+|-
+! 23
+| [[Laser Room]]
+| [[TrueNature]]
+| <center>{{Featured лёгкий демон}}</center>
+| 15 989 271
+| 842 376
+|-
+! 24
+| [[Space Travel]]
+| Rabbitical
+| <center>{{Featured авто}}</center>
+| 15 459 549
+| 1 372 865
+|-
+! 25
+| [[Spooky Light]]
+| [[Serponge]]
+| <center>{{Featured нормальный}}</center>
+| 14 817 841
+| 1 165 513
+|-
+! 26
+| [[Xstep v2]]
+| [[Neptune]]
+| <center>{{Featured лёгкий демон}}</center>
+| 14 671 426
+| 904 547
+|-
+! 27
+| [[Polargeist v01]]
+| [[Mixroid]]
+| <center>{{Featured сложный}}</center>
+| 14 539 446
+| 1 162 500
+|-
+! 28
+| [[Dry Out RM]]
+| [[ZenthicAlpha]]
+| <center>{{Featured сложный}}</center>
+| 14 519 710
+| 742 077
+|-
+! 29
+| [[dinosaur]]
+| [[Alkali]]
+| <center>{{Эпический безумный}}</center>
+| 14 453 760
+| 966 409
+|-
+! 30
+| [[Easy]]
+| [[MrCheeseTigrr]]
+| <center>{{Featured сложный}}</center>
+| 14 347 074
+| 1 110 199
+|-
+! 31
+| [[Speed Racer]]
+| [[ZenthicAlpha]]
+| <center>{{Featured лёгкий демон}}</center>
+| 14 100 004
+| 1 193 072
+|-
+! 32
+| [[yStep]]
+| [[Darnoc]]
+| <center>{{Featured лёгкий демон}}</center>
+| 13 799 221
+| 749 673
+|-
+! 33
+| [[Highscore]]
+| [[Danolex]]
+| <center>{{Featured нормальный}}</center>
+| 13 740 460
+| 1 602 924
+|-
+! 34
+| [[Infernal Arena]]
+| [[Suomi]]
+| <center>{{Featured нормальный}}</center>
+| 13 552 836
+| 1 082 427
+|-
+! 35
+| [[Stereo Madness v2 (Neptune)]]
+| [[Neptune]]
+| <center>{{Featured нормальный}}</center>
+| 13 216 052
+| 895 174
+|-
+! 36
+| [[High hill]]
+| —
+| <center>{{Featured сложный}}</center>
+| 13 056 293
+| 1 058 717
+|-
+! 37
+| [[dorabaebasic5]]
+| [[Dorabae]]
+| <center>{{Featured сложный}}</center>
+| 13 041 623
+| 1 403 146
+|-
+! 38
+| [[Fernanfloo 3]]
+| 1XxDrawinGxX1
+| <center>{{очень сложный}}</center>
+| 12 685 237
+| 931 785
+|-
+! 39
+| [[Phantom]]
+| [[TheRealSalad]]
+| <center>{{Эпический сложный}}</center>
+| 12 609 278
+| 1 225 278
+|-
+! 40
+| [[Hexagon HyperDrive]]
+| [[Mitchell]]
+| <center>{{Featured сложный}}</center>
+| 12 575 007
+| 950 383
+|-
+! 41
+| [[square adventure]]
+| —
+| <center>{{Featured сложный}}</center>
+| 12 355 510
+| 728 097
+|-
+! 42
+| [[Secrets]]
+| AceVict
+| <center>{{Featured очень сложный}}</center>
+| 12 334 574
+| 869 610
+|-
+! 43
+| [[Endless (FlappySheepy)]]
+| [[FlappySheepy]]
+| <center>{{Featured нормальный}}</center>
+| 12 213 234
+| 1 142 842
+|-
+! 44
+| [[Lucid Dream]]
+| Dverry
+| <center>{{лёгкий}}</center>
+| 12 146 101
+| 1 281 480
+|-
+! 45
+| [[Adrift]]
+| [[TamaN]]
+| <center>{{Featured нормальный}}</center>
+| 12 117 552
+| 1 190 009
+|-
+! 46
+| [[UFO on Track]]
+| ZelLink
+| <center>{{Featured сложный}}</center>
+| 11 975 948
+| 630 084
+|-
+! 47
+| [[Unity]]
+| [[TriAxis]]
+| <center>{{Featured безумный}}</center>
+| 11 834 964
+| 1 086 010
+|-
+! 48
+| [[X]]
+| [[TriAxis]]
+| <center>{{Featured лёгкий демон}}</center>
+| 11 634 974
+| 966 199
+|-
+! 49
+| [[Glitter Madness 2k15]]
+| [[Glittershroom]]
+| <center>{{Featured нормальный}}</center>
+| 11 228 382
+| 939 472
+|-
+! 50
+| [[UFOgeist]]
+| ZelLink
+| <center>{{Featured сложный}}</center>
+| 11 217 054
+| 601 472
+|}
+</div>
+|-|Топ по лайкам=
+<div class="recordboxmedium">
+{| class="wikitable"
+! Место
+! Уровень
+! Создатель
+! [[Уровни сложности|Сложность]]
+! Кол-во загрузок
+! Кол-во лайков
+|-
+! 1
+| [[ReTraY]]
+| [[DimaVikulov26]]
+| <center>{{Featured лёгкий}}</center>
+| 35 756 314
+| 4 040 572
+|-
+! 2
+| [[Sonar]]
+| [[JerkRat]]
+| <center>{{Featured лёгкий}}</center>
+| 40 239 780
+| 3 148 955
+|-
+! 3
+| [[Level Easy]]
+| [[Cody]]
+| <center>{{Featured нормальный}}</center>
+| 42 550 657
+| 3 119 071
+|-
+! 4
+| [[Promises (Adiale)]]
+| [[Adiale]]
+| <center>{{Featured лёгкий}}</center>
+| 31 191 745
+| 2 876 494
+|-
+! 5
+| [[The Nightmare]]
+| [[Jax]]
+| <center>{{Featured лёгкий демон}}</center>
+| 36 671 037
+| 2 799 043
+|-
+! 6
+| [[Dark Paradise]]
+| [[Rolipso|Roli GD]]
+| <center>{{Featured лёгкий}}</center>
+| 30 505 087
+| 2 797 496
+|-
+! 7
+| [[End Of Line]]
+| PMK
+| <center>{{Featured нормальный}}</center>
+| 29 266 349
+| 2 486 302
+|-
+! 8
+| [[Auto Play Area]]
+| [[Jax]]
+| <center>{{Featured авто}}</center>
+| 24 401 935
+| 2 312 391
+|-
+! 9
+| [[OuterSpace]]
+| Nicki1202
+| <center>{{Featured сложный}}</center>
+| 34 795 485
+| 2 117 108
+|-
+! 10
+| [[dorabaebasic4]]
+| [[Dorabae]]
+| <center>{{Featured нормальный}}</center>
+| 22 547 461
+| 1 924 366
+|-
+! 11
+| [[through time]]
+| [[Berkoo]]
+| <center>{{Featured нормальный}}</center>
+| 17 711 840
+| 1 885 003
+|-
+! 12
+| [[Dreamland (Scanbrux)]]
+| [[Scanbrux]]
+| <center>{{Featured сложный}}</center>
+| 32 559 610
+| 1 875 397
+|-
+! 13
+| [[Flappy Hexagon]]
+| [[Creator Cloud]]
+| <center>{{Featured сложный}}</center>
+| 21 699 511
+| 1 760 725
+|-
+! 14
+| [[The Lightning Road]]
+| [[Timeless real]]
+| <center>{{Featured лёгкий демон}}</center>
+| 22 503 078
+| 1 671 320
+|-
+! 15
+| [[Highscore]]
+| [[Danolex]]
+| <center>{{Featured нормальный}}</center>
+| 13 740 460
+| 1 602 924
+|-
+! 16
+| [[Almighty]]
+| aArbolito
+| <center>{{Featured сложный}}</center>
+| 17 232 168
+| 1 499 557
+|-
+! 17
+| [[Acid Factory]]
+| JefryKawaii
+| <center>{{Featured сложный}}</center>
+| 25 049 315
+| 1 493 128
+|-
+! 18
+| [[Nine Circles]]
+| [[Zobros]]
+| <center>{{Featured демон}}</center>
+| 18 164 008
+| 1 422 785
+|-
+! 19
+| [[Bloodbath]]
+| [[Riot]] и др.
+| <center>{{Featured экстремальный демон}}</center>
+| 21 475 592
+| 1 417 845
+|-
+! 20
+| [[dorabaebasic5]]
+| [[Dorabae]]
+| <center>{{Featured сложный}}</center>
+| 13 041 623
+| 1 403 146
+|-
+! 21
+| [[Back on Track RM]]
+| [[ZenthicAlpha]]
+| <center>{{Featured нормальный}}</center>
+| 21 019 852
+| 1 396 984
+|-
+! 22
+| [[Chambers]]
+| [[SirHadoken]]
+| <center>{{Featured нормальный}}</center>
+| 17 526 635
+| 1 379 337
+|-
+! 23
+| [[Space Travel]]
+| Rabbitical
+| <center>{{Featured авто}}</center>
+| 15 459 549
+| 1 372 865
+|-
+! 24
+| [[Lucid Dream]]
+| Dverry
+| <center>{{лёгкий}}</center>
+| 12 146 101
+| 1 281 480
+|-
+! 25
+| [[destructive auto]]
+| yakine
+| <center>{{Featured авто}}</center>
+| 8 435 750
+| 1 257 225
+|-
+! 26
+| [[The World]]
+| [[X8Px|x8Px]]
+| <center>{{Featured лёгкий}}</center>
+| 10 079 485
+| 1 246 768
+|-
+! 27
+| [[Phantom]]
+| [[TheRealSalad]]
+| <center>{{Эпический сложный}}</center>
+| 12 609 278
+| 1 225 278
+|-
+! 28
+| [[Speed Racer]]
+| [[ZenthicAlpha]]
+| <center>{{Featured лёгкий демон}}</center>
+| 14 100 004
+| 1 193 072
+|-
+! 29
+| [[Adrift]]
+| [[TamaN]]
+| <center>{{Featured нормальный}}</center>
+| 12 117 552
+| 1 190 009
+|-
+! 30
+| [[Amplification]]
+| [[Berkoo]]
+| <center>{{Featured сложный}}</center>
+| 21 518 459
+| 1 187 157
+|-
+! 31
+| [[Spooky Light]]
+| [[Serponge]]
+| <center>{{Featured нормальный}}</center>
+| 14 817 841
+| 1 165 513
+|-
+! 32
+| [[Polargeist v01]]
+| [[Mixroid]]
+| <center>{{Featured сложный}}</center>
+| 14 539 446
+| 1 162 500
+|-
+! 33
+| [[Endless (FlappySheepy)]]
+| [[FlappySheepy]]
+| <center>{{Featured нормальный}}</center>
+| 12 213 234
+| 1 142 842
+|-
+! 34
+| [[Easy]]
+| [[MrCheeseTigrr]]
+| <center>{{Featured сложный}}</center>
+| 14 347 074
+| 1 110 199
+|-
+! 35
+| [[ColorZ]]
+| [[Xtobe5|xtobe5]]
+| <center>{{Featured нормальный}}</center>
+| 10 509 744
+| 1 102 885
+|-
+! 36
+| [[Unity]]
+| [[TriAxis]]
+| <center>{{Featured безумный}}</center>
+| 11 834 964
+| 1 086 010
+|-
+! 37
+| [[Infernal Arena]]
+| [[Suomi]]
+| <center>{{Featured нормальный}}</center>
+| 13 552 836
+| 1 082 427
+|-
+! 38
+| [[High hill]]
+| —
+| <center>{{Featured сложный}}</center>
+| 13 056 293
+| 1 058 717
+|-
+! 39
+| [[Auto Cycles]]
+| [[FunnyGame]]
+| <center>{{Featured авто}}</center>
+| 10 304 215
+| 1 014 074
+|-
+! 40
+| [[Auto Clubstep]]
+| [[FunnyGame]]
+| <center>{{Featured авто}}</center>
+| 9 381 761
+| 980 295
+|-
+! 41
+| [[Ocean Of Dreams]]
+| [[Spu7nix]]
+| <center>{{Featured лёгкий}}</center>
+| 9 258 966
+| 972 673
+|-
+! 42
+| [[dinosaur]]
+| [[Alkali]]
+| <center>{{Эпический безумный}}</center>
+| 14 453 760
+| 966 409
+|-
+! 43
+| [[X]]
+| [[TriAxis]]
+| <center>{{Featured лёгкий демон}}</center>
+| 11 634 974
+| 966 199
+|-
+! 44
+| [[ichor]]
+| DzRAS
+| <center>{{Featured сложный}}</center>
+| 9 283 029
+| 963 221
+|-
+! 45
+| [[Shock]]
+| [[Danolex]]
+| <center>{{Эпический очень сложный}}</center>
+| 9 918 168
+| 959 939
+|-
+! 46
+| [[Hexagon HyperDrive]]
+| [[Mitchell]]
+| <center>{{Featured сложный}}</center>
+| 12 575 007
+| 950 383
+|-
+! 47
+| [[Glitter Madness 2k15]]
+| [[Glittershroom]]
+| <center>{{Featured нормальный}}</center>
+| 11 228 382
+| 939 472
+|-
+! 48
+| [[Death Moon]]
+| [[Caustic]]
+| <center>{{Featured лёгкий демон}}</center>
+| 11 126 110
+| 934 254
+|-
+! 49
+| [[Fernanfloo 3]]
+| 1XxDrawinGxX1
+| <center>{{очень сложный}}</center>
+| 12 685 237
+| 931 785
+|-
+! 50
+| [[dorabaebasic7]]
+| [[Dorabae]]
+| <center>{{сложный}}</center>
+| 7 128 893
+| 920 526
+|}
+</div>
+</tabber>
+
+== Интересные факты ==
+* В обоих топах нет ни одного уровня со сложностью {{Средний демон}} и {{Безумный демон}}.
+* [[Bloodbath]] — единственный {{Экстремальный демон}} в данных топах.
+* [[Phantom]], [[Dinosaur]] и [[Shock]] — единственные [[Зал славы|эпические]] уровни в данных топах, причём [[Phantom]] и [[Dinosaur]] есть в обоих топах, а [[Shock]] есть только в топе по лайкам.
+* [[Fernanfloo 3]] — единственный неоценённый уровень в данных топах.

@@ -38,6 +38,7 @@ public class Main {
 
     private static void generateMostLikedLevels() {
         mostLikedLevels = ResponseGenerator.generateMostLikedList();
+        //replacement for one exception
         mostLikedLevels = mostLikedLevels.replace("| [[Level Easy]]\n" +
                 "| —", "| [[Level Easy]]\n" +
                 "| [[Cody]]");
@@ -78,7 +79,7 @@ public class Main {
                 "* [[Phantom]], [[Dinosaur]] и [[Shock]] — единственные [[Зал славы|эпические]] уровни в данных топах, причём [[Phantom]] и [[Dinosaur]] есть в обоих топах, а [[Shock]] есть только в топе по лайкам.\n" +
                 "* [[Fernanfloo 3]] — единственный неоценённый уровень в данных топах.";
         String result = start + mostDownloadedLevels + medium + mostLikedLevels + finish;
-        writeToFile("copytext", result.getBytes());
+        writeToFile("Copy text", result.getBytes());
     }
 
     private static void generateMostDownloadedAndLikedDemonsCopyText() {
@@ -94,7 +95,7 @@ public class Main {
                 "* [[Extinction]], [[FREEDOM]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
                 "* В данном топе присутствуют демоны всех сложностей.";
         String result = start + mostDownloadedLevelsForDemons + finish;
-        writeToFile("copytext demons", result.getBytes());
+        writeToFile("Copy text for demons", result.getBytes());
     }
 
     private static void writeToFile(String prefix, byte[] data) {
