@@ -45,8 +45,8 @@ Windy Landscape,
 8o,
 Jawbreaker (ZenthicAlpha),
 FREEDOM,
-Beautiful Chaos,
-Hexagon Force v2,
 Ultra Paracosm,
+Hexagon Force v2,
+Beautiful Chaos,
 Insomnia
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
