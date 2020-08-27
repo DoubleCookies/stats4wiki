@@ -1,8 +1,8 @@
 # Stats4wiki
 
-[![Build Status](https://travis-ci.org/killhtf/stats4wiki.svg?branch=master)](https://travis-ci.org/killhtf/stats4wiki)
+[![Build Status](https://travis-ci.org/DoubleCookies/stats4wiki.svg?branch=master)](https://travis-ci.org/killhtf/stats4wiki)
 
-Statistics tool for building tables and templated for GDWiki top levels lists pages. Based on [GdStatistics](https://github.com/killhtf/GDStatistics) project, which is based on Alex1304 [ultimategdbot](https://github.com/alex1304/ultimategdbot) *(feel increasing nesting!)*. 
+Statistics tool for building tables and templated for GDWiki top levels lists pages. Based on [GdStatistics](https://github.com/DoubleCookies/GDStatistics) project, which is based on Alex1304 [ultimategdbot](https://github.com/alex1304/ultimategdbot) *(we need to go deeper)*. 
 
 ## Features
 - Collect information about top-50 most downloaded/liked levels and generate table for it.
@@ -15,10 +15,9 @@ Statistics tables contains russian headers and templates but it's easy to change
 - **Statistics** folder contains markdown lists with statistics information.
 - **src** folder contains... sources!
 
-## Plans (for the distant future)
-- Create some github page
-- Describe how project works
-- Create some illustrations?
+## Plans
+- Create github page
+- Describe how project works (with illustrations)
 
 ## License
 This project has [MIT License](https://opensource.org/licenses/MIT)
