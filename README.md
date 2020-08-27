@@ -1,6 +1,6 @@
 # Stats4wiki
 
-[![Build Status](https://travis-ci.org/DoubleCookies/stats4wiki.svg?branch=master)](https://travis-ci.org/killhtf/stats4wiki)
+[![Build Status](https://travis-ci.org/DoubleCookies/stats4wiki.svg?branch=master)](https://travis-ci.org/DoubleCookies/stats4wiki)
 
 Statistics tool for building tables and templated for GDWiki top levels lists pages. Based on [GdStatistics](https://github.com/DoubleCookies/GDStatistics) project, which is based on Alex1304 [ultimategdbot](https://github.com/alex1304/ultimategdbot) *(we need to go deeper)*. 
 
