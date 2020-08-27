@@ -9,6 +9,7 @@ public class Constants {
     /* Replace names lists (for wiki articles) */
     public static final Map<String, String> levelsExceptions = initLevelExceptions();
 
+    /* Levels list which have article on wiki (with other article name) */
     private static Map<String, String> initLevelExceptions() {
         Map<String, String> map = new HashMap<>();
         map.put("Dreamland", "Dreamland (Scanbrux)");
@@ -78,7 +79,7 @@ public class Constants {
         return names;
     }
 
-    /* Creators list which have article on wiki (with different article name) */
+    /* Creators list which have article on wiki (with other article name) */
     public static final Map<String, String> allowedCreatorsNamesWithReplacement = initCreatorsMapForRepalcement();
 
     private static Map<String, String> initCreatorsMapForRepalcement() {

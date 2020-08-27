@@ -47,6 +47,6 @@ Jawbreaker (ZenthicAlpha),
 FREEDOM,
 Ultra Paracosm,
 Hexagon Force v2,
-Beautiful Chaos,
-Insomnia
+Insomnia,
+Beautiful Chaos
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>

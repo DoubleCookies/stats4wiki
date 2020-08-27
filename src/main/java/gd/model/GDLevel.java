@@ -17,57 +17,47 @@ public class GDLevel {
     /**
      * The ID of the level
      */
-    private long id;
+    private final long id;
 
     /**
      * The name of the level
      */
-    private String name;
+    private final String name;
 
     /**
      * The name of the creator who created this level
      */
-    private String creator;
+    private final String creator;
 
     /**
      * The level difficulty
      */
-    private Difficulty difficulty;
+    private final Difficulty difficulty;
 
     /**
      * If it's a Demon, the type of Demon difficulty
      */
-    private DemonDifficulty demonDifficulty;
-
-    /**
-     * The number of stars assigned to the level
-     */
-    private short stars;
+    private final DemonDifficulty demonDifficulty;
 
     /**
      * The featured score of the level, or a value &lt;= 0 if not featured
      */
-    private int featuredScore;
+    private final int featuredScore;
 
     /**
      * Whether the level is marked as Epic
      */
-    private boolean epic;
+    private final boolean epic;
 
     /**
      * Amount of downloads for the level
      */
-    private long downloads;
+    private final long downloads;
 
     /**
      * Amount of likes for the level
      */
-    private long likes;
-
-    /**
-     * The level description
-     */
-    private String description;
+    private final long likes;
 
     /**
      * Constructs an instance of gd.model.GDLevel by providing all of its attributes at
@@ -78,28 +68,24 @@ public class GDLevel {
      * @param creator         - the name of the user who created this level
      * @param difficulty      - the level difficulty
      * @param demonDifficulty - if it's a Demon, the type of Demon difficulty
-     * @param stars           - the number of stars assigned to the level
      * @param featuredScore   - the featured score of the level, or a value &lt;= 0 if not
      *                        featured
      * @param epic            - whether the level is marked as Epic
      * @param downloads       - amount of downloads for the level
      * @param likes           - amount of likes for the level
-     * @param description     - level description
      */
     public GDLevel(long id, String name, String creator, Difficulty difficulty,
-                   DemonDifficulty demonDifficulty, short stars, int featuredScore, boolean epic, long downloads,
-                   long likes, String description) {
+                   DemonDifficulty demonDifficulty, int featuredScore, boolean epic, long downloads,
+                   long likes) {
         this.id = id;
         this.name = name;
         this.creator = creator;
         this.difficulty = difficulty;
         this.demonDifficulty = demonDifficulty;
-        this.stars = stars;
         this.featuredScore = featuredScore;
         this.epic = epic;
         this.downloads = downloads;
         this.likes = likes;
-        this.description = description;
     }
 
     /**

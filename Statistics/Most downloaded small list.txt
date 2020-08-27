@@ -48,5 +48,5 @@ UFO on Track,
 Unity,
 X,
 Glitter Madness 2k15,
-UFOgeist
+Crescendo
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>

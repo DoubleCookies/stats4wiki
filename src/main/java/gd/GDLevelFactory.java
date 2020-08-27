@@ -74,12 +74,10 @@ public abstract class GDLevelFactory {
                     creator,
                     lvlDiff,
                     demonDifficultyByValue.get(Integer.parseInt(structuredLvlInfo.get(43))),
-                    Short.parseShort(structuredLvlInfo.get(18)),
                     Integer.parseInt(structuredLvlInfo.get(19)),
                     structuredLvlInfo.get(42).equals("1"),
                     Long.parseLong(structuredLvlInfo.get(10)),
-                    Long.parseLong(structuredLvlInfo.get(14)),
-                    new String(Base64.getUrlDecoder().decode(structuredLvlInfo.get(3)))
+                    Long.parseLong(structuredLvlInfo.get(14))
             );
         } catch (NullPointerException | IllegalArgumentException e) {
             throw new IndexOutOfBoundsException();
