@@ -1,6 +1,8 @@
 *.class
 *.iml
 target/
+node_modules/
+build/
 # BlueJ files
 *.ctxt
 
