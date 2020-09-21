@@ -193,6 +193,8 @@ public class GDLevel {
         }
         if (levelName.equals("Beautiful Chaos"))
             creatorString = "Darnoc2";
+        if (levelName.equals("Level Easy"))
+            creatorString = "[[Cody]]";
         return "! " + (count + 1) + "\n" + "| [[" + levelName + "]]\n| " + creatorString + "\n| <center>{{" + diffTemplate + "}}</center>\n| " + numberFormatter.format(downloads) + "\n| " + numberFormatter.format(likes);
     }
 

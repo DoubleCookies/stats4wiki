@@ -24,10 +24,6 @@ public class Main {
 
     private static void generateMostDownloadedLevels() {
         mostDownloadedLevels = ResponseGenerator.generateMostDownloadedList();
-        //replacement for one exception
-        mostDownloadedLevels = mostDownloadedLevels.replace("| [[Level Easy]]\n" +
-                "| —", "| [[Level Easy]]\n" +
-                "| [[Cody]]");
         writeToFile("Most downloaded", mostDownloadedLevels.getBytes());
     }
 
@@ -38,10 +34,6 @@ public class Main {
 
     private static void generateMostLikedLevels() {
         mostLikedLevels = ResponseGenerator.generateMostLikedList();
-        //replacement for one exception
-        mostLikedLevels = mostLikedLevels.replace("| [[Level Easy]]\n" +
-                "| —", "| [[Level Easy]]\n" +
-                "| [[Cody]]");
         writeToFile("Most liked", mostLikedLevels.getBytes());
     }
 
@@ -52,8 +44,6 @@ public class Main {
 
     private static void generateMostDownloadedLevelsSmallForDemons() {
         String res = ResponseGenerator.generateMostDownloadedListSmallForDemons();
-        //replacement for one exception
-        res = res.replace("Jawbreaker (ZenthicAlpha)|Jawbreaker", "Jawbreaker (ZenthicAlpha)");
         writeToFile("Most downloaded small for demons", res.getBytes());
     }
 

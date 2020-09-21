@@ -27,8 +27,7 @@ public class Constants {
         map.put("moon adventure", "Moon Adventure");
         map.put("time pressure", "Time pressure");
         map.put("Theory of SkriLLex", "Theory of Skrillex");
-        map.put("Jawbreaker", "Jawbreaker (ZenthicAlpha)|Jawbreaker");
-
+        map.put("Jawbreaker", "Jawbreaker (ZenthicAlpha)");
         return map;
     }
 
