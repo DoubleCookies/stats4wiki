@@ -108,7 +108,7 @@ public class GDLevel {
      * @return string with only level name
      */
     public String smallWikiString() {
-        String data = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name).trim() : name.trim();
+        String data = Constants.LEVELS_WITH_DIFFERENT_NAME.containsKey(name) ? Constants.LEVELS_WITH_DIFFERENT_NAME.get(name).trim() : name.trim();
         data = data.trim();
         data = data.substring(0, 1).toUpperCase() + data.substring(1);
         return data;
@@ -121,7 +121,7 @@ public class GDLevel {
      * @return string with information about level in MediaWiki table row format
      */
     public String wikiString(int count) {
-        String levelName = Constants.levelsExceptions.containsKey(name) ? Constants.levelsExceptions.get(name).trim() : name.trim();
+        String levelName = Constants.LEVELS_WITH_DIFFERENT_NAME.containsKey(name) ? Constants.LEVELS_WITH_DIFFERENT_NAME.get(name).trim() : name.trim();
         String diffTemplate = "";
         if (epic) {
             diffTemplate += "Эпический ";

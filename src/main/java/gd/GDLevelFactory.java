@@ -4,7 +4,6 @@ import gd.enums.DemonDifficulty;
 import gd.enums.Difficulty;
 import gd.model.GDLevel;
 
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 

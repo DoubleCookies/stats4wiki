@@ -7,10 +7,10 @@ import java.util.Map;
 
 public class Constants {
     /* Replace names lists (for wiki articles) */
-    public static final Map<String, String> levelsExceptions = initLevelExceptions();
+    public static final Map<String, String> LEVELS_WITH_DIFFERENT_NAME = initLevelsMapWithDifferentName();
 
     /* Levels list which have article on wiki (with other article name) */
-    private static Map<String, String> initLevelExceptions() {
+    private static Map<String, String> initLevelsMapWithDifferentName() {
         Map<String, String> map = new HashMap<>();
         map.put("Dreamland", "Dreamland (Scanbrux)");
         map.put("auto play area", "Auto Play Area");

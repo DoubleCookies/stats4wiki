@@ -21,8 +21,9 @@ public class ResponseGenerator {
             "! [[Уровни сложности|Сложность]]\n" +
             "! Кол-во загрузок\n" +
             "! Кол-во лайков\n";
+    private static final String WIKITABLE_END = "|}";
     private static final String ARRAY_START = "{{#arraydefine:levels|TEST_VALUE_FOR_SHIFT,\n";
-    private static final String PAGE_END = "}}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>";
+    private static final String ARRAY_END = "}}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>";
 
     private static List<GDLevel> mostDownloadedLevels;
     private static List<GDLevel> mostDownloadedDemons;
@@ -39,7 +40,7 @@ public class ResponseGenerator {
             builder.append(level.wikiString(counter)).append("\n");
             counter++;
         }
-        builder.append("|}");
+        builder.append(WIKITABLE_END);
         return builder.toString();
     }
 
@@ -51,7 +52,7 @@ public class ResponseGenerator {
             counter++;
             builder.append(level.smallWikiString()).append(counter == 50 ? "\n" : ",\n");
         }
-        builder.append(PAGE_END);
+        builder.append(ARRAY_END);
         return builder.toString();
     }
 
@@ -67,7 +68,7 @@ public class ResponseGenerator {
             builder.append(level.wikiString(counter)).append("\n");
             counter++;
         }
-        builder.append("|}");
+        builder.append(WIKITABLE_END);
         return builder.toString();
     }
 
@@ -79,7 +80,7 @@ public class ResponseGenerator {
             counter++;
             builder.append(level.smallWikiString()).append(counter == 50 ? "\n" : ",\n");
         }
-        builder.append(PAGE_END);
+        builder.append(ARRAY_END);
         return builder.toString();
     }
 
@@ -93,7 +94,7 @@ public class ResponseGenerator {
             builder.append(level.wikiString(counter)).append("\n");
             counter++;
         }
-        builder.append("|}");
+        builder.append(WIKITABLE_END);
         return builder.toString();
     }
 
