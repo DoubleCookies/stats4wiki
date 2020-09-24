@@ -22,6 +22,7 @@ public class ResponseGenerator {
             "! Кол-во загрузок\n" +
             "! Кол-во лайков\n";
     private static final String WIKITABLE_END = "|}";
+    private static final String WIKITABLE_NEWLINE = "|-\n";
     private static final String ARRAY_START = "{{#arraydefine:levels|TEST_VALUE_FOR_SHIFT,\n";
     private static final String ARRAY_END = "}}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>";
 
@@ -36,7 +37,7 @@ public class ResponseGenerator {
             mostDownloadedLevels = processListUpdate(LEVELS_DOWNLOADS);
         }
         for (GDLevel level : mostDownloadedLevels) {
-            builder.append("|-\n");
+            builder.append(WIKITABLE_NEWLINE);
             builder.append(level.wikiString(counter)).append("\n");
             counter++;
         }
@@ -64,7 +65,7 @@ public class ResponseGenerator {
             mostDownloadedDemons = processListUpdate(DEMONS_DOWNLOADS);
         }
         for (GDLevel level : mostDownloadedDemons) {
-            builder.append("|-\n");
+            builder.append(WIKITABLE_NEWLINE);
             builder.append(level.wikiString(counter)).append("\n");
             counter++;
         }
@@ -90,7 +91,7 @@ public class ResponseGenerator {
         builder.append(WIKITABLE_START);
         List<GDLevel> list = processListUpdate(LEVELS_LIKES);
         for (GDLevel level : list) {
-            builder.append("|-\n");
+            builder.append(WIKITABLE_NEWLINE);
             builder.append(level.wikiString(counter)).append("\n");
             counter++;
         }
@@ -107,9 +108,9 @@ public class ResponseGenerator {
                 switch (type) {
                     case LEVELS_LIKES:
                     case LEVELS_DOWNLOADS: {
-                        String res = type == LEVELS_LIKES ? GDServer.fetchMostLikedLevels(i) : GDServer.fetchMostPopularLevels(i);
+                        String rawData = type == LEVELS_LIKES ? GDServer.fetchMostLikedLevels(i) : GDServer.fetchMostPopularLevels(i);
                         for (int j = 0; j < 10; j++) {
-                            GDLevel level = getLevel(j, res);
+                            GDLevel level = getLevel(rawData, j);
                             list.add(level);
                             count++;
                             if (count >= 50)
@@ -119,9 +120,9 @@ public class ResponseGenerator {
                         break;
                     }
                     case DEMONS_DOWNLOADS: {
-                        String res = GDServer.fetchMostPopularLevels(i);
+                        String rawData = GDServer.fetchMostPopularLevels(i);
                         for (int j = 0; j < 10; j++) {
-                            GDLevel level = getLevel(j, res);
+                            GDLevel level = getLevel(rawData, j);
                             if (level.getDifficulty() == Difficulty.DEMON) {
                                 list.add(level);
                                 count++;
@@ -140,7 +141,7 @@ public class ResponseGenerator {
         return list;
     }
 
-    private static GDLevel getLevel(int j, String res) {
-        return GDLevelFactory.buildGDLevelSearchedByFilter(res, j, false);
+    private static GDLevel getLevel(String rawData, int index) {
+        return GDLevelFactory.buildGDLevelSearchedByFilter(rawData, index);
     }
 }

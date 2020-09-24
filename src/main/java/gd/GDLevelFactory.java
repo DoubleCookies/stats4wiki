@@ -47,11 +47,11 @@ public abstract class GDLevelFactory {
      * @return new instance of gd.model.GDLevel
      * @throws IndexOutOfBoundsException if the index given doesn't point to a search item.
      */
-    public static GDLevel buildGDLevelSearchedByFilter(String rawData, int index, boolean download)
+    public static GDLevel buildGDLevelSearchedByFilter(String rawData, int index)
             throws IndexOutOfBoundsException {
         try {
             Map<Integer, String> structuredLvlInfo = structureRawData(cutOneLevel(cutLevelInfoPart(rawData), index));
-            Map<Long, String> structuredCreatorsInfo = structureCreatorsInfo(cutCreatorInfoPart(rawData, download));
+            Map<Long, String> structuredCreatorsInfo = structureCreatorsInfo(cutCreatorInfoPart(rawData));
 
             if (structuredLvlInfo.size() == 0)
                 return null;
@@ -92,9 +92,9 @@ public abstract class GDLevelFactory {
         }
     }
 
-    private static String cutCreatorInfoPart(String rawData, boolean download) {
+    private static String cutCreatorInfoPart(String rawData) {
         try {
-            return rawData.split("#")[download ? 3 : 1];
+            return rawData.split("#")[1];
         } catch (ArrayIndexOutOfBoundsException e) {
             return "";
         }
