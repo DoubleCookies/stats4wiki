@@ -104,10 +104,10 @@ public class ResponseGenerator {
         int i = 0;
         int count = 0;
         try {
-            while (count < 50) {
-                switch (type) {
-                    case LEVELS_LIKES:
-                    case LEVELS_DOWNLOADS: {
+            switch (type) {
+                case LEVELS_LIKES:
+                case LEVELS_DOWNLOADS: {
+                    while (count < 50) {
                         String rawData = type == LEVELS_LIKES ? GDServer.fetchMostLikedLevels(i) : GDServer.fetchMostPopularLevels(i);
                         for (int j = 0; j < 10; j++) {
                             GDLevel level = getLevel(rawData, j);
@@ -117,9 +117,10 @@ public class ResponseGenerator {
                                 break;
                         }
                         i++;
-                        break;
                     }
-                    case DEMONS_DOWNLOADS: {
+                }
+                case DEMONS_DOWNLOADS: {
+                    while (count < 50) {
                         String rawData = GDServer.fetchMostPopularLevels(i);
                         for (int j = 0; j < 10; j++) {
                             GDLevel level = getLevel(rawData, j);
@@ -131,7 +132,6 @@ public class ResponseGenerator {
                                 break;
                         }
                         i++;
-                        break;
                     }
                 }
             }
