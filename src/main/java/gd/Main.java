@@ -19,7 +19,7 @@ public class Main {
         generateMostDownloadedLevelsSmall();
         generateMostDownloadedLevelsSmallForDemons();
         generateMostDownloadedAndLikedCopyText();
-        generateMostDownloadedAndLikedDemonsCopyText();
+        generateMostDownloadedDemonsCopyText();
     }
 
     private static void generateMostDownloadedLevels() {
@@ -67,12 +67,15 @@ public class Main {
                 "* В обоих топах нет ни одного уровня со сложностью {{Средний демон}} и {{Безумный демон}}.\n" +
                 "* [[Bloodbath]] — единственный {{Экстремальный демон}} в данных топах.\n" +
                 "* [[Phantom]], [[Dinosaur]] и [[Shock]] — единственные [[Зал славы|эпические]] уровни в данных топах, причём [[Phantom]] и [[Dinosaur]] есть в обоих топах, а [[Shock]] есть только в топе по лайкам.\n" +
-                "* [[Fernanfloo 3]] — единственный неоценённый уровень в данных топах.";
+                "* [[Fernanfloo 3]] — единственный неоценённый уровень в данных топах." +
+                "[[Категория:Топы]]\n" +
+                "[[Категория:Пользовательские уровни]]\n" +
+                "[[Категория:Уровни]]";
         String result = start + mostDownloadedLevels + medium + mostLikedLevels + finish;
         writeToFile("Copy text", result.getBytes());
     }
 
-    private static void generateMostDownloadedAndLikedDemonsCopyText() {
+    private static void generateMostDownloadedDemonsCopyText() {
         String start = "{{Фан-статья}}\n" +
                 "{{Связанный шаблон|[[Шаблон:Топ 50 популярных демонов|данном шаблоне]]}}\n" +
                 "\n" +
@@ -83,7 +86,11 @@ public class Main {
                 "\n" +
                 "== Интересные факты ==\n" +
                 "* [[Extinction]], [[FREEDOM]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
-                "* В данном топе присутствуют демоны всех сложностей.";
+                "* В данном топе присутствуют демоны всех сложностей." +
+                "[[Категория:Демоны]]\n" +
+                "[[Категория:Пользовательские уровни]]\n" +
+                "[[Категория:Уровни]]\n" +
+                "[[Категория:Топы]]";
         String result = start + mostDownloadedLevelsForDemons + finish;
         writeToFile("Copy text for demons", result.getBytes());
     }
