@@ -13,7 +13,7 @@ public class Constants {
     private static Map<String, String> initLevelsMapWithDifferentName() {
         Map<String, String> map = new HashMap<>();
         map.put("Dreamland", "Dreamland (Scanbrux)");
-        map.put("auto play area", "Auto Play Area");
+        map.put("auto play area", "Auto play area");
         map.put("flappy hexagon", "Flappy Hexagon");
         map.put("THE LIGHTNING ROAD", "The Lightning Road");
         map.put("Clutterfunk v2", "Clutterfunk v2 (Neptune)");
