@@ -7,7 +7,7 @@ Statistics tool for building tables and templated for GDWiki top levels lists pa
 ## Features
 - Collect information about top-50 most downloaded/liked levels and generate table for it.
 - Collect information about top-50 most downloaded demons and generate table for it.
-- Generate short lists for special templates.
+- Generate short lists for wiki templates.
 - Transform level names and level authors to links (you can found it in **`Constants.java`**).
 Statistics tables contains russian headers and templates but it's easy to change it if you need! 
 
@@ -17,7 +17,7 @@ Statistics tables contains russian headers and templates but it's easy to change
 
 ## Plans
 - Create github page
-- Describe how project works (with illustrations)
+- Describe how project works (with illustrations?)
 
 ## License
 This project has [MIT License](https://opensource.org/licenses/MIT)
