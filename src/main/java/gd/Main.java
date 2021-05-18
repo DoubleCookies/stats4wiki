@@ -110,6 +110,7 @@ public class Main {
                 "<div class=\"recordboxmedium\">\n";
 
         String finish = "\n</div>\n" +
+                "</tabber>\n" +
                 "\n" +
                 "== Интересные факты ==\n" +
                 "* [[Extinction]], [[FREEDOM]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
