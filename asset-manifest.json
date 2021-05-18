@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stats4wiki/static/css/main.b0e0f98c.chunk.css",
+    "main.css": "/stats4wiki/static/css/main.100f095e.chunk.css",
     "main.js": "/stats4wiki/static/js/main.b28d6ec3.chunk.js",
     "main.js.map": "/stats4wiki/static/js/main.b28d6ec3.chunk.js.map",
     "runtime-main.js": "/stats4wiki/static/js/runtime-main.5685d925.js",
@@ -10,13 +10,13 @@
     "static/js/3.a6e62f54.chunk.js": "/stats4wiki/static/js/3.a6e62f54.chunk.js",
     "static/js/3.a6e62f54.chunk.js.map": "/stats4wiki/static/js/3.a6e62f54.chunk.js.map",
     "index.html": "/stats4wiki/index.html",
-    "static/css/main.b0e0f98c.chunk.css.map": "/stats4wiki/static/css/main.b0e0f98c.chunk.css.map",
+    "static/css/main.100f095e.chunk.css.map": "/stats4wiki/static/css/main.100f095e.chunk.css.map",
     "static/js/2.fe1c2ac8.chunk.js.LICENSE.txt": "/stats4wiki/static/js/2.fe1c2ac8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5685d925.js",
     "static/js/2.fe1c2ac8.chunk.js",
-    "static/css/main.b0e0f98c.chunk.css",
+    "static/css/main.100f095e.chunk.css",
     "static/js/main.b28d6ec3.chunk.js"
   ]
 }
