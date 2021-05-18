@@ -18,6 +18,7 @@
 .main-content {
   max-width: 800px;
   margin: 0 auto 20px auto;
+  line-height: 1.5;
 }
 
 .main-headers {
@@ -33,6 +34,7 @@
   margin-top: 16px;
   color: #504a4a;
   font-size: 14px;
-  padding-top: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
   text-align: center;
 }
