@@ -1,5 +1,7 @@
 package gd;
 
+import gd.enums.ListType;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,39 +13,59 @@ public class Main {
     static String mostDownloadedLevels;
     static String mostLikedLevels;
     static String mostDownloadedLevelsForDemons;
+    static String mostLikedLevelsForDemons;
 
     public static void main(String[] args) {
+        getLevelsForLists();
+        generateTables();
+        generateTextForCopy();
+    }
+
+    private static void getLevelsForLists() {
+        ResponseGenerator.getLevelsForLists();
+    }
+
+    private static void generateTables() {
         generateMostDownloadedLevels();
         generateMostLikedLevels();
         generateMostDownloadedLevelsForDemons();
+        generateMostLikedLevelsForDemons();
         generateMostDownloadedLevelsSmall();
         generateMostDownloadedLevelsSmallForDemons();
+    }
+
+    private static void generateTextForCopy() {
         generateMostDownloadedAndLikedCopyText();
         generateMostDownloadedDemonsCopyText();
     }
 
     private static void generateMostDownloadedLevels() {
-        mostDownloadedLevels = ResponseGenerator.generateMostDownloadedList();
+        mostDownloadedLevels = ResponseGenerator.createTableForLevels(ListType.DOWNLOAD_LEVELS);
         writeToFile("Most downloaded", mostDownloadedLevels.getBytes());
     }
 
     private static void generateMostDownloadedLevelsForDemons() {
-        mostDownloadedLevelsForDemons = ResponseGenerator.generateMostDownloadedListForDemons();
+        mostDownloadedLevelsForDemons = ResponseGenerator.createTableForLevels(ListType.DOWNLOAD_DEMONS);
         writeToFile("Most downloaded for demons", mostDownloadedLevelsForDemons.getBytes());
     }
 
     private static void generateMostLikedLevels() {
-        mostLikedLevels = ResponseGenerator.generateMostLikedList();
+        mostLikedLevels = ResponseGenerator.createTableForLevels(ListType.LIKED_LEVELS);
         writeToFile("Most liked", mostLikedLevels.getBytes());
     }
 
+    private static void generateMostLikedLevelsForDemons() {
+        mostLikedLevelsForDemons = ResponseGenerator.createTableForLevels(ListType.LIKED_DEMONS);
+        writeToFile("Most liked for demons", mostLikedLevels.getBytes());
+    }
+
     private static void generateMostDownloadedLevelsSmall() {
-        String res = ResponseGenerator.generateMostDownloadedListSmall();
+        String res = ResponseGenerator.createShortList(ListType.DOWNLOAD_LEVELS);
         writeToFile("Most downloaded small", res.getBytes());
     }
 
     private static void generateMostDownloadedLevelsSmallForDemons() {
-        String res = ResponseGenerator.generateMostDownloadedListSmallForDemons();
+        String res = ResponseGenerator.createShortList(ListType.DOWNLOAD_DEMONS);
         writeToFile("Most downloaded small for demons", res.getBytes());
     }
 
@@ -79,7 +101,12 @@ public class Main {
         String start = "{{Фан-статья}}\n" +
                 "{{Связанный шаблон|[[Шаблон:Топ 50 популярных демонов|данном шаблоне]]}}\n" +
                 "\n" +
-                "В представленном ниже списке находятся 50 самых популярных {{Демон}} уровней в [[Geometry Dash]] '''по количеству загрузок'''.\n\n" +
+                "В представленных ниже списках находятся 50 самых популярных демонов по количеству загрузок и по количеству лайков.\n\n" +
+                "<tabber>Топ по загрузкам=\n" +
+                "<div class=\"recordboxmedium\">\n";
+
+        String medium = "\n</div>\n" +
+                "|-|Топ по лайкам=\n" +
                 "<div class=\"recordboxmedium\">\n";
 
         String finish = "\n</div>\n" +
@@ -92,7 +119,7 @@ public class Main {
                 "[[Категория:Пользовательские уровни]]\n" +
                 "[[Категория:Уровни]]\n" +
                 "[[Категория:Топы]]";
-        String result = start + mostDownloadedLevelsForDemons + finish;
+        String result = start + mostDownloadedLevelsForDemons + medium + mostLikedLevelsForDemons + finish;
         writeToFile("Copy text for demons", result.getBytes());
     }
 

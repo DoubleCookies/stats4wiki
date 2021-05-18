@@ -6,14 +6,15 @@ import gd.model.GDLevel;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static gd.enums.ListType.*;
+import java.util.stream.Collectors;
 
 /**
  * Class for generating level lists
  */
 public class ResponseGenerator {
 
+    private static final int LIST_SIZE = 50;
+    private static final int GD_PAGE_SIZE = 10;
     private static final String WIKITABLE_START = "{| class=\"wikitable\"\n" +
             "! Место\n" +
             "! Уровень\n" +
@@ -29,27 +30,20 @@ public class ResponseGenerator {
     private static List<GDLevel> mostDownloadedLevels;
     private static List<GDLevel> mostDownloadedDemons;
 
-    static String generateMostDownloadedList() {
-        int counter = 0;
-        StringBuilder builder = new StringBuilder();
-        builder.append(WIKITABLE_START);
-        if (mostDownloadedLevels == null || mostDownloadedLevels.isEmpty()) {
-            mostDownloadedLevels = processListUpdate(LEVELS_DOWNLOADS);
-        }
-        for (GDLevel level : mostDownloadedLevels) {
-            builder.append(WIKITABLE_NEWLINE);
-            builder.append(level.wikiString(counter)).append("\n");
-            counter++;
-        }
-        builder.append(WIKITABLE_END);
-        return builder.toString();
+    private static List<GDLevel> mostLikedLevels;
+    private static List<GDLevel> mostLikedDemons;
+
+    static void getLevelsForLists() {
+        getListForType(ListType.DOWNLOAD_LEVELS);
+        getListForType(ListType.LIKED_LEVELS);
     }
 
-    static String generateMostDownloadedListSmall() {
+    static String createShortList(ListType type) {
         int counter = 0;
         StringBuilder builder = new StringBuilder();
         builder.append(ARRAY_START);
-        for (GDLevel level : mostDownloadedLevels) {
+        List<GDLevel> levelsForList = type == ListType.DOWNLOAD_LEVELS ? mostDownloadedLevels : mostDownloadedDemons;
+        for (GDLevel level : levelsForList) {
             counter++;
             builder.append(level.smallWikiString()).append(counter == 50 ? "\n" : ",\n");
         }
@@ -57,14 +51,18 @@ public class ResponseGenerator {
         return builder.toString();
     }
 
-    static String generateMostDownloadedListForDemons() {
+    static String createTableForLevels(ListType listType) {
         int counter = 0;
         StringBuilder builder = new StringBuilder();
         builder.append(WIKITABLE_START);
-        if (mostDownloadedDemons == null || mostDownloadedDemons.isEmpty()) {
-            mostDownloadedDemons = processListUpdate(DEMONS_DOWNLOADS);
+        List<GDLevel> levelsForList;
+        switch (listType) {
+            case DOWNLOAD_DEMONS: { levelsForList = mostDownloadedDemons; break; }
+            case LIKED_LEVELS: { levelsForList = mostLikedLevels; break; }
+            case LIKED_DEMONS: { levelsForList = mostLikedDemons; break; }
+            default: { levelsForList = mostDownloadedLevels; break; }
         }
-        for (GDLevel level : mostDownloadedDemons) {
+        for (GDLevel level : levelsForList) {
             builder.append(WIKITABLE_NEWLINE);
             builder.append(level.wikiString(counter)).append("\n");
             counter++;
@@ -73,72 +71,41 @@ public class ResponseGenerator {
         return builder.toString();
     }
 
-    static String generateMostDownloadedListSmallForDemons() {
-        int counter = 0;
-        StringBuilder builder = new StringBuilder();
-        builder.append(ARRAY_START);
-        for (GDLevel level : mostDownloadedDemons) {
-            counter++;
-            builder.append(level.smallWikiString()).append(counter == 50 ? "\n" : ",\n");
-        }
-        builder.append(ARRAY_END);
-        return builder.toString();
-    }
-
-    static String generateMostLikedList() {
-        int counter = 0;
-        StringBuilder builder = new StringBuilder();
-        builder.append(WIKITABLE_START);
-        List<GDLevel> list = processListUpdate(LEVELS_LIKES);
-        for (GDLevel level : list) {
-            builder.append(WIKITABLE_NEWLINE);
-            builder.append(level.wikiString(counter)).append("\n");
-            counter++;
-        }
-        builder.append(WIKITABLE_END);
-        return builder.toString();
-    }
-
-    private static List<GDLevel> processListUpdate(ListType type) {
+    private static void getListForType(ListType type) {
         List<GDLevel> list = new ArrayList<>();
+        int demonsCount = 0;
         int i = 0;
-        int count = 0;
         try {
-            switch (type) {
-                case LEVELS_LIKES:
-                case LEVELS_DOWNLOADS: {
-                    while (count < 50) {
-                        String rawData = type == LEVELS_LIKES ? GDServer.fetchMostLikedLevels(i) : GDServer.fetchMostPopularLevels(i);
-                        for (int j = 0; j < 10; j++) {
-                            GDLevel level = getLevel(rawData, j);
-                            list.add(level);
-                            count++;
-                            if (count >= 50)
-                                break;
-                        }
-                        i++;
-                    }
+            while (demonsCount < LIST_SIZE) {
+                String rawData = (type == ListType.DOWNLOAD_LEVELS || type ==  ListType.DOWNLOAD_DEMONS)
+                        ? GDServer.fetchMostPopularLevels(i) : GDServer.fetchMostLikedLevels(i);
+                for (int j = 0; j < GD_PAGE_SIZE; j++) {
+                    GDLevel level = getLevel(rawData, j);
+                    list.add(level);
+                    if (level.getDifficulty() == Difficulty.DEMON)
+                        demonsCount++;
+                    if (demonsCount >= LIST_SIZE)
+                        break;
                 }
-                case DEMONS_DOWNLOADS: {
-                    while (count < 50) {
-                        String rawData = GDServer.fetchMostPopularLevels(i);
-                        for (int j = 0; j < 10; j++) {
-                            GDLevel level = getLevel(rawData, j);
-                            if (level.getDifficulty() == Difficulty.DEMON) {
-                                list.add(level);
-                                count++;
-                            }
-                            if (count >= 50)
-                                break;
-                        }
-                        i++;
-                    }
-                }
+                i++;
             }
         } catch (Exception e) {
             System.out.println("Limit reached!");
         }
-        return list;
+        switch (type) {
+            case DOWNLOAD_LEVELS:
+            case DOWNLOAD_DEMONS: {
+                mostDownloadedLevels = list.subList(0, LIST_SIZE);
+                mostDownloadedDemons = list.stream().filter(level -> level.getDifficulty() == Difficulty.DEMON).collect(Collectors.toList());
+                break;
+            }
+            case LIKED_LEVELS:
+            case LIKED_DEMONS: {
+                mostLikedLevels = list.subList(0, LIST_SIZE);
+                mostLikedDemons = list.stream().filter(level -> level.getDifficulty() == Difficulty.DEMON).collect(Collectors.toList());
+                break;
+            }
+        }
     }
 
     private static GDLevel getLevel(String rawData, int index) {

@@ -44,9 +44,9 @@ Hexagon HyperDrive,
 Endless (FlappySheepy),
 Unity,
 Adrift,
-Square adventure,
 Death Moon,
-Lucid Dream,
+Square adventure,
 Cataclysm,
+Lucid Dream,
 UFO on Track
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
