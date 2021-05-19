@@ -1,41 +1,48 @@
 .app {
-  text-align: left;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+
+  text-align: left;
 }
 
 .app-header {
-  text-align: center;
-  background-color: #ffdb91;
   display: flex;
   justify-content: center;
-  font-size: calc(18px + 3vmin);
+
   padding: 20px;
+
+  background-color: #ffdb91;
+
   font-family: 'Balsamiq Sans', sans-serif;
+  font-size: calc(18px + 3vmin);
+  text-align: center;
 }
 
 .main-content {
   max-width: 800px;
+
   margin: 0 auto 20px auto;
+
   line-height: 1.5;
 }
 
 .main-headers {
-  font-family: 'Balsamiq Sans', sans-serif;
-  text-align: center;
-  font-size: calc(14px + 2vmin);
   margin-top: 20px;
+
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: calc(14px + 2vmin);
+  text-align: center;
 }
 
 .footer-block {
-  font-family: 'Balsamiq Sans', sans-serif;
+  margin-top: auto;
   border-top: 2px solid #f5e5bc;
-  color: #504a4a;
-  font-size: 14px;
   padding-bottom: 12px;
   padding-top: 12px;
-  text-align: center;
 
-  margin-top: auto;
+  color: #504a4a;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: 14px;
+  text-align: center;
 }
