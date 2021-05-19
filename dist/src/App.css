@@ -1,8 +1,8 @@
 .app {
   text-align: left;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-header {
@@ -31,10 +31,11 @@
 .footer-block {
   font-family: 'Balsamiq Sans', sans-serif;
   border-top: 2px solid #f5e5bc;
-  margin-top: 16px;
   color: #504a4a;
   font-size: 14px;
   padding-bottom: 12px;
   padding-top: 12px;
   text-align: center;
+
+  margin-top: auto;
 }
