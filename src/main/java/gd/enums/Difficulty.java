@@ -8,5 +8,5 @@ public enum Difficulty {
     HARD,
     HARDER,
     INSANE,
-    DEMON;
+    DEMON
 }
