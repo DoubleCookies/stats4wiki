@@ -109,7 +109,6 @@ public class GDLevel {
      */
     public String smallWikiString() {
         String data = Constants.LEVELS_WITH_DIFFERENT_NAME.containsKey(name) ? Constants.LEVELS_WITH_DIFFERENT_NAME.get(name).trim() : name.trim();
-        data = data.trim();
         data = data.substring(0, 1).toUpperCase() + data.substring(1);
         return data;
     }
@@ -125,61 +124,11 @@ public class GDLevel {
         String diffTemplate = "";
         if (epic) {
             diffTemplate += "Эпический ";
-        } else {
-            if (featuredScore != 0 && !name.equals("Sonic Wave"))
-                diffTemplate += "Featured ";
+        } else if (featuredScore != 0 && !name.equals("Sonic Wave")) {
+            diffTemplate += "Featured ";
         }
-        if (difficulty == Difficulty.DEMON) {
-            switch (demonDifficulty) {
-                case EASY: {
-                    diffTemplate += "лёгкий демон";
-                    break;
-                }
-                case MEDIUM: {
-                    diffTemplate += "средний демон";
-                    break;
-                }
-                case HARD: {
-                    diffTemplate += "демон";
-                    break;
-                }
-                case INSANE: {
-                    diffTemplate += "безумный демон";
-                    break;
-                }
-                case EXTREME: {
-                    diffTemplate += "экстремальный демон";
-                    break;
-                }
-            }
-        } else {
-            switch (difficulty) {
-                case EASY: {
-                    diffTemplate += "лёгкий";
-                    break;
-                }
-                case NORMAL: {
-                    diffTemplate += "нормальный";
-                    break;
-                }
-                case HARD: {
-                    diffTemplate += "сложный";
-                    break;
-                }
-                case HARDER: {
-                    diffTemplate += "очень сложный";
-                    break;
-                }
-                case INSANE: {
-                    diffTemplate += "безумный";
-                    break;
-                }
-                case AUTO: {
-                    diffTemplate += "авто";
-                    break;
-                }
-            }
-        }
+        diffTemplate += difficulty == Difficulty.DEMON
+                ? Constants.demonDifficultyStringMap.get(demonDifficulty) : Constants.difficultyStringMap.get(difficulty);
         NumberFormat numberFormatter = NumberFormat.getNumberInstance();
         String creatorString = "";
         if (Constants.allowedCreatorsNames.contains(creator)) {
