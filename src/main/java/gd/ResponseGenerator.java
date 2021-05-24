@@ -51,6 +51,7 @@ public class ResponseGenerator {
         return builder.toString();
     }
 
+    // TODO: refactor filling list
     static String createTableForLevels(ListType listType) {
         int counter = 0;
         StringBuilder builder = new StringBuilder();
@@ -71,6 +72,7 @@ public class ResponseGenerator {
         return builder.toString();
     }
 
+    // TODO: refactor
     private static void getListForType(ListType type) {
         List<GDLevel> list = new ArrayList<>();
         int demonsCount = 0;

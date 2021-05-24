@@ -99,7 +99,7 @@ public class GDLevel {
     }
 
     /**
-     * Generate string for small lists
+     * Generate string for templates
      *
      * @return string with only level name
      */
@@ -110,7 +110,7 @@ public class GDLevel {
     }
 
     /**
-     * Generate string for big lists
+     * Generate string for pages
      *
      * @param count number of row in table
      * @return string with information about level in MediaWiki table row format
