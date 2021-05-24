@@ -9,10 +9,37 @@ import java.util.List;
 import java.util.Map;
 
 public class Constants {
-    /* Replace names lists (for wiki articles) */
-    public static final Map<String, String> LEVELS_WITH_DIFFERENT_NAME = initLevelsMapWithDifferentName();
+
+    //Difficulties map for replace in text
+    public static final Map<Difficulty, String> difficultyStringMap = initMapForTemplates();
+
+    private static Map<Difficulty, String> initMapForTemplates() {
+        Map<Difficulty, String> map = new HashMap<>();
+        map.put(Difficulty.AUTO, "авто");
+        map.put(Difficulty.EASY, "лёгкий");
+        map.put(Difficulty.NORMAL, "нормальный");
+        map.put(Difficulty.HARD, "сложный");
+        map.put(Difficulty.HARDER, "очень сложный");
+        map.put(Difficulty.INSANE, "безумный");
+        return map;
+    }
+
+    //Demon difficulties map for replace in text
+    public static final Map<DemonDifficulty, String> demonDifficultyStringMap = initMapForDemonTemplates();
+
+    private static Map<DemonDifficulty, String> initMapForDemonTemplates() {
+        Map<DemonDifficulty, String> map = new HashMap<>();
+        map.put(DemonDifficulty.EASY, "лёгкий демон");
+        map.put(DemonDifficulty.MEDIUM, "средний демон");
+        map.put(DemonDifficulty.HARD, "демон");
+        map.put(DemonDifficulty.INSANE, "безумный демон");
+        map.put(DemonDifficulty.EXTREME, "экстремальный демон");
+        return map;
+    }
 
     /* Levels list which have article on wiki (with other article name) */
+    public static final Map<String, String> LEVELS_WITH_DIFFERENT_NAME = initLevelsMapWithDifferentName();
+
     private static Map<String, String> initLevelsMapWithDifferentName() {
         Map<String, String> map = new HashMap<>();
         map.put("Dreamland", "Dreamland (Scanbrux)");
@@ -31,31 +58,6 @@ public class Constants {
         map.put("time pressure", "Time pressure");
         map.put("Theory of SkriLLex", "Theory of Skrillex");
         map.put("Jawbreaker", "Jawbreaker (ZenthicAlpha)");
-        return map;
-    }
-
-    public static final Map<DemonDifficulty, String> demonDifficultyStringMap = initMapForDemonTemplates();
-
-    private static Map<DemonDifficulty, String> initMapForDemonTemplates() {
-        Map<DemonDifficulty, String> map = new HashMap<>();
-        map.put(DemonDifficulty.EASY, "лёгкий демон");
-        map.put(DemonDifficulty.MEDIUM, "средний демон");
-        map.put(DemonDifficulty.HARD, "демон");
-        map.put(DemonDifficulty.INSANE, "безумный демон");
-        map.put(DemonDifficulty.EXTREME, "экстремальный демон");
-        return map;
-    }
-
-    public static final Map<Difficulty, String> difficultyStringMap = initMapForTemplates();
-
-    private static Map<Difficulty, String> initMapForTemplates() {
-        Map<Difficulty, String> map = new HashMap<>();
-        map.put(Difficulty.AUTO, "авто");
-        map.put(Difficulty.EASY, "лёгкий");
-        map.put(Difficulty.NORMAL, "нормальный");
-        map.put(Difficulty.HARD, "сложный");
-        map.put(Difficulty.HARDER, "очень сложный");
-        map.put(Difficulty.INSANE, "безумный");
         return map;
     }
 

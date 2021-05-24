@@ -14,6 +14,7 @@ import java.text.NumberFormat;
  */
 public class GDLevel {
 
+    private static final NumberFormat numberFormatter = NumberFormat.getNumberInstance();
     /**
      * The ID of the level
      */
@@ -97,11 +98,6 @@ public class GDLevel {
         return difficulty;
     }
 
-    @Override
-    public String toString() {
-        return "\"" + name + "\" by " + creator + " (" + id + ") — likes: " + likes + ", downloads: " + downloads;
-    }
-
     /**
      * Generate string for small lists
      *
@@ -121,30 +117,47 @@ public class GDLevel {
      */
     public String wikiString(int count) {
         String levelName = Constants.LEVELS_WITH_DIFFERENT_NAME.containsKey(name) ? Constants.LEVELS_WITH_DIFFERENT_NAME.get(name).trim() : name.trim();
-        String diffTemplate = "";
+        String prefix = getPrefix();
+        String difficultyOutput = getDifficultyOutput();
+        String creatorName = getCreatorName(levelName);
+        return "! " + (count + 1) + "\n" + "| [[" + levelName + "]]\n| " + creatorName + "\n| <center>{{" + prefix + difficultyOutput + "}}</center>\n| " + numberFormatter.format(downloads) + "\n| " + numberFormatter.format(likes);
+    }
+
+    private String getPrefix() {
         if (epic) {
-            diffTemplate += "Эпический ";
+            return "Эпический ";
         } else if (featuredScore != 0 && !name.equals("Sonic Wave")) {
-            diffTemplate += "Featured ";
+            return "Featured ";
         }
-        diffTemplate += difficulty == Difficulty.DEMON
+        return "";
+    }
+
+    private String getDifficultyOutput() {
+        return difficulty == Difficulty.DEMON
                 ? Constants.demonDifficultyStringMap.get(demonDifficulty) : Constants.difficultyStringMap.get(difficulty);
-        NumberFormat numberFormatter = NumberFormat.getNumberInstance();
-        String creatorString = "";
+    }
+
+    private String getCreatorName(String levelName) {
+        String creatorOutput;
         if (Constants.allowedCreatorsNames.contains(creator)) {
-            creatorString = "[[" + creator + "]]";
+            creatorOutput = "[[" + creator + "]]";
             if (creator.equals("Riot"))
-                creatorString += " и др.";
+                creatorOutput += " и др.";
         } else if (Constants.allowedCreatorsNamesWithReplacement.containsKey(creator)) {
-            creatorString = "[[" + Constants.allowedCreatorsNamesWithReplacement.get(creator) + "]]";
+            creatorOutput = "[[" + Constants.allowedCreatorsNamesWithReplacement.get(creator) + "]]";
         } else {
-            creatorString = creator == null ? "—" : creator;
+            creatorOutput = creator == null ? "—" : creator;
         }
         if (levelName.equals("Beautiful Chaos"))
-            creatorString = "Darnoc2";
+            creatorOutput = "Darnoc2";
         if (levelName.equals("Level Easy"))
-            creatorString = "[[Cody]]";
-        return "! " + (count + 1) + "\n" + "| [[" + levelName + "]]\n| " + creatorString + "\n| <center>{{" + diffTemplate + "}}</center>\n| " + numberFormatter.format(downloads) + "\n| " + numberFormatter.format(likes);
+            creatorOutput = "[[Cody]]";
+        return creatorOutput;
+    }
+
+    @Override
+    public String toString() {
+        return "\"" + name + "\" by " + creator + " (" + id + ") — likes: " + likes + ", downloads: " + downloads;
     }
 
     @Override
