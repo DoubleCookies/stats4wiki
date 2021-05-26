@@ -45,35 +45,57 @@ public class ResponseGenerator {
         List<GDLevel> levelsForList = type == ListType.DOWNLOAD_LEVELS ? mostDownloadedLevels : mostDownloadedDemons;
         for (GDLevel level : levelsForList) {
             counter++;
-            builder.append(level.smallWikiString()).append(counter == 50 ? "\n" : ",\n");
+            builder.append(level.smallWikiString()).append(counter == LIST_SIZE ? "\n" : ",\n");
         }
         builder.append(ARRAY_END);
         return builder.toString();
     }
 
-    // TODO: refactor filling list
     static String createTableForLevels(ListType listType) {
         int counter = 0;
         StringBuilder builder = new StringBuilder();
         builder.append(WIKITABLE_START);
-        List<GDLevel> levelsForList;
-        switch (listType) {
-            case DOWNLOAD_DEMONS: { levelsForList = mostDownloadedDemons; break; }
-            case LIKED_LEVELS: { levelsForList = mostLikedLevels; break; }
-            case LIKED_DEMONS: { levelsForList = mostLikedDemons; break; }
-            default: { levelsForList = mostDownloadedLevels; break; }
-        }
+        List<GDLevel> levelsForList = selectLevelsList(listType);
         for (GDLevel level : levelsForList) {
-            builder.append(WIKITABLE_NEWLINE);
-            builder.append(level.wikiString(counter)).append("\n");
+            builder.append(WIKITABLE_NEWLINE).append(level.wikiString(counter)).append("\n");
             counter++;
         }
         builder.append(WIKITABLE_END);
         return builder.toString();
     }
 
-    // TODO: refactor
+    private static List<GDLevel> selectLevelsList(ListType listType) {
+        switch (listType) {
+            case DOWNLOAD_DEMONS: { return mostDownloadedDemons;  }
+            case LIKED_LEVELS: { return mostLikedLevels; }
+            case LIKED_DEMONS: { return mostLikedDemons; }
+            default: { return mostDownloadedLevels; }
+        }
+    }
+
     private static void getListForType(ListType type) {
+        List<GDLevel> list = fillListWithLevels(type);
+        fillTypedList(type, list);
+    }
+
+    private static void fillTypedList(ListType type, List<GDLevel> list) {
+        switch (type) {
+            case DOWNLOAD_LEVELS:
+            case DOWNLOAD_DEMONS: {
+                mostDownloadedLevels = list.subList(0, LIST_SIZE);
+                mostDownloadedDemons = list.stream().filter(level -> level.getDifficulty() == Difficulty.DEMON).collect(Collectors.toList());
+                break;
+            }
+            case LIKED_LEVELS:
+            case LIKED_DEMONS: {
+                mostLikedLevels = list.subList(0, LIST_SIZE);
+                mostLikedDemons = list.stream().filter(level -> level.getDifficulty() == Difficulty.DEMON).collect(Collectors.toList());
+                break;
+            }
+        }
+    }
+
+    private static List<GDLevel> fillListWithLevels(ListType type) {
         List<GDLevel> list = new ArrayList<>();
         int demonsCount = 0;
         int i = 0;
@@ -94,20 +116,7 @@ public class ResponseGenerator {
         } catch (Exception e) {
             System.out.println("Limit reached!");
         }
-        switch (type) {
-            case DOWNLOAD_LEVELS:
-            case DOWNLOAD_DEMONS: {
-                mostDownloadedLevels = list.subList(0, LIST_SIZE);
-                mostDownloadedDemons = list.stream().filter(level -> level.getDifficulty() == Difficulty.DEMON).collect(Collectors.toList());
-                break;
-            }
-            case LIKED_LEVELS:
-            case LIKED_DEMONS: {
-                mostLikedLevels = list.subList(0, LIST_SIZE);
-                mostLikedDemons = list.stream().filter(level -> level.getDifficulty() == Difficulty.DEMON).collect(Collectors.toList());
-                break;
-            }
-        }
+        return list;
     }
 
     private static GDLevel getLevel(String rawData, int index) {

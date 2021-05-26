@@ -124,11 +124,10 @@ public class GDLevel {
     }
 
     private String getPrefix() {
-        if (epic) {
+        if (epic)
             return "Эпический ";
-        } else if (featuredScore != 0 && !name.equals("Sonic Wave")) {
+        if (featuredScore > 0)
             return "Featured ";
-        }
         return "";
     }
 
@@ -141,17 +140,13 @@ public class GDLevel {
         String creatorOutput;
         if (Constants.allowedCreatorsNames.contains(creator)) {
             creatorOutput = "[[" + creator + "]]";
-            if (creator.equals("Riot"))
-                creatorOutput += " и др.";
         } else if (Constants.allowedCreatorsNamesWithReplacement.containsKey(creator)) {
             creatorOutput = "[[" + Constants.allowedCreatorsNamesWithReplacement.get(creator) + "]]";
+        } else if (Constants.specialCreatorsNamesForLevels.containsKey(levelName)) {
+            creatorOutput = "[[" + Constants.specialCreatorsNamesForLevels.get(levelName) + "]]";
         } else {
             creatorOutput = creator == null ? "—" : creator;
         }
-        if (levelName.equals("Beautiful Chaos"))
-            creatorOutput = "Darnoc2";
-        if (levelName.equals("Level Easy"))
-            creatorOutput = "[[Cody]]";
         return creatorOutput;
     }
 

@@ -114,7 +114,6 @@ public class Main {
     }
 
     private static void generateMostDownloadedAndLikedCopyText() {
-
         String result = TOP_LEVELS_PAGE_START + mostDownloadedLevels
                 + TOP_MEDIUM_SECTION
                 + mostLikedLevels + TOP_LEVELS_PAGE_FINISH;

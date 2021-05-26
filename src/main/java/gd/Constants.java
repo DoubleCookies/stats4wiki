@@ -133,4 +133,13 @@ public class Constants {
         map.put("f3lixsram", "F3lixsram|f3lixsram");
         return map;
     }
+
+    public static final Map<String, String> specialCreatorsNamesForLevels = initSpecialCreatorsNamesForLevels();
+
+    private static Map<String, String> initSpecialCreatorsNamesForLevels() {
+        Map<String, String> map = new HashMap<>();
+        map.put("Level Easy", "Cody");
+        map.put("Sonic Wave", "Cyclic");
+        return map;
+    }
 }
