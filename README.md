@@ -16,5 +16,9 @@ Statistics tables contains ru-headers and templates but it's easy to change it i
 - **src** folder contains Java sources for collecting, processing and saving data.
 - **web** folder contains JS sources for **[Github page](https://doublecookies.github.io/stats4wiki/)** with info about project.
 
+## Launch
+- For web-part you can check README is **web** folder.
+- For java-part the easiest way - launch project via the IDE.
+
 ## License
 This project has [MIT License](https://opensource.org/licenses/MIT)
