@@ -3,7 +3,7 @@
   flex-direction: column;
   min-height: 100vh;
 
-  text-align: left;
+  text-align: justify;
 }
 
 .app-header {
@@ -23,6 +23,7 @@
   max-width: 800px;
 
   margin: 0 auto 10px auto;
+  padding: 10px;
 
   line-height: 1.5;
 }
@@ -39,6 +40,10 @@
   font-size: calc(14px + 2vmin);
   font-weight: normal;
   text-align: center;
+}
+
+.tight-list {
+  padding-inline-start: 30px;
 }
 
 .footer-block {
