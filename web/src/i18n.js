@@ -6,7 +6,7 @@ const resources = {
     en: {
         translation: {
             aboutTitle: "What is this project about?",
-            aboutText: "Here I collect data about top-50 most downloaded and most liked levels in Geometry Dash " +
+            aboutText: "I collect data about top-50 most downloaded and most liked levels in Geometry Dash " +
                 "(overall and for \"demon\" difficulty levels). After that I form table and " +
                 "post it on Geometry Dash Wiki (ru). At the same time I create data for two templates which are used " +
                 "in articles about most downloaded levels.<1/>" +
