@@ -6,7 +6,6 @@ import i18n from "./i18n";
 function App() {
     const {t} = useTranslation();
     const changeLanguage = () => {
-        console.log('inside!')
         let lng = 'en';
         if (i18n.language === 'en') {
             lng = 'ru';
