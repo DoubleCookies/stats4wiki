@@ -60,8 +60,8 @@ const resources = {
 }
 
 i18n.use(detector).use(initReactI18next).init({
-        fallbackLng: 'en',
-        resources,
-    })
+    fallbackLng: 'en',
+    resources,
+})
 
 export default i18n;
