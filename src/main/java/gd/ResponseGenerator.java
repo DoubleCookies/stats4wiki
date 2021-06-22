@@ -66,10 +66,18 @@ public class ResponseGenerator {
 
     private static List<GDLevel> selectLevelsList(ListType listType) {
         switch (listType) {
-            case DOWNLOAD_DEMONS: { return mostDownloadedDemons;  }
-            case LIKED_LEVELS: { return mostLikedLevels; }
-            case LIKED_DEMONS: { return mostLikedDemons; }
-            default: { return mostDownloadedLevels; }
+            case DOWNLOAD_DEMONS: {
+                return mostDownloadedDemons;
+            }
+            case LIKED_LEVELS: {
+                return mostLikedLevels;
+            }
+            case LIKED_DEMONS: {
+                return mostLikedDemons;
+            }
+            default: {
+                return mostDownloadedLevels;
+            }
         }
     }
 
@@ -101,7 +109,7 @@ public class ResponseGenerator {
         int i = 0;
         try {
             while (demonsCount < LIST_SIZE) {
-                String rawData = (type == ListType.DOWNLOAD_LEVELS || type ==  ListType.DOWNLOAD_DEMONS)
+                String rawData = (type == ListType.DOWNLOAD_LEVELS || type == ListType.DOWNLOAD_DEMONS)
                         ? GDServer.fetchMostPopularLevels(i) : GDServer.fetchMostLikedLevels(i);
                 for (int j = 0; j < GD_PAGE_SIZE; j++) {
                     GDLevel level = getLevel(rawData, j);
