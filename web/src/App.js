@@ -16,12 +16,13 @@ function App() {
     return (
         <div className="app">
             <header className="app-header">
-                Stats4wiki<br/>~(˘▾˘~)
-                <div className="button-container">
+                <div>Stats4wiki</div>
+                <div>
                     <button className="lang-button" aria-label="Switch language (en/ru)"
-                            title="Switch language (en/ru)" onClick={() => changeLanguage()}>
+                             title="Switch language (en/ru)" onClick={() => changeLanguage()}>
                         🌎
                     </button>
+                    <span>~(˘▾˘~)</span>
                 </div>
             </header>
             <main className="main-content">
