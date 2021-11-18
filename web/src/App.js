@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import { Trans, useTranslation } from "react-i18next";
 import i18n from "./i18n";
+import GithubIcon from './GithubIcon';
 
 function App() {
     const {t} = useTranslation();
@@ -65,6 +66,9 @@ function App() {
                 </Trans>
             </main>
             <footer className="footer-block">
+                <div>
+                    <GithubIcon />
+                </div>
                 <div>2018-2021 <span role="img" aria-label="cookieEmoji">🍪</span></div>
             </footer>
         </div>
