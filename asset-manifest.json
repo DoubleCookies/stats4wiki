@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stats4wiki/static/css/main.6eb2fe5d.chunk.css",
-    "main.js": "/stats4wiki/static/js/main.abbc259b.chunk.js",
-    "main.js.map": "/stats4wiki/static/js/main.abbc259b.chunk.js.map",
+    "main.js": "/stats4wiki/static/js/main.64001224.chunk.js",
+    "main.js.map": "/stats4wiki/static/js/main.64001224.chunk.js.map",
     "runtime-main.js": "/stats4wiki/static/js/runtime-main.76933ce2.js",
     "runtime-main.js.map": "/stats4wiki/static/js/runtime-main.76933ce2.js.map",
     "static/js/2.dd34104f.chunk.js": "/stats4wiki/static/js/2.dd34104f.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.76933ce2.js",
     "static/js/2.dd34104f.chunk.js",
     "static/css/main.6eb2fe5d.chunk.css",
-    "static/js/main.abbc259b.chunk.js"
+    "static/js/main.64001224.chunk.js"
   ]
 }
