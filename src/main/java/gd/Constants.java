@@ -10,6 +10,20 @@ import java.util.Map;
 
 public class Constants {
 
+    public static final int LIST_SIZE = 50;
+    public static final String WIKITABLE_START = "{| class=\"wikitable\"\n" +
+            "! Место\n" +
+            "! Уровень\n" +
+            "! Создатель\n" +
+            "! [[Уровни сложности|Сложность]]\n" +
+            "! Кол-во загрузок\n" +
+            "! Кол-во лайков\n";
+    public static final String WIKITABLE_END = "|}";
+    public static final String WIKITABLE_NEWLINE = "|-\n";
+    public static final String ARRAY_START = "{{#arraydefine:levels|TEST_VALUE_FOR_SHIFT,\n";
+    public static final String ARRAY_END = "}}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>";
+
+
     //Difficulties map for replace in text
     public static final Map<Difficulty, String> difficultyStringMap = initMapForTemplates();
 
