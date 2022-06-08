@@ -1,6 +1,7 @@
 package gd;
 
 import jdash.client.GDClient;
+import jdash.common.Difficulty;
 import jdash.common.LevelBrowseMode;
 import jdash.common.entity.GDLevel;
 
@@ -156,12 +157,6 @@ public class ResponseGenerator {
                 + "\n| " + numberFormatter.format(level.likes());
     }
 
-    private static String basicString(GDLevel level) {
-        String creatorName = level.creatorName().isPresent() ? level.creatorName().get() : "-";
-        return "\"" + level.name() + "\" by " + creatorName + " (" + level.id()
-                + ") — likes: " + level.likes() + ", downloads: " + level.downloads();
-    }
-
     private static String getPrefix(GDLevel level) {
         if (level.isEpic())
             return "Эпический ";
@@ -171,9 +166,13 @@ public class ResponseGenerator {
     }
 
     private static String getDifficultyOutput(GDLevel level) {
-        return level.isDemon()
-                ? Constants.demonDifficultyStringMap.get(level.demonDifficulty())
-                : Constants.difficultyStringMap.get(level.difficulty());
+        if (level.isAuto()) {
+            return Constants.difficultyStringMap.get(Difficulty.AUTO);
+        } else {
+            return level.isDemon()
+                    ? Constants.demonDifficultyStringMap.get(level.demonDifficulty())
+                    : Constants.difficultyStringMap.get(level.difficulty());
+        }
     }
 
     private static String getCreatorName(GDLevel level, String levelName) {
