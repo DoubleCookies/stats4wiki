@@ -1,7 +1,7 @@
 package gd;
 
-import gd.enums.DemonDifficulty;
-import gd.enums.Difficulty;
+import jdash.common.DemonDifficulty;
+import jdash.common.Difficulty;
 
 import java.util.ArrayList;
 import java.util.HashMap;

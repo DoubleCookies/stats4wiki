@@ -1,9 +1,10 @@
 package gd;
 
-import gd.enums.Difficulty;
-import gd.enums.ListType;
-import gd.model.GDLevel;
+import jdash.client.GDClient;
+import jdash.common.LevelBrowseMode;
+import jdash.common.entity.GDLevel;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,9 +13,10 @@ import java.util.stream.Collectors;
  * Class for generating level lists
  */
 public class ResponseGenerator {
-
+    private static final NumberFormat numberFormatter = NumberFormat.getNumberInstance();
     private static final int LIST_SIZE = 50;
     private static final int GD_PAGE_SIZE = 10;
+    private static final GDClient client = GDClient.create();
     private static final String WIKITABLE_START = "{| class=\"wikitable\"\n" +
             "! Место\n" +
             "! Уровень\n" +
@@ -34,8 +36,8 @@ public class ResponseGenerator {
     private static List<GDLevel> mostLikedDemons;
 
     static void getLevelsForLists() {
-        getListForType(ListType.DOWNLOAD_LEVELS);
-        getListForType(ListType.LIKED_LEVELS);
+        getListForType(LevelBrowseMode.MOST_DOWNLOADED);
+        getListForType(LevelBrowseMode.MOST_LIKED);
     }
 
     static String createShortList(ListType type) {
@@ -45,7 +47,7 @@ public class ResponseGenerator {
         List<GDLevel> levelsForList = type == ListType.DOWNLOAD_LEVELS ? mostDownloadedLevels : mostDownloadedDemons;
         for (GDLevel level : levelsForList) {
             counter++;
-            builder.append(level.smallWikiString()).append(counter == LIST_SIZE ? "\n" : ",\n");
+            builder.append(smallWikiString(level)).append(counter == LIST_SIZE ? "\n" : ",\n");
         }
         builder.append(ARRAY_END);
         return builder.toString();
@@ -57,7 +59,7 @@ public class ResponseGenerator {
         builder.append(WIKITABLE_START);
         List<GDLevel> levelsForList = selectLevelsList(listType);
         for (GDLevel level : levelsForList) {
-            builder.append(WIKITABLE_NEWLINE).append(level.wikiString(counter)).append("\n");
+            builder.append(WIKITABLE_NEWLINE).append(wikiString(level, counter)).append("\n");
             counter++;
         }
         builder.append(WIKITABLE_END);
@@ -81,53 +83,114 @@ public class ResponseGenerator {
         }
     }
 
-    private static void getListForType(ListType type) {
-        List<GDLevel> list = fillListWithLevels(type);
-        fillTypedList(type, list);
+    private static void getListForType(LevelBrowseMode levelBrowseMode) {
+        List<GDLevel> list = fillListWithLevels(levelBrowseMode);
+        if (levelBrowseMode == LevelBrowseMode.MOST_DOWNLOADED)
+            fillTypedList(levelBrowseMode, list);
+        else
+            fillTypedList(LevelBrowseMode.MOST_LIKED, list);
     }
 
-    private static List<GDLevel> fillListWithLevels(ListType type) {
+    private static List<GDLevel> fillListWithLevels(LevelBrowseMode levelBrowseMode) {
         List<GDLevel> list = new ArrayList<>();
         int demonsCount = 0;
         int i = 0;
         try {
             while (demonsCount < LIST_SIZE) {
-                String rawData = (type == ListType.DOWNLOAD_LEVELS || type == ListType.DOWNLOAD_DEMONS)
-                        ? GDServer.fetchMostPopularLevels(i) : GDServer.fetchMostLikedLevels(i);
-                for (int j = 0; j < GD_PAGE_SIZE; j++) {
-                    GDLevel level = getLevel(rawData, j);
-                    list.add(level);
-                    if (level.getDifficulty() == Difficulty.DEMON)
-                        demonsCount++;
-                    if (demonsCount >= LIST_SIZE)
-                        break;
+                List<GDLevel> levels = client.browseLevels(levelBrowseMode,null, null, i)
+                        .collectList().block();
+                if (levels != null) {
+                    for (int j = 0; j < GD_PAGE_SIZE; j++) {
+                        GDLevel level = levels.get(j);
+                        list.add(level);
+                        if (level.isDemon())
+                            demonsCount++;
+                        if (demonsCount >= LIST_SIZE)
+                            break;
+                    }
+                    i++;
+                } else {
+                    throw new Exception("No levels!");
                 }
-                i++;
             }
         } catch (Exception e) {
-            System.out.println("Limit reached!");
+            System.out.println("Limit reached for " + levelBrowseMode.name() + " levels");
         }
         return list;
     }
 
-    private static GDLevel getLevel(String rawData, int index) {
-        return GDLevelFactory.buildGDLevelSearchedByFilter(rawData, index);
-    }
-
-    private static void fillTypedList(ListType type, List<GDLevel> list) {
-        switch (type) {
-            case DOWNLOAD_LEVELS:
-            case DOWNLOAD_DEMONS: {
+    private static void fillTypedList(LevelBrowseMode levelBrowseMode, List<GDLevel> list) {
+        switch (levelBrowseMode) {
+            case MOST_DOWNLOADED: {
                 mostDownloadedLevels = list.subList(0, LIST_SIZE);
-                mostDownloadedDemons = list.stream().filter(level -> level.getDifficulty() == Difficulty.DEMON).collect(Collectors.toList());
+                mostDownloadedDemons = list.stream().filter(GDLevel::isDemon).collect(Collectors.toList());
                 break;
             }
-            case LIKED_LEVELS:
-            case LIKED_DEMONS: {
+            case MOST_LIKED: {
                 mostLikedLevels = list.subList(0, LIST_SIZE);
-                mostLikedDemons = list.stream().filter(level -> level.getDifficulty() == Difficulty.DEMON).collect(Collectors.toList());
+                mostLikedDemons = list.stream().filter(GDLevel::isDemon).collect(Collectors.toList());
                 break;
             }
         }
+    }
+
+    private static String smallWikiString(GDLevel level) {
+        String data = Constants.LEVELS_WITH_DIFFERENT_NAME.containsKey(level.name())
+                ? Constants.LEVELS_WITH_DIFFERENT_NAME.get(level.name()).trim() : level.name().trim();
+        data = data.substring(0, 1).toUpperCase() + data.substring(1);
+        return data;
+    }
+
+    /**
+     * Generate string for pages
+     *
+     * @param count number of row in table
+     * @return string with information about level in MediaWiki table row format
+     */
+    private static String wikiString(GDLevel level, int count) {
+        String levelName = Constants.LEVELS_WITH_DIFFERENT_NAME.containsKey(level.name())
+                ? Constants.LEVELS_WITH_DIFFERENT_NAME.get(level.name()).trim() : level.name().trim();
+        String prefix = getPrefix(level);
+        String difficultyOutput = getDifficultyOutput(level);
+        String creatorName = getCreatorName(level, levelName);
+        return "! " + (count + 1) + "\n" + "| [[" + levelName + "]]\n| "
+                + creatorName + "\n| <center>{{" + prefix + difficultyOutput
+                + "}}</center>\n| " + numberFormatter.format(level.downloads())
+                + "\n| " + numberFormatter.format(level.likes());
+    }
+
+    private static String basicString(GDLevel level) {
+        String creatorName = level.creatorName().isPresent() ? level.creatorName().get() : "-";
+        return "\"" + level.name() + "\" by " + creatorName + " (" + level.id()
+                + ") — likes: " + level.likes() + ", downloads: " + level.downloads();
+    }
+
+    private static String getPrefix(GDLevel level) {
+        if (level.isEpic())
+            return "Эпический ";
+        if (level.featuredScore() > 0)
+            return "Featured ";
+        return "";
+    }
+
+    private static String getDifficultyOutput(GDLevel level) {
+        return level.isDemon()
+                ? Constants.demonDifficultyStringMap.get(level.demonDifficulty())
+                : Constants.difficultyStringMap.get(level.difficulty());
+    }
+
+    private static String getCreatorName(GDLevel level, String levelName) {
+        String creator = level.name();
+        String creatorOutput;
+        if (Constants.allowedCreatorsNames.contains(creator)) {
+            creatorOutput = "[[" + creator + "]]";
+        } else if (Constants.allowedCreatorsNamesWithReplacement.containsKey(creator)) {
+            creatorOutput = "[[" + Constants.allowedCreatorsNamesWithReplacement.get(creator) + "]]";
+        } else if (Constants.specialCreatorsNamesForLevels.containsKey(levelName)) {
+            creatorOutput = "[[" + Constants.specialCreatorsNamesForLevels.get(levelName) + "]]";
+        } else {
+            creatorOutput = creator == null ? "—" : creator;
+        }
+        return creatorOutput;
     }
 }

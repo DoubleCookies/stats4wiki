@@ -1,4 +1,4 @@
-package gd.enums;
+package gd;
 
 public enum ListType {
     DOWNLOAD_LEVELS,

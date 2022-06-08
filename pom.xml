@@ -6,8 +6,16 @@
 
     <groupId>stats4wiki</groupId>
     <artifactId>stats4wiki</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.alex1304.jdash/jdash-client -->
+        <dependency>
+            <groupId>com.alex1304.jdash</groupId>
+            <artifactId>jdash-client</artifactId>
+            <version>4.0.5</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
