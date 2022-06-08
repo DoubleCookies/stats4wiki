@@ -85,10 +85,7 @@ public class ResponseGenerator {
 
     private static void getListForType(LevelBrowseMode levelBrowseMode) {
         List<GDLevel> list = fillListWithLevels(levelBrowseMode);
-        if (levelBrowseMode == LevelBrowseMode.MOST_DOWNLOADED)
-            fillTypedList(levelBrowseMode, list);
-        else
-            fillTypedList(LevelBrowseMode.MOST_LIKED, list);
+        fillTypedList(levelBrowseMode, list);
     }
 
     private static List<GDLevel> fillListWithLevels(LevelBrowseMode levelBrowseMode) {
@@ -110,11 +107,11 @@ public class ResponseGenerator {
                     }
                     i++;
                 } else {
-                    throw new Exception("No levels!");
+                    throw new Exception("Can't load levels!");
                 }
             }
         } catch (Exception e) {
-            System.out.println("Limit reached for " + levelBrowseMode.name() + " levels");
+            System.out.println("Limit reached for " + levelBrowseMode.name() + " levels. Message: " + e.getMessage());
         }
         return list;
     }
