@@ -1,20 +1,13 @@
 {
   "files": {
-    "main.css": "/stats4wiki/static/css/main.6eb2fe5d.chunk.css",
-    "main.js": "/stats4wiki/static/js/main.8427e29e.chunk.js",
-    "main.js.map": "/stats4wiki/static/js/main.8427e29e.chunk.js.map",
-    "runtime-main.js": "/stats4wiki/static/js/runtime-main.09922534.js",
-    "runtime-main.js.map": "/stats4wiki/static/js/runtime-main.09922534.js.map",
-    "static/js/2.cc42508b.chunk.js": "/stats4wiki/static/js/2.cc42508b.chunk.js",
-    "static/js/2.cc42508b.chunk.js.map": "/stats4wiki/static/js/2.cc42508b.chunk.js.map",
+    "main.css": "/stats4wiki/static/css/main.7525d500.css",
+    "main.js": "/stats4wiki/static/js/main.756d4680.js",
     "index.html": "/stats4wiki/index.html",
-    "static/css/main.6eb2fe5d.chunk.css.map": "/stats4wiki/static/css/main.6eb2fe5d.chunk.css.map",
-    "static/js/2.cc42508b.chunk.js.LICENSE.txt": "/stats4wiki/static/js/2.cc42508b.chunk.js.LICENSE.txt"
+    "main.7525d500.css.map": "/stats4wiki/static/css/main.7525d500.css.map",
+    "main.756d4680.js.map": "/stats4wiki/static/js/main.756d4680.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.09922534.js",
-    "static/js/2.cc42508b.chunk.js",
-    "static/css/main.6eb2fe5d.chunk.css",
-    "static/js/main.8427e29e.chunk.js"
+    "static/css/main.7525d500.css",
+    "static/js/main.756d4680.js"
   ]
 }
