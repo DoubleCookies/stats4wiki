@@ -25,6 +25,9 @@
     "eject": "react-scripts eject",
     "upgrade": "yarn upgrade"
   },
+  "resolutions": {
+    "@svgr/webpack": "^6.2.1"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
