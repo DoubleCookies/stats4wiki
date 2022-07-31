@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/stats4wiki/static/css/main.b3198572.css",
-    "main.js": "/stats4wiki/static/js/main.181622a6.js",
+    "main.js": "/stats4wiki/static/js/main.b449aa06.js",
     "index.html": "/stats4wiki/index.html",
     "main.b3198572.css.map": "/stats4wiki/static/css/main.b3198572.css.map",
-    "main.181622a6.js.map": "/stats4wiki/static/js/main.181622a6.js.map"
+    "main.b449aa06.js.map": "/stats4wiki/static/js/main.b449aa06.js.map"
   },
   "entrypoints": [
     "static/css/main.b3198572.css",
-    "static/js/main.181622a6.js"
+    "static/js/main.b449aa06.js"
   ]
 }
