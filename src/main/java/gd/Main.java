@@ -41,7 +41,7 @@ public class Main {
             "\n" +
             "== Интересные факты ==\n" +
             "* [[Extinction]], [[FREEDOM]] и [[Bloodlust]] — единственные [[Зал славы|эпические]] уровни в топе.\n" +
-            "* [[Theory of Skrillex]], [[Demon mixed]], [[Ultra Paracosm]] и [[Sonic Wave]] — единственные демоны из топа, не имеющие [[Featured-уровни|Featured]].\n" +
+            "* [[Theory of Skrillex]], [[Demon mixed]], [[Ultra Paracosm]], [[Sonic Wave]], [[invisible clubstep]] и [[Blue Hell]] — единственные демоны из топа, не имеющие [[Featured-уровни|Featured]].\n" +
             "* В данном топе присутствуют демоны всех сложностей.\n" +
             "[[Категория:Демоны]]\n" +
             "[[Категория:Пользовательские уровни]]\n" +
