@@ -98,7 +98,7 @@ public class Main {
 
     private static void generateMostLikedLevelsForDemons() {
         mostLikedLevelsForDemons = ResponseGenerator.createTableForLevels(ListType.LIKED_DEMONS);
-        writeToFile("Most liked for demons", mostLikedLevels.getBytes());
+        writeToFile("Most liked for demons", mostLikedLevelsForDemons.getBytes());
     }
 
     private static void generateMostDownloadedLevelsSmall() {
