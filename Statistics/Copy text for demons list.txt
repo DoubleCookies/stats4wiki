@@ -17,351 +17,351 @@
 | [[The Nightmare]]
 | The Nightmare
 | <center>{{Featured лёгкий демон}}</center>
-| 70 895 316
-| 4 193 936
+| 71 382 046
+| 4 214 158
 |-
 ! 2
 | [[Bloodbath]]
 | Bloodbath
 | <center>{{Featured экстремальный демон}}</center>
-| 56 415 085
-| 2 913 845
+| 56 927 244
+| 2 936 755
 |-
 ! 3
 | [[The Lightning Road]]
 | THE LIGHTNING ROAD
 | <center>{{Featured лёгкий демон}}</center>
-| 44 508 776
-| 2 436 021
+| 44 812 156
+| 2 445 614
 |-
 ! 4
 | [[Nine Circles]]
 | Nine Circles
 | <center>{{Featured демон}}</center>
-| 38 726 990
-| 2 272 856
+| 39 015 769
+| 2 286 390
 |-
 ! 5
 | [[Speed Racer]]
 | Speed Racer
 | <center>{{Featured лёгкий демон}}</center>
-| 31 651 684
-| 1 832 349
+| 31 889 197
+| 1 840 638
 |-
 ! 6
 | [[Xstep v2]]
 | Xstep v2
 | <center>{{Featured лёгкий демон}}</center>
-| 28 971 166
-| 1 285 221
+| 29 165 420
+| 1 290 123
 |-
 ! 7
 | [[X]]
 | X
 | <center>{{Featured лёгкий демон}}</center>
-| 28 365 448
-| 1 612 445
+| 28 595 503
+| 1 621 202
 |-
 ! 8
 | [[Laser Room]]
 | Laser Room
 | <center>{{Featured лёгкий демон}}</center>
-| 28 357 088
-| 1 051 860
+| 28 515 270
+| 1 054 605
 |-
 ! 9
 | [[Cataclysm]]
 | Cataclysm
 | <center>{{Featured экстремальный демон}}</center>
-| 27 498 723
-| 1 018 412
+| 27 730 906
+| 1 023 625
 |-
 ! 10
 | [[Death Moon]]
 | Death Moon 
 | <center>{{Featured лёгкий демон}}</center>
-| 25 276 243
-| 1 430 035
+| 25 465 996
+| 1 436 874
 |-
 ! 11
 | [[Platinum Adventure]]
 | Platinum Adventure
 | <center>{{Featured лёгкий демон}}</center>
-| 24 946 335
-| 1 801 125
+| 25 183 348
+| 1 814 141
 |-
 ! 12
 | [[Extinction]]
 | Extinction
 | <center>{{Эпический лёгкий демон}}</center>
-| 24 314 519
-| 937 357
+| 24 537 681
+| 944 084
 |-
 ! 13
 | [[yStep]]
 | yStep
 | <center>{{Featured лёгкий демон}}</center>
-| 23 398 794
-| 929 289
+| 23 510 102
+| 931 365
 |-
 ! 14
 | [[Supersonic]]
 | Supersonic
 | <center>{{Featured безумный демон}}</center>
-| 22 699 998
-| 1 205 942
+| 22 873 322
+| 1 211 694
 |-
 ! 15
 | [[Crescendo]]
 | Crescendo
 | <center>{{Featured лёгкий демон}}</center>
-| 21 230 405
-| 876 635
+| 21 345 240
+| 879 016
 |-
 ! 16
 | [[Bloodlust]]
 | Bloodlust
 | <center>{{Эпический экстремальный демон}}</center>
-| 18 632 627
-| 688 739
+| 18 817 264
+| 694 100
 |-
 ! 17
 | [[Sonic Wave]]
 | [[Cyclic]]
 | <center>{{экстремальный демон}}</center>
-| 17 614 968
-| 638 703
+| 17 756 916
+| 642 283
 |-
 ! 18
 | [[Yatagarasu]]
 | Yatagarasu 
 | <center>{{Featured экстремальный демон}}</center>
-| 17 404 983
-| 776 406
+| 17 541 148
+| 779 976
 |-
 ! 19
 | [[Buck Force]]
 | Buck Force
 | <center>{{Featured лёгкий демон}}</center>
-| 16 460 524
-| 521 669
+| 16 539 691
+| 522 762
 |-
 ! 20
 | [[Theory of every v2]]
 | Theory of every v2
 | <center>{{Featured лёгкий демон}}</center>
-| 16 100 971
-| 686 066
+| 16 178 732
+| 687 542
 |-
 ! 21
 | [[Dear Nostalgists]]
 | Dear Nostalgists
 | <center>{{Featured лёгкий демон}}</center>
-| 15 982 265
-| 995 785
+| 16 124 664
+| 1 001 923
 |-
 ! 22
 | [[demon park]]
 | demon park
 | <center>{{Featured лёгкий демон}}</center>
-| 15 849 792
-| 637 175
+| 15 933 080
+| 638 929
 |-
 ! 23
 | [[Sidestep]]
 | Sidestep
 | <center>{{Featured лёгкий демон}}</center>
-| 15 721 644
-| 771 895
+| 15 829 901
+| 775 295
 |-
 ! 24
 | [[DeCode]]
 | DeCode
 | <center>{{Featured лёгкий демон}}</center>
-| 14 494 300
-| 797 944
+| 14 588 803
+| 800 640
 |-
 ! 25
 | [[Problematic]]
 | Problematic
 | <center>{{Featured лёгкий демон}}</center>
-| 13 982 563
-| 857 604
+| 14 067 387
+| 860 485
 |-
 ! 26
 | [[Theory of Skrillex]]
 | Theory of SkriLLex
 | <center>{{средний демон}}</center>
-| 13 464 731
-| 660 401
+| 13 534 679
+| 661 683
 |-
 ! 27
 | [[Super Cycles]]
 | Super Cycles
 | <center>{{Featured лёгкий демон}}</center>
-| 13 074 802
-| 568 948
+| 13 142 097
+| 570 118
 |-
 ! 28
 | [[Moon Adventure]]
 | moon adventure
 | <center>{{Featured лёгкий демон}}</center>
-| 12 889 676
-| 445 913
+| 12 956 339
+| 446 805
 |-
 ! 29
 | [[demon mixed]]
 | demon mixed
 | <center>{{лёгкий демон}}</center>
-| 12 143 685
-| 757 948
+| 12 244 856
+| 761 506
 |-
 ! 30
 | [[demon jumper]]
 | demon jumper
 | <center>{{Featured лёгкий демон}}</center>
-| 12 035 959
-| 521 125
+| 12 099 990
+| 522 337
 |-
 ! 31
 | [[Sakupen Hell]]
 | Sakupen Hell
 | <center>{{Featured экстремальный демон}}</center>
-| 11 054 770
-| 396 605
+| 11 147 117
+| 398 948
 |-
 ! 32
 | [[Impulse]]
 | Impulse
 | <center>{{Featured лёгкий демон}}</center>
-| 11 021 836
-| 682 489
+| 11 083 169
+| 684 253
 |-
 ! 33
 | [[Phobos]]
 | Phobos
 | <center>{{Featured экстремальный демон}}</center>
-| 10 861 187
-| 456 784
+| 10 951 497
+| 459 355
 |-
 ! 34
 | [[Speed of Light]]
 | Speed of Light
 | <center>{{Featured лёгкий демон}}</center>
-| 9 712 945
-| 583 182
+| 9 790 469
+| 585 689
 |-
 ! 35
 | [[Lights And Thunder]]
 | Lights And Thunder
 | <center>{{Featured лёгкий демон}}</center>
-| 9 634 932
-| 538 049
+| 9 696 792
+| 539 780
 |-
 ! 36
 | [[Sky Realm]]
 | Sky Realm
 | <center>{{Featured лёгкий демон}}</center>
-| 9 292 657
-| 457 295
+| 9 332 910
+| 458 100
 |-
 ! 37
 | [[Ultra Paracosm]]
 | Ultra Paracosm
 | <center>{{лёгкий демон}}</center>
-| 9 255 791
-| 660 834
+| 9 328 601
+| 664 009
 |-
 ! 38
 | [[8o]]
 | 8o
 | <center>{{Featured безумный демон}}</center>
-| 9 161 987
-| 573 635
+| 9 231 611
+| 575 728
 |-
 ! 39
 | [[Hextec Flow]]
 | Hextec Flow
 | <center>{{Featured лёгкий демон}}</center>
-| 8 863 670
-| 467 082
+| 8 901 730
+| 467 997
 |-
 ! 40
 | [[HyperSonic]]
 | HyperSonic
 | <center>{{Эпический экстремальный демон}}</center>
-| 8 344 528
-| 385 930
+| 8 413 097
+| 387 887
 |-
 ! 41
 | [[Extreme Fantasy]]
 | Extreme Fantasy
 | <center>{{Featured лёгкий демон}}</center>
-| 8 224 895
-| 390 120
+| 8 261 594
+| 390 860
 |-
 ! 42
 | [[Clutterfunk v2 (Neptune)]]
 | Clutterfunk v2
 | <center>{{Featured лёгкий демон}}</center>
-| 8 214 762
-| 403 465
+| 8 256 593
+| 404 477
 |-
 ! 43
 | [[Electrodynamix v2]]
 | Electrodynamix v2
 | <center>{{Featured средний демон}}</center>
-| 8 081 577
-| 352 661
+| 8 124 014
+| 353 513
 |-
 ! 44
 | [[FREEDOM]]
 | FREEDOM
 | <center>{{Эпический лёгкий демон}}</center>
-| 8 045 255
-| 482 908
+| 8 093 560
+| 484 697
 |-
 ! 45
 | [[Jawbreaker (ZenthicAlpha)]]
 | Jawbreaker
 | <center>{{Featured демон}}</center>
-| 8 031 495
-| 524 134
+| 8 088 479
+| 525 993
 |-
 ! 46
 | [[The Ultimate Phase]]
 | The Ultimate Phase
 | <center>{{Featured экстремальный демон}}</center>
-| 7 907 680
-| 383 285
+| 7 968 901
+| 384 800
 |-
 ! 47
 | [[-sirius-]]
 | -sirius-
 | <center>{{Featured средний демон}}</center>
-| 7 870 239
-| 582 222
+| 7 931 221
+| 584 545
 |-
 ! 48
 | [[Windy Landscape]]
 | Windy Landscape
 | <center>{{Featured безумный демон}}</center>
-| 7 527 326
-| 520 200
+| 7 571 367
+| 521 859
 |-
 ! 49
 | [[invisible clubstep]]
 | invisible clubstep 
 | <center>{{лёгкий демон}}</center>
-| 7 508 182
-| 436 865
+| 7 561 640
+| 438 504
 |-
 ! 50
 | [[Future Funk]]
 | Future Funk
 | <center>{{Эпический демон}}</center>
-| 7 293 363
-| 397 289
+| 7 364 501
+| 400 594
 |}
 </div>
 |-|Топ по лайкам=
@@ -378,351 +378,351 @@
 | [[The Nightmare]]
 | The Nightmare
 | <center>{{Featured лёгкий демон}}</center>
-| 70 895 316
-| 4 193 936
+| 71 382 046
+| 4 214 158
 |-
 ! 2
 | [[Bloodbath]]
 | Bloodbath
 | <center>{{Featured экстремальный демон}}</center>
-| 56 415 085
-| 2 913 845
+| 56 927 244
+| 2 936 755
 |-
 ! 3
 | [[The Lightning Road]]
 | THE LIGHTNING ROAD
 | <center>{{Featured лёгкий демон}}</center>
-| 44 508 776
-| 2 436 021
+| 44 812 156
+| 2 445 614
 |-
 ! 4
 | [[Nine Circles]]
 | Nine Circles
 | <center>{{Featured демон}}</center>
-| 38 726 990
-| 2 272 856
+| 39 015 769
+| 2 286 390
 |-
 ! 5
 | [[Speed Racer]]
 | Speed Racer
 | <center>{{Featured лёгкий демон}}</center>
-| 31 651 684
-| 1 832 349
+| 31 889 197
+| 1 840 638
 |-
 ! 6
 | [[Platinum Adventure]]
 | Platinum Adventure
 | <center>{{Featured лёгкий демон}}</center>
-| 24 946 335
-| 1 801 125
+| 25 183 348
+| 1 814 141
 |-
 ! 7
 | [[X]]
 | X
 | <center>{{Featured лёгкий демон}}</center>
-| 28 365 448
-| 1 612 445
+| 28 595 503
+| 1 621 202
 |-
 ! 8
 | [[Death Moon]]
 | Death Moon 
 | <center>{{Featured лёгкий демон}}</center>
-| 25 276 243
-| 1 430 035
+| 25 465 996
+| 1 436 874
 |-
 ! 9
 | [[Xstep v2]]
 | Xstep v2
 | <center>{{Featured лёгкий демон}}</center>
-| 28 971 166
-| 1 285 221
+| 29 165 420
+| 1 290 123
 |-
 ! 10
 | [[Supersonic]]
 | Supersonic
 | <center>{{Featured безумный демон}}</center>
-| 22 699 998
-| 1 205 942
+| 22 873 322
+| 1 211 694
 |-
 ! 11
 | [[Laser Room]]
 | Laser Room
 | <center>{{Featured лёгкий демон}}</center>
-| 28 357 088
-| 1 051 860
+| 28 515 270
+| 1 054 605
 |-
 ! 12
 | [[Cataclysm]]
 | Cataclysm
 | <center>{{Featured экстремальный демон}}</center>
-| 27 498 723
-| 1 018 412
+| 27 730 906
+| 1 023 625
 |-
 ! 13
 | [[Dear Nostalgists]]
 | Dear Nostalgists
 | <center>{{Featured лёгкий демон}}</center>
-| 15 982 265
-| 995 785
+| 16 124 664
+| 1 001 923
 |-
 ! 14
 | [[Extinction]]
 | Extinction
 | <center>{{Эпический лёгкий демон}}</center>
-| 24 314 519
-| 937 357
+| 24 537 681
+| 944 084
 |-
 ! 15
 | [[yStep]]
 | yStep
 | <center>{{Featured лёгкий демон}}</center>
-| 23 398 794
-| 929 289
+| 23 510 102
+| 931 365
 |-
 ! 16
 | [[Crescendo]]
 | Crescendo
 | <center>{{Featured лёгкий демон}}</center>
-| 21 230 405
-| 876 635
+| 21 345 240
+| 879 016
 |-
 ! 17
 | [[Problematic]]
 | Problematic
 | <center>{{Featured лёгкий демон}}</center>
-| 13 982 563
-| 857 604
+| 14 067 387
+| 860 485
 |-
 ! 18
 | [[DeCode]]
 | DeCode
 | <center>{{Featured лёгкий демон}}</center>
-| 14 494 300
-| 797 944
+| 14 588 803
+| 800 640
 |-
 ! 19
 | [[Yatagarasu]]
 | Yatagarasu 
 | <center>{{Featured экстремальный демон}}</center>
-| 17 404 983
-| 776 406
+| 17 541 148
+| 779 976
 |-
 ! 20
 | [[Sidestep]]
 | Sidestep
 | <center>{{Featured лёгкий демон}}</center>
-| 15 721 644
-| 771 895
+| 15 829 901
+| 775 295
 |-
 ! 21
 | [[demon mixed]]
 | demon mixed
 | <center>{{лёгкий демон}}</center>
-| 12 143 685
-| 757 948
+| 12 244 856
+| 761 506
 |-
 ! 22
 | [[Bloodlust]]
 | Bloodlust
 | <center>{{Эпический экстремальный демон}}</center>
-| 18 632 627
-| 688 739
+| 18 817 264
+| 694 100
 |-
 ! 23
 | [[Theory of every v2]]
 | Theory of every v2
 | <center>{{Featured лёгкий демон}}</center>
-| 16 100 971
-| 686 066
+| 16 178 732
+| 687 542
 |-
 ! 24
 | [[Impulse]]
 | Impulse
 | <center>{{Featured лёгкий демон}}</center>
-| 11 021 836
-| 682 489
+| 11 083 169
+| 684 253
 |-
 ! 25
 | [[Ultra Paracosm]]
 | Ultra Paracosm
 | <center>{{лёгкий демон}}</center>
-| 9 255 791
-| 660 834
+| 9 328 601
+| 664 009
 |-
 ! 26
 | [[Theory of Skrillex]]
 | Theory of SkriLLex
 | <center>{{средний демон}}</center>
-| 13 464 731
-| 660 401
+| 13 534 679
+| 661 683
 |-
 ! 27
 | [[Sonic Wave]]
 | [[Cyclic]]
 | <center>{{экстремальный демон}}</center>
-| 17 614 968
-| 638 703
+| 17 756 916
+| 642 283
 |-
 ! 28
 | [[demon park]]
 | demon park
 | <center>{{Featured лёгкий демон}}</center>
-| 15 849 792
-| 637 175
+| 15 933 080
+| 638 929
 |-
 ! 29
 | [[Speed of Light]]
 | Speed of Light
 | <center>{{Featured лёгкий демон}}</center>
-| 9 712 945
-| 583 182
+| 9 790 469
+| 585 689
 |-
 ! 30
 | [[-sirius-]]
 | -sirius-
 | <center>{{Featured средний демон}}</center>
-| 7 870 239
-| 582 222
+| 7 931 221
+| 584 545
 |-
 ! 31
 | [[8o]]
 | 8o
 | <center>{{Featured безумный демон}}</center>
-| 9 161 987
-| 573 635
+| 9 231 611
+| 575 728
 |-
 ! 32
 | [[Super Cycles]]
 | Super Cycles
 | <center>{{Featured лёгкий демон}}</center>
-| 13 074 802
-| 568 948
+| 13 142 097
+| 570 118
 |-
 ! 33
 | [[Lights And Thunder]]
 | Lights And Thunder
 | <center>{{Featured лёгкий демон}}</center>
-| 9 634 932
-| 538 049
+| 9 696 792
+| 539 780
 |-
 ! 34
 | [[Jawbreaker (ZenthicAlpha)]]
 | Jawbreaker
 | <center>{{Featured демон}}</center>
-| 8 031 495
-| 524 134
+| 8 088 479
+| 525 993
 |-
 ! 35
-| [[Buck Force]]
-| Buck Force
-| <center>{{Featured лёгкий демон}}</center>
-| 16 460 524
-| 521 669
-|-
-! 36
 | [[Lonely travel]]
 | Lonely travel
 | <center>{{Featured средний демон}}</center>
-| 6 664 008
-| 521 408
+| 6 707 642
+| 522 810
+|-
+! 36
+| [[Buck Force]]
+| Buck Force
+| <center>{{Featured лёгкий демон}}</center>
+| 16 539 691
+| 522 762
 |-
 ! 37
 | [[demon jumper]]
 | demon jumper
 | <center>{{Featured лёгкий демон}}</center>
-| 12 035 959
-| 521 125
+| 12 099 990
+| 522 337
 |-
 ! 38
 | [[Windy Landscape]]
 | Windy Landscape
 | <center>{{Featured безумный демон}}</center>
-| 7 527 326
-| 520 200
+| 7 571 367
+| 521 859
 |-
 ! 39
 | [[Insomnia]]
 | Insomnia
 | <center>{{Featured лёгкий демон}}</center>
-| 6 681 091
-| 517 310
+| 6 714 575
+| 518 513
 |-
 ! 40
 | [[FREEDOM]]
 | FREEDOM
 | <center>{{Эпический лёгкий демон}}</center>
-| 8 045 255
-| 482 908
+| 8 093 560
+| 484 697
 |-
 ! 41
 | [[Retro Circles]]
 | Retro Circles
 | <center>{{Featured лёгкий демон}}</center>
-| 6 131 669
-| 467 862
+| 6 184 109
+| 470 353
 |-
 ! 42
 | [[Hextec Flow]]
 | Hextec Flow
 | <center>{{Featured лёгкий демон}}</center>
-| 8 863 670
-| 467 082
+| 8 901 730
+| 467 997
 |-
 ! 43
-| [[Sky Realm]]
-| Sky Realm
-| <center>{{Featured лёгкий демон}}</center>
-| 9 292 657
-| 457 295
-|-
-! 44
 | [[Phobos]]
 | Phobos
 | <center>{{Featured экстремальный демон}}</center>
-| 10 861 187
-| 456 784
+| 10 951 497
+| 459 355
+|-
+! 44
+| [[Sky Realm]]
+| Sky Realm
+| <center>{{Featured лёгкий демон}}</center>
+| 9 332 910
+| 458 100
 |-
 ! 45
 | [[Moon Adventure]]
 | moon adventure
 | <center>{{Featured лёгкий демон}}</center>
-| 12 889 676
-| 445 913
+| 12 956 339
+| 446 805
 |-
 ! 46
 | [[Mechanical Showdown]]
 | Mechanical Showdown
 | <center>{{Эпический средний демон}}</center>
-| 6 470 567
-| 439 240
+| 6 510 933
+| 440 794
 |-
 ! 47
 | [[invisible clubstep]]
 | invisible clubstep 
 | <center>{{лёгкий демон}}</center>
-| 7 508 182
-| 436 865
+| 7 561 640
+| 438 504
 |-
 ! 48
 | [[Blue Hell]]
 | Blue Hell
 | <center>{{лёгкий демон}}</center>
-| 5 519 704
-| 434 179
+| 5 561 400
+| 436 053
 |-
 ! 49
 | [[Chaoz Impact]]
 | Chaoz Impact
 | <center>{{Featured лёгкий демон}}</center>
-| 6 262 322
-| 425 308
+| 6 291 809
+| 426 069
 |-
 ! 50
 | [[ABCDEFGHIJKLMNOPQRS]]
 | ABCDEFGHIJKLMNOPQRS
 | <center>{{Featured лёгкий демон}}</center>
-| 4 946 068
-| 418 144
+| 5 019 016
+| 423 369
 |}
 </div>
 </tabber>
