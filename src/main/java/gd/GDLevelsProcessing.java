@@ -25,8 +25,11 @@ public class GDLevelsProcessing {
                     for (int j = 0; j < GD_PAGE_SIZE; j++) {
                         GDLevel level = levels.get(j);
                         list.add(level);
-                        if (level.isDemon())
+                        if (level.isDemon()) {
                             demonsCount++;
+                            if (demonsCount % 10 == 0 && demonsCount > 0)
+                                System.out.println("Found " + demonsCount + " demon levels.");
+                        }
                         if (demonsCount >= LIST_SIZE)
                             break;
                     }

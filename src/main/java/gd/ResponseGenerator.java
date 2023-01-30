@@ -28,6 +28,7 @@ public class ResponseGenerator {
     }
 
     private static void getListForType(LevelBrowseMode levelBrowseMode) {
+        System.out.println("Generating list for this type: " + levelBrowseMode.name());
         List<GDLevel> list = GDLevelsProcessing.fillListWithLevels(levelBrowseMode);
         fillTypedList(levelBrowseMode, list);
     }
