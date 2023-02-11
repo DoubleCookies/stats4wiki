@@ -17,351 +17,351 @@
 | [[OuterSpace]]
 | OuterSpace
 | <center>{{Featured сложный}}</center>
-| 76 760 010
-| 3 955 743
+| 77 165 634
+| 3 977 474
 |-
 ! 2
 | [[Sonar]]
 | Sonar
 | <center>{{Featured лёгкий}}</center>
-| 75 101 510
-| 4 872 932
+| 75 425 359
+| 4 891 600
 |-
 ! 3
 | [[The Nightmare]]
 | The Nightmare
 | <center>{{Featured лёгкий демон}}</center>
-| 72 502 613
-| 4 262 407
+| 72 869 914
+| 4 278 177
 |-
 ! 4
 | [[ReTraY]]
 | ReTraY
 | <center>{{Featured лёгкий}}</center>
-| 68 426 090
-| 6 292 665
+| 68 747 070
+| 6 317 311
 |-
 ! 5
 | [[Level Easy]]
 | [[Cody]]
 | <center>{{Featured нормальный}}</center>
-| 67 307 605
-| 3 807 334
+| 67 534 345
+| 3 814 587
 |-
 ! 6
 | [[Bloodbath]]
 | Bloodbath
 | <center>{{Featured экстремальный демон}}</center>
-| 58 099 464
-| 2 988 802
+| 58 484 094
+| 3 006 123
 |-
 ! 7
 | [[Dark Paradise]]
 | Dark Paradise
 | <center>{{Featured лёгкий}}</center>
-| 55 410 696
-| 4 075 256
+| 55 655 507
+| 4 090 018
 |-
 ! 8
 | [[Dreamland (Scanbrux)]]
 | Dreamland
 | <center>{{Featured сложный}}</center>
-| 52 261 687
-| 2 313 239
+| 52 446 400
+| 2 318 224
 |-
 ! 9
 | [[Acid Factory]]
 | Acid Factory
 | <center>{{Featured сложный}}</center>
-| 51 980 086
-| 2 486 863
+| 52 239 468
+| 2 498 750
 |-
 ! 10
 | [[Promises (Adiale)]]
 | Promises
 | <center>{{Featured лёгкий}}</center>
-| 50 548 687
-| 3 816 467
+| 50 684 158
+| 3 824 015
 |-
 ! 11
 | [[End Of Line]]
 | End Of Line
 | <center>{{Featured нормальный}}</center>
-| 46 394 019
-| 3 035 059
+| 46 557 754
+| 3 041 143
 |-
 ! 12
 | [[Amplification]]
 | Amplification
 | <center>{{Featured сложный}}</center>
-| 46 114 760
-| 2 064 559
+| 46 352 488
+| 2 075 121
 |-
 ! 13
 | [[The Lightning Road]]
 | THE LIGHTNING ROAD
 | <center>{{Featured лёгкий демон}}</center>
-| 45 509 228
-| 2 469 336
+| 45 735 348
+| 2 477 061
 |-
 ! 14
 | [[Nine Circles]]
 | Nine Circles
 | <center>{{Featured демон}}</center>
-| 39 712 487
-| 2 320 168
+| 39 947 099
+| 2 331 715
 |-
 ! 15
 | [[Auto play area]]
 | auto play area
 | <center>{{Featured авто}}</center>
-| 39 375 164
-| 2 810 915
+| 39 507 861
+| 2 815 918
 |-
 ! 16
 | [[dorabaebasic4]]
 | dorabaebasic4
 | <center>{{Featured нормальный}}</center>
-| 36 367 854
-| 2 398 566
+| 36 498 127
+| 2 403 773
 |-
 ! 17
 | [[Flappy Hexagon]]
 | flappy hexagon
 | <center>{{Featured сложный}}</center>
-| 35 995 904
-| 2 199 879
+| 36 132 927
+| 2 204 781
 |-
 ! 18
 | [[Chambers]]
 | Chambers
 | <center>{{Featured нормальный}}</center>
-| 35 786 811
-| 2 239 279
+| 35 964 409
+| 2 249 035
 |-
 ! 19
 | [[Back on Track RM]]
 | Back on Track RM
 | <center>{{Featured нормальный}}</center>
-| 33 105 057
-| 1 735 695
+| 33 222 139
+| 1 739 400
 |-
 ! 20
 | [[Speed Racer]]
 | Speed Racer
 | <center>{{Featured лёгкий демон}}</center>
-| 32 437 278
-| 1 861 090
+| 32 618 003
+| 1 868 273
 |-
 ! 21
 | [[Spooky Light]]
 | Spooky Light
 | <center>{{Featured нормальный}}</center>
-| 30 881 553
-| 1 917 442
+| 31 036 893
+| 1 925 847
 |-
 ! 22
 | [[Xstep v2]]
 | Xstep v2
 | <center>{{Featured лёгкий демон}}</center>
-| 29 608 189
-| 1 302 195
+| 29 751 955
+| 1 306 321
 |-
 ! 23
 | [[X]]
 | X
 | <center>{{Featured лёгкий демон}}</center>
-| 29 125 506
-| 1 642 491
+| 29 299 502
+| 1 649 815
 |-
 ! 24
-| [[through time]]
-| through time
-| <center>{{Featured нормальный}}</center>
-| 28 931 894
-| 2 521 934
-|-
-! 25
 | [[Laser Room]]
 | Laser Room
 | <center>{{Featured лёгкий демон}}</center>
-| 28 887 734
-| 1 061 441
+| 29 009 985
+| 1 063 839
+|-
+! 25
+| [[through time]]
+| through time
+| <center>{{Featured нормальный}}</center>
+| 29 009 374
+| 2 527 014
 |-
 ! 26
 | [[dinosaur]]
 | dinosaur
 | <center>{{Эпический безумный}}</center>
-| 28 469 912
-| 1 491 195
+| 28 577 352
+| 1 495 892
 |-
 ! 27
 | [[Cataclysm]]
 | Cataclysm
 | <center>{{Featured экстремальный демон}}</center>
-| 28 268 236
-| 1 036 538
+| 28 442 150
+| 1 040 970
 |-
 ! 28
 | [[Infernal Arena]]
 | Infernal Arena
 | <center>{{Featured нормальный}}</center>
-| 28 085 388
-| 1 776 961
+| 28 227 087
+| 1 785 039
 |-
 ! 29
 | [[UFO Madness]]
 | UFO Madness
 | <center>{{Featured нормальный}}</center>
-| 27 417 662
-| 1 088 092
+| 27 520 304
+| 1 090 371
 |-
 ! 30
 | [[Shock]]
 | Shock
 | <center>{{Эпический очень сложный}}</center>
-| 27 001 900
-| 1 805 303
+| 27 165 861
+| 1 814 672
 |-
 ! 31
 | [[Almighty]]
 | Almighty
 | <center>{{Featured сложный}}</center>
-| 26 452 057
-| 1 930 716
+| 26 499 604
+| 1 933 707
 |-
 ! 32
 | [[Death Moon]]
 | Death Moon 
 | <center>{{Featured лёгкий демон}}</center>
-| 25 922 499
-| 1 455 190
+| 26 075 490
+| 1 461 884
 |-
 ! 33
 | [[Platinum Adventure]]
 | Platinum Adventure
 | <center>{{Featured лёгкий демон}}</center>
-| 25 715 798
-| 1 843 046
+| 25 889 676
+| 1 852 714
 |-
 ! 34
 | [[Phantom]]
 | Phantom
 | <center>{{Эпический сложный}}</center>
-| 25 511 304
-| 1 954 143
+| 25 608 998
+| 1 960 953
 |-
 ! 35
 | [[Extinction]]
 | Extinction
 | <center>{{Эпический лёгкий демон}}</center>
-| 25 065 191
-| 961 460
+| 25 241 655
+| 967 680
 |-
 ! 36
 | [[Unity]]
 | Unity
 | <center>{{Featured безумный}}</center>
-| 24 956 662
-| 1 582 466
+| 25 090 854
+| 1 588 332
 |-
 ! 37
 | [[Dry Out RM]]
 | Dry Out RM
 | <center>{{Featured сложный}}</center>
-| 24 707 464
-| 926 345
+| 24 804 905
+| 928 474
 |-
 ! 38
 | [[Ghoul]]
 | Ghoul
 | <center>{{Эпический безумный}}</center>
-| 23 870 361
-| 796 550
+| 24 033 083
+| 802 259
 |-
 ! 39
 | [[yStep]]
 | yStep
 | <center>{{Featured лёгкий демон}}</center>
-| 23 771 289
-| 936 537
+| 23 857 219
+| 938 427
 |-
 ! 40
 | [[Supersonic]]
 | Supersonic
 | <center>{{Featured безумный демон}}</center>
-| 23 275 476
-| 1 225 652
+| 23 407 534
+| 1 230 342
 |-
 ! 41
 | [[Easy]]
 | Easy 
 | <center>{{Featured сложный}}</center>
-| 22 904 542
-| 1 407 393
+| 22 978 290
+| 1 410 272
 |-
 ! 42
 | [[Space Travel]]
 | Space Travel
 | <center>{{Featured авто}}</center>
-| 22 901 846
-| 1 601 938
+| 22 963 987
+| 1 604 115
 |-
 ! 43
 | [[Highscore]]
 | Highscore
 | <center>{{Featured нормальный}}</center>
-| 22 657 979
-| 2 124 259
+| 22 727 387
+| 2 129 038
 |-
 ! 44
 | [[Polargeist v01]]
 | Polargeist v01
 | <center>{{Featured сложный}}</center>
-| 22 629 140
-| 1 453 687
+| 22 697 488
+| 1 456 548
 |-
 ! 45
 | [[Endless (FlappySheepy)]]
 | endless
 | <center>{{Featured нормальный}}</center>
-| 22 013 034
-| 1 627 784
+| 22 106 557
+| 1 632 994
 |-
 ! 46
 | [[Fernanfloo 3]]
 | Fernanfloo 3 
 | <center>{{очень сложный}}</center>
-| 21 942 194
-| 1 280 037
+| 22 016 121
+| 1 283 654
 |-
 ! 47
 | [[SLAM]]
 | SLAM
 | <center>{{Эпический очень сложный}}</center>
-| 21 754 987
-| 1 317 528
+| 21 919 839
+| 1 328 374
 |-
 ! 48
 | [[Adrift]]
 | Adrift
 | <center>{{Featured нормальный}}</center>
-| 21 724 657
-| 1 673 941
+| 21 817 538
+| 1 679 306
 |-
 ! 49
 | [[Crescendo]]
 | Crescendo
 | <center>{{Featured лёгкий демон}}</center>
-| 21 623 824
-| 885 330
+| 21 717 014
+| 887 511
 |-
 ! 50
 | [[dorabaebasic5]]
 | dorabaebasic5
 | <center>{{Featured сложный}}</center>
-| 21 505 849
-| 1 775 534
+| 21 582 677
+| 1 779 270
 |}
 </div>
 |-|Топ по лайкам=
@@ -378,351 +378,351 @@
 | [[ReTraY]]
 | ReTraY
 | <center>{{Featured лёгкий}}</center>
-| 68 426 090
-| 6 292 665
+| 68 747 070
+| 6 317 311
 |-
 ! 2
 | [[Sonar]]
 | Sonar
 | <center>{{Featured лёгкий}}</center>
-| 75 101 510
-| 4 872 932
+| 75 425 359
+| 4 891 600
 |-
 ! 3
 | [[The Nightmare]]
 | The Nightmare
 | <center>{{Featured лёгкий демон}}</center>
-| 72 502 613
-| 4 262 407
+| 72 869 914
+| 4 278 177
 |-
 ! 4
 | [[Dark Paradise]]
 | Dark Paradise
 | <center>{{Featured лёгкий}}</center>
-| 55 410 696
-| 4 075 256
+| 55 655 507
+| 4 090 018
 |-
 ! 5
 | [[OuterSpace]]
 | OuterSpace
 | <center>{{Featured сложный}}</center>
-| 76 760 010
-| 3 955 743
+| 77 165 634
+| 3 977 474
 |-
 ! 6
 | [[Promises (Adiale)]]
 | Promises
 | <center>{{Featured лёгкий}}</center>
-| 50 548 687
-| 3 816 467
+| 50 684 158
+| 3 824 015
 |-
 ! 7
 | [[Level Easy]]
 | [[Cody]]
 | <center>{{Featured нормальный}}</center>
-| 67 307 605
-| 3 807 334
+| 67 534 345
+| 3 814 587
 |-
 ! 8
 | [[End Of Line]]
 | End Of Line
 | <center>{{Featured нормальный}}</center>
-| 46 394 019
-| 3 035 059
+| 46 557 754
+| 3 041 143
 |-
 ! 9
 | [[Bloodbath]]
 | Bloodbath
 | <center>{{Featured экстремальный демон}}</center>
-| 58 099 464
-| 2 988 802
+| 58 484 094
+| 3 006 123
 |-
 ! 10
 | [[Auto play area]]
 | auto play area
 | <center>{{Featured авто}}</center>
-| 39 375 164
-| 2 810 915
+| 39 507 861
+| 2 815 918
 |-
 ! 11
 | [[through time]]
 | through time
 | <center>{{Featured нормальный}}</center>
-| 28 931 894
-| 2 521 934
+| 29 009 374
+| 2 527 014
 |-
 ! 12
 | [[Acid Factory]]
 | Acid Factory
 | <center>{{Featured сложный}}</center>
-| 51 980 086
-| 2 486 863
+| 52 239 468
+| 2 498 750
 |-
 ! 13
 | [[The Lightning Road]]
 | THE LIGHTNING ROAD
 | <center>{{Featured лёгкий демон}}</center>
-| 45 509 228
-| 2 469 336
+| 45 735 348
+| 2 477 061
 |-
 ! 14
 | [[dorabaebasic4]]
 | dorabaebasic4
 | <center>{{Featured нормальный}}</center>
-| 36 367 854
-| 2 398 566
+| 36 498 127
+| 2 403 773
 |-
 ! 15
 | [[Nine Circles]]
 | Nine Circles
 | <center>{{Featured демон}}</center>
-| 39 712 487
-| 2 320 168
+| 39 947 099
+| 2 331 715
 |-
 ! 16
 | [[Dreamland (Scanbrux)]]
 | Dreamland
 | <center>{{Featured сложный}}</center>
-| 52 261 687
-| 2 313 239
+| 52 446 400
+| 2 318 224
 |-
 ! 17
 | [[Chambers]]
 | Chambers
 | <center>{{Featured нормальный}}</center>
-| 35 786 811
-| 2 239 279
+| 35 964 409
+| 2 249 035
 |-
 ! 18
 | [[Flappy Hexagon]]
 | flappy hexagon
 | <center>{{Featured сложный}}</center>
-| 35 995 904
-| 2 199 879
+| 36 132 927
+| 2 204 781
 |-
 ! 19
 | [[Highscore]]
 | Highscore
 | <center>{{Featured нормальный}}</center>
-| 22 657 979
-| 2 124 259
+| 22 727 387
+| 2 129 038
 |-
 ! 20
 | [[Amplification]]
 | Amplification
 | <center>{{Featured сложный}}</center>
-| 46 114 760
-| 2 064 559
+| 46 352 488
+| 2 075 121
 |-
 ! 21
 | [[Phantom]]
 | Phantom
 | <center>{{Эпический сложный}}</center>
-| 25 511 304
-| 1 954 143
+| 25 608 998
+| 1 960 953
 |-
 ! 22
 | [[Almighty]]
 | Almighty
 | <center>{{Featured сложный}}</center>
-| 26 452 057
-| 1 930 716
+| 26 499 604
+| 1 933 707
 |-
 ! 23
 | [[Spooky Light]]
 | Spooky Light
 | <center>{{Featured нормальный}}</center>
-| 30 881 553
-| 1 917 442
+| 31 036 893
+| 1 925 847
 |-
 ! 24
 | [[Speed Racer]]
 | Speed Racer
 | <center>{{Featured лёгкий демон}}</center>
-| 32 437 278
-| 1 861 090
+| 32 618 003
+| 1 868 273
 |-
 ! 25
 | [[Platinum Adventure]]
 | Platinum Adventure
 | <center>{{Featured лёгкий демон}}</center>
-| 25 715 798
-| 1 843 046
+| 25 889 676
+| 1 852 714
 |-
 ! 26
 | [[Shock]]
 | Shock
 | <center>{{Эпический очень сложный}}</center>
-| 27 001 900
-| 1 805 303
+| 27 165 861
+| 1 814 672
 |-
 ! 27
 | [[The World]]
 | ThE WorLd
 | <center>{{Featured лёгкий}}</center>
-| 19 075 069
-| 1 781 548
+| 19 157 273
+| 1 786 902
 |-
 ! 28
 | [[Infernal Arena]]
 | Infernal Arena
 | <center>{{Featured нормальный}}</center>
-| 28 085 388
-| 1 776 961
+| 28 227 087
+| 1 785 039
 |-
 ! 29
 | [[dorabaebasic5]]
 | dorabaebasic5
 | <center>{{Featured сложный}}</center>
-| 21 505 849
-| 1 775 534
+| 21 582 677
+| 1 779 270
 |-
 ! 30
 | [[Back on Track RM]]
 | Back on Track RM
 | <center>{{Featured нормальный}}</center>
-| 33 105 057
-| 1 735 695
+| 33 222 139
+| 1 739 400
 |-
 ! 31
 | [[Overture]]
 | Overture
 | <center>{{Featured сложный}}</center>
-| 18 435 285
-| 1 679 638
+| 18 557 486
+| 1 688 983
 |-
 ! 32
 | [[Adrift]]
 | Adrift
 | <center>{{Featured нормальный}}</center>
-| 21 724 657
-| 1 673 941
+| 21 817 538
+| 1 679 306
 |-
 ! 33
 | [[X]]
 | X
 | <center>{{Featured лёгкий демон}}</center>
-| 29 125 506
-| 1 642 491
+| 29 299 502
+| 1 649 815
 |-
 ! 34
 | [[Endless (FlappySheepy)]]
 | endless
 | <center>{{Featured нормальный}}</center>
-| 22 013 034
-| 1 627 784
+| 22 106 557
+| 1 632 994
 |-
 ! 35
 | [[First Race]]
 | First Race
 | <center>{{Featured очень сложный}}</center>
-| 20 543 197
-| 1 615 752
+| 20 688 077
+| 1 625 215
 |-
 ! 36
-| [[Space Travel]]
-| Space Travel
-| <center>{{Featured авто}}</center>
-| 22 901 846
-| 1 601 938
-|-
-! 37
 | [[Lucid Dream]]
 | lucid dream
 | <center>{{лёгкий}}</center>
-| 19 960 426
-| 1 600 995
+| 20 028 129
+| 1 604 300
+|-
+! 37
+| [[Space Travel]]
+| Space Travel
+| <center>{{Featured авто}}</center>
+| 22 963 987
+| 1 604 115
 |-
 ! 38
 | [[Unity]]
 | Unity
 | <center>{{Featured безумный}}</center>
-| 24 956 662
-| 1 582 466
+| 25 090 854
+| 1 588 332
 |-
 ! 39
 | [[destructive auto]]
 | destructive auto
 | <center>{{Featured авто}}</center>
-| 13 117 957
-| 1 574 812
+| 13 157 641
+| 1 577 792
 |-
 ! 40
 | [[ColorZ]]
 | ColorZ
 | <center>{{Featured нормальный}}</center>
-| 18 324 377
-| 1 541 145
+| 18 401 169
+| 1 546 055
 |-
 ! 41
 | [[Anubis]]
 | Anubis
 | <center>{{Featured сложный}}</center>
-| 16 600 151
-| 1 498 355
+| 16 698 600
+| 1 505 243
 |-
 ! 42
 | [[dinosaur]]
 | dinosaur
 | <center>{{Эпический безумный}}</center>
-| 28 469 912
-| 1 491 195
+| 28 577 352
+| 1 495 892
 |-
 ! 43
 | [[Death Moon]]
 | Death Moon 
 | <center>{{Featured лёгкий демон}}</center>
-| 25 922 499
-| 1 455 190
+| 26 075 490
+| 1 461 884
 |-
 ! 44
 | [[ichor]]
 | ichor
 | <center>{{Featured сложный}}</center>
-| 18 007 966
-| 1 454 234
+| 18 085 826
+| 1 459 259
 |-
 ! 45
 | [[Polargeist v01]]
 | Polargeist v01
 | <center>{{Featured сложный}}</center>
-| 22 629 140
-| 1 453 687
+| 22 697 488
+| 1 456 548
 |-
 ! 46
 | [[Ocean Of Dreams]]
 | Ocean Of Dreams
 | <center>{{Featured лёгкий}}</center>
-| 17 536 510
-| 1 423 563
+| 17 605 300
+| 1 427 907
 |-
 ! 47
 | [[Easy]]
 | Easy 
 | <center>{{Featured сложный}}</center>
-| 22 904 542
-| 1 407 393
+| 22 978 290
+| 1 410 272
 |-
 ! 48
 | [[Frontline Full]]
 | Frontline Full
 | <center>{{Featured очень сложный}}</center>
-| 17 018 839
-| 1 373 428
+| 17 115 113
+| 1 379 857
 |-
 ! 49
 | [[fernanfloo 2]]
 | fernanfloo 2
 | <center>{{очень сложный}}</center>
-| 20 120 222
-| 1 333 191
+| 20 229 327
+| 1 340 238
 |-
 ! 50
 | [[Warmth]]
 | Warmth
 | <center>{{Featured лёгкий}}</center>
-| 14 997 736
-| 1 332 660
+| 15 054 637
+| 1 336 705
 |}
 </div>
 </tabber>
