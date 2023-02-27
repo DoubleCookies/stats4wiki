@@ -6,6 +6,7 @@ import jdash.common.entity.GDLevel;
 
 import java.text.NumberFormat;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import static gd.Constants.*;
@@ -135,17 +136,24 @@ public class ResponseGenerator {
     }
 
     private static String getCreatorName(GDLevel level, String levelName) {
-        String creator = level.name();
         String creatorOutput;
-        if (allowedCreatorsNames.contains(creator)) {
-            creatorOutput = "[[" + creator + "]]";
-        } else if (allowedCreatorsNamesWithReplacement.containsKey(creator)) {
-            creatorOutput = "[[" + allowedCreatorsNamesWithReplacement.get(creator) + "]]";
-        } else if (specialCreatorsNamesForLevels.containsKey(levelName)) {
-            creatorOutput = "[[" + specialCreatorsNamesForLevels.get(levelName) + "]]";
+        Optional<String> creator = level.creatorName();
+        if (creator.isPresent()) {
+            String creatorName = creator.get();
+            if (allowedCreatorsNames.contains(creatorName)) {
+                creatorOutput = "[[" + creatorName + "]]";
+            } else if (allowedCreatorsNamesWithReplacement.containsKey(creatorName)) {
+                creatorOutput = "[[" + allowedCreatorsNamesWithReplacement.get(creatorName) + "]]";
+            } else if (specialCreatorsNamesForLevels.containsKey(levelName)) {
+                creatorOutput = "[[" + specialCreatorsNamesForLevels.get(levelName) + "]]";
+            } else {
+                creatorOutput = creatorName;
+            }
         } else {
-            creatorOutput = creator == null ? "—" : creator;
+            creatorOutput = "—";
         }
+
+
         return creatorOutput;
     }
 }
