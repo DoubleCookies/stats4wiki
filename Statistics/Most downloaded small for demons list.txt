@@ -46,7 +46,7 @@ Electrodynamix v2,
 FREEDOM,
 The Ultimate Phase,
 -sirius-,
+Future Funk,
 Invisible clubstep,
-Windy Landscape,
-Future Funk
+Windy Landscape
 }}{{#vardefineecho:number|{{#expr:{{#arraysearch:levels|{{{1}}}}}}}}}<noinclude>{{doc}}[[Категория:Информационные шаблоны]]</noinclude>
