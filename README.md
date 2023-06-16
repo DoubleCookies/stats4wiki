@@ -2,6 +2,8 @@
 Statistics tool for building tables and templates for GDWiki top levels lists pages. 
 Based on [GdStatistics](https://github.com/DoubleCookies/GDStatistics) and Alex1304 [jdash](https://github.com/Alex1304/jdash). 
 
+Project is archived because its functionality was moved to **GdStatistics** project.
+
 ## Features
 - Collect information about top-50 most downloaded/liked levels (all and demons difficulties) and generate tables for it.
 - Generate short lists for wiki templates.
